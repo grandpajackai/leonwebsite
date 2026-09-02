@@ -26,13 +26,13 @@ export default function Header({
 
       <div className="sticky top-0 z-40 bg-navy text-white shadow-header-sticky">
         <Container className="flex items-center justify-between gap-6 py-3">
-          <Link href={`/${locale}`} className="flex items-center gap-3">
+          <Link href={`/${locale}`} className="flex shrink-0 items-center gap-3">
             <Image
               src="/assets/leon-lion-mark-900.png"
               alt="Leon Roofing & Restoration"
               width={44}
               height={46}
-              className="block h-auto w-11"
+              className="block h-auto w-9 sm:w-11"
               priority
             />
             <span className="flex flex-none flex-col gap-[3px]">
@@ -45,7 +45,7 @@ export default function Header({
             </span>
           </Link>
 
-          <div className="flex items-center gap-3 sm:gap-6">
+          <div className="flex items-center gap-2 sm:gap-6">
             <nav className="hidden items-center gap-6 lg:flex">
               {c.nav.map((item) => (
                 <Link
@@ -64,9 +64,9 @@ export default function Header({
             />
             <a
               href={PHONE_TEL}
-              className="flex items-center gap-[9px] whitespace-nowrap rounded-btn bg-amber px-3 py-[11px] font-sans text-[13px] font-bold leading-none text-ink transition-colors hover:bg-amber-hover sm:px-[18px] sm:text-sm"
+              className="flex min-h-[44px] shrink-0 items-center gap-[9px] whitespace-nowrap rounded-btn bg-amber px-2.5 py-[11px] font-sans text-[13px] font-bold leading-none text-ink transition-colors hover:bg-amber-hover sm:px-[18px] sm:text-sm"
             >
-              <span className="h-[7px] w-[7px] flex-none rounded-full bg-ink" />
+              <span className="hidden h-[7px] w-[7px] flex-none rounded-full bg-ink sm:block" />
               {PHONE_DISPLAY}
             </a>
             <MobileNav

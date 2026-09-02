@@ -8,6 +8,7 @@ import { isLocale, locales } from "@/lib/i18n";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TextUsWidget from "@/components/TextUsWidget";
+import StickyCallBar from "@/components/StickyCallBar";
 import "../globals.css";
 
 const archivo = Archivo({
@@ -48,12 +49,13 @@ export default function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${archivo.variable} ${plexMono.variable} flex min-h-screen flex-col bg-paper font-sans`}
+        className={`${archivo.variable} ${plexMono.variable} flex min-h-screen flex-col bg-paper pb-16 font-sans lg:pb-0`}
       >
         <Header locale={locale} c={c} />
         <main className="flex-1">{children}</main>
         <Footer locale={locale} c={c} />
         <TextUsWidget locale={locale} c={c} />
+        <StickyCallBar locale={locale} />
       </body>
     </html>
   );

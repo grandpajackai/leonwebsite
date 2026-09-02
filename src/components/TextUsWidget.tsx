@@ -32,9 +32,9 @@ export default function TextUsWidget({
   const chat = chatCopy[locale];
 
   return (
-    <div className="fixed bottom-[22px] right-[22px] z-[60] flex flex-col items-end gap-2.5">
+    <div className="fixed bottom-[78px] right-4 z-[60] flex flex-col items-end gap-2.5 lg:bottom-[22px] lg:right-[22px]">
       {open && (
-        <div className="w-[290px] overflow-hidden rounded-[14px] border border-navy/10 bg-white shadow-widget-open">
+        <div className="w-[290px] max-w-[calc(100vw-32px)] overflow-hidden rounded-[14px] border border-navy/10 bg-white shadow-widget-open">
           <div className="flex items-center justify-between bg-navy px-[18px] py-4 text-white">
             <span className="font-sans text-[14.5px] font-bold leading-[1.2]">
               {chat.title}
