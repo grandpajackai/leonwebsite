@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><style>
+body{margin:0;background:#e9e6e0;font-family:Archivo,Helvetica,Arial,sans-serif}
+a{color:#0b3a5d}a:hover{color:#12557f}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 Archivo,sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 Archivo,sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.07);overflow:hidden}
+.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.5 Archivo,sans-serif;color:rgba(0,0,0,.5)}
+.ph{display:flex;align-items:center;justify-content:center;font:500 10px/1.4 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:rgba(0,0,0,.42);background:repeating-linear-gradient(135deg,#dedad2 0 7px,#e9e5de 7px 14px);text-align:center}
+.phd{display:flex;align-items:center;justify-content:center;font:500 10px/1.4 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5);background:repeating-linear-gradient(135deg,rgba(255,255,255,.10) 0 7px,rgba(255,255,255,.04) 7px 14px);text-align:center}
+</style></helmet>
+
+<section class="dv-turn" id="t4">
+<div class="dv-thd"><a class="dv-tid" href="#t4">4</a><span class="dv-tname">Lion kept as the centerpiece — your original art cleaned up, background knocked out, retina-resolution</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="4a">
+<div class="dv-olabel"><a class="dv-oid" href="#4a">4a</a>Horizontal lockup — lion + ring exactly as sent, wordmark set in the brand type</div>
+<div class="dv-card" style="width:560px;background:#0c1520">
+<div style="padding:44px 40px;display:flex;align-items:center;gap:26px">
+<img src="assets/leon-lion-mark-900.png" alt="Leon lion mark" style="width:112px;height:auto;display:block">
+<div style="display:flex;flex-direction:column;gap:8px;flex:none">
+<div style="font:800 38px/1 Archivo,sans-serif;color:#fff;letter-spacing:.08em">LEON</div>
+<div style="height:1px;background:linear-gradient(90deg,#e6bb5c,rgba(230,187,92,0))"></div>
+<div style="font:500 9.5px/1 'IBM Plex Mono',monospace;letter-spacing:.19em;color:#e6bb5c;white-space:nowrap">ROOFING &amp; RESTORATION</div>
+</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.12);padding:22px 40px;display:flex;align-items:center;gap:26px">
+<img src="assets/leon-lion-mark-900.png" alt="" style="width:52px;height:auto;display:block">
+<img src="assets/leon-lion-mark-900.png" alt="" style="width:30px;height:auto;display:block">
+<img src="assets/leon-lion-mark-900.png" alt="" style="width:20px;height:auto;display:block">
+<span style="font:500 10px/1.5 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(255,255,255,.45);white-space:nowrap">NAV · APP ICON · FAVICON</span>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="4b">
+<div class="dv-olabel"><a class="dv-oid" href="#4b">4b</a>Square badge — your original composition, retypeset</div>
+<div class="dv-card" style="width:400px;background:#f4f2ec">
+<div style="padding:34px;display:flex;justify-content:center">
+<div style="width:320px;background:#000;border-radius:8px;padding:26px 22px 20px;display:flex;flex-direction:column;align-items:center;gap:16px">
+<img src="assets/leon-lion-mark-900.png" alt="Leon lion mark" style="width:210px;height:auto;display:block">
+<div style="width:100%;text-align:center;border-top:1px solid rgba(230,187,92,.35);padding-top:14px">
+<div style="font:800 21px/1 Archivo,sans-serif;color:#fff;letter-spacing:.06em">LEON</div>
+<div style="margin-top:7px;font:500 8.5px/1 'IBM Plex Mono',monospace;letter-spacing:.18em;color:#e6bb5c;white-space:nowrap">ROOFING &amp; RESTORATION</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="4c">
+<div class="dv-olabel"><a class="dv-oid" href="#4c">4c</a>Light-background treatment — the strokes need a dark field, so the mark rides in a navy disc</div>
+<div class="dv-card" style="width:560px;background:#f7f5f1">
+<div style="padding:40px;display:flex;align-items:center;gap:26px">
+<div style="width:112px;height:112px;border-radius:50%;background:#0c1520;display:flex;align-items:center;justify-content:center;flex:none"><img src="assets/leon-lion-mark-900.png" alt="Leon lion mark" style="width:80px;height:auto;display:block"></div>
+<div style="display:flex;flex-direction:column;gap:8px;flex:none">
+<div style="font:800 34px/1 Archivo,sans-serif;color:#0c1520;letter-spacing:.06em">LEON</div>
+<div style="font:500 9.5px/1 'IBM Plex Mono',monospace;letter-spacing:.19em;color:rgba(12,21,32,.6);white-space:nowrap">ROOFING &amp; RESTORATION</div>
+</div>
+</div>
+<div style="background:#f2b21a;padding:26px 40px;display:flex;align-items:center;gap:24px">
+<div style="width:76px;height:76px;border-radius:50%;background:#12100b;display:flex;align-items:center;justify-content:center;flex:none"><img src="assets/leon-lion-mark-900.png" alt="" style="width:56px;height:auto;display:block"></div>
+<div style="display:flex;flex-direction:column;gap:6px;flex:none"><div style="font:800 24px/1 Archivo,sans-serif;color:#12100b;letter-spacing:.06em">LEON</div><div style="font:500 8.5px/1 'IBM Plex Mono',monospace;letter-spacing:.18em;color:rgba(18,16,11,.7);white-space:nowrap">ROOFING &amp; RESTORATION</div></div>
+<span style="margin-left:auto;font:500 10px/1.5 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(18,16,11,.45);white-space:nowrap">ON AMBER</span>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="4d">
+<div class="dv-olabel"><a class="dv-oid" href="#4d">4d</a>Applied in the <a class="dv-oid" href="#2a">2a</a> header and hero</div>
+<div class="dv-card" style="width:1180px">
+<div style="background:#f2b21a;color:#12100b;padding:9px 32px;display:flex;justify-content:space-between;align-items:center;font:600 12.5px/1 Archivo,sans-serif"><span>Crews staged across Miami-Dade &amp; Broward · 45-minute average arrival</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:500">LIC. CFC1428XXX · IICRC WRT/ASD · MOLD MRSR3XXX</span></div>
+<div style="background:#0c1520;color:#fff">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.10)">
+<div style="display:flex;align-items:center;gap:13px">
+<img src="assets/leon-lion-mark-900.png" alt="Leon" style="width:46px;height:auto;display:block">
+<div style="display:flex;flex-direction:column;gap:3px;flex:none"><span style="font:800 21px/1 Archivo,sans-serif;letter-spacing:.09em">LEON</span><span style="font:500 8.5px/1 'IBM Plex Mono',monospace;letter-spacing:.17em;color:#e6bb5c;white-space:nowrap">ROOFING &amp; RESTORATION</span></div>
+</div>
+<div style="display:flex;align-items:center;gap:26px;font:500 13.5px/1 Archivo,sans-serif;color:rgba(255,255,255,.82)"><span>Water Extraction</span><span>Structural Drying</span><span>Mold</span><span>Insurance Claims</span><span>Service Areas</span><div style="display:flex;align-items:center;gap:10px;background:#f2b21a;color:#12100b;padding:11px 18px;border-radius:6px;font-weight:700;font-size:14px"><span style="width:7px;height:7px;border-radius:50%;background:#12100b"></span>{{ phone }}</div></div>
+</div>
+<div style="padding:54px 32px 48px;display:grid;grid-template-columns:1.08fr .92fr;gap:36px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:22px">
+<div style="display:inline-flex;align-items:center;gap:9px;font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#f2b21a"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>ANSWERING LIVE — 24 HOURS, 7 DAYS</div>
+<h1 style="margin:0;font:800 58px/.96 Archivo,sans-serif;letter-spacing:-.025em">Water doesn’t wait.<br><span style="color:#f2b21a">Neither do we.</span></h1>
+<p style="margin:0;max-width:470px;font:400 17px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.72)">Emergency water extraction, structural drying, and mold control across South Florida — documented for your insurer from hour one.</p>
+<div style="display:flex;gap:12px"><div style="background:#f2b21a;color:#12100b;padding:16px 26px;border-radius:7px;font:700 16px/1 Archivo,sans-serif">Call {{ phone }}</div><div style="border:1px solid rgba(255,255,255,.28);padding:16px 26px;border-radius:7px;font:600 16px/1 Archivo,sans-serif">Request an inspection →</div></div>
+</div>
+<div style="position:relative;display:flex;align-items:center;justify-content:center">
+<img src="assets/leon-lion-mark-900.png" alt="" style="position:absolute;width:330px;height:auto;opacity:.13;display:block">
+<div class="phd" style="height:280px;width:100%;border-radius:8px;position:relative">PHOTO — NIGHT EXTRACTION · 520×560</div>
+</div>
+</div>
+</div>
+<div style="background:#12100b;color:rgba(255,255,255,.6);padding:30px 32px;display:flex;justify-content:space-between;align-items:center;font:400 12.5px/1.6 Archivo,sans-serif">
+<div style="display:flex;align-items:center;gap:14px"><img src="assets/leon-lion-mark-900.png" alt="" style="width:44px;height:auto;display:block"><div><div style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.12em;color:#fff;margin-bottom:7px">LEON</div>Water Mitigation · Hialeah, FL · Lic. CFC1428XXX</div></div>
+<div style="display:flex;gap:34px"><span>Extraction</span><span>Drying</span><span>Mold</span><span>Claims</span><span>Careers</span></div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="4e">
+<div class="dv-olabel"><a class="dv-oid" href="#4e">4e</a>Mobile header</div>
+<div class="dv-card" style="width:390px;border-radius:26px">
+<div style="background:#0c1520;color:#fff">
+<div style="display:flex;justify-content:space-between;padding:11px 22px 6px;font:600 12px/1 Archivo,sans-serif;color:rgba(255,255,255,.85)"><span>2:14</span><span>▮▮▮ ⌁</span></div>
+<div style="display:flex;align-items:center;justify-content:space-between;padding:11px 18px;border-bottom:1px solid rgba(255,255,255,.1)"><div style="display:flex;align-items:center;gap:10px"><img src="assets/leon-lion-mark-900.png" alt="Leon" style="width:34px;height:auto;display:block"><div style="display:flex;flex-direction:column;gap:2px;flex:none"><span style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.09em">LEON</span><span style="font:500 7px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#e6bb5c;white-space:nowrap">ROOFING &amp; RESTORATION</span></div></div><span style="font:600 13px/1 Archivo,sans-serif;color:rgba(255,255,255,.7)">MENU</span></div>
+<div style="padding:24px 18px 22px;display:flex;flex-direction:column;gap:15px">
+<div style="display:flex;align-items:center;gap:8px;font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#f2b21a"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>DISPATCH ANSWERING NOW</div>
+<h1 style="margin:0;font:800 38px/.98 Archivo,sans-serif;letter-spacing:-.025em">Water doesn’t wait.</h1>
+<div style="background:#f2b21a;color:#12100b;padding:19px;border-radius:9px;text-align:center;font:800 20px/1 Archivo,sans-serif">Call {{ phone }}</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: “roll <a class="dv-oid" href="#4a">4a</a> into every screen in <a class="dv-oid" href="#2a">2a</a>” · “make the ring a full circle” · “give me the mark as a transparent PNG file to download”</p>
+</section>
+
+<section class="dv-turn" id="t3">
+<div class="dv-thd"><a class="dv-tid" href="#t3">3</a><span class="dv-tname">Original logo lockups — ring + gold DNA kept, lion illustration replaced with a mark I built from scratch</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="3a">
+<div class="dv-olabel"><a class="dv-oid" href="#3a">3a</a>Broken ring + monogram. The ring reads as the original; the mane is gone.</div>
+<div class="dv-card" style="width:520px;background:#0c1520">
+<div style="padding:44px 40px;display:flex;flex-direction:column;gap:34px">
+<div style="display:flex;align-items:center;gap:20px">
+<div style="width:92px;height:92px;border-radius:50%;background:conic-gradient(from 155deg,#f8e6b4 0deg,#e6bb5c 90deg,#c9931f 190deg,rgba(201,147,31,0) 232deg,rgba(201,147,31,0) 300deg,#f8e6b4 340deg);display:flex;align-items:center;justify-content:center">
+<div style="width:70px;height:70px;border-radius:50%;background:#0c1520;display:flex;align-items:center;justify-content:center;font:800 38px/1 Archivo,sans-serif;color:#f0cf7d;letter-spacing:-.04em">L</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:7px;flex:none">
+<div style="font:800 34px/1 Archivo,sans-serif;color:#fff;letter-spacing:.1em">LEON</div>
+<div style="height:1px;background:linear-gradient(90deg,#e6bb5c,rgba(230,187,92,0))"></div>
+<div style="font:500 9.5px/1 'IBM Plex Mono',monospace;letter-spacing:.2em;color:rgba(255,255,255,.6);white-space:nowrap">ROOFING &amp; RESTORATION</div>
+</div>
+</div>
+<div style="display:flex;gap:26px;align-items:center;padding-top:6px;border-top:1px solid rgba(255,255,255,.12)">
+<div style="width:44px;height:44px;border-radius:50%;background:conic-gradient(from 155deg,#f8e6b4 0deg,#e6bb5c 90deg,#c9931f 190deg,rgba(201,147,31,0) 232deg,rgba(201,147,31,0) 300deg,#f8e6b4 340deg);display:flex;align-items:center;justify-content:center"><div style="width:33px;height:33px;border-radius:50%;background:#0c1520;display:flex;align-items:center;justify-content:center;font:800 18px/1 Archivo,sans-serif;color:#f0cf7d">L</div></div>
+<div style="width:26px;height:26px;border-radius:50%;background:conic-gradient(from 155deg,#f8e6b4 0deg,#e6bb5c 90deg,#c9931f 190deg,rgba(201,147,31,0) 232deg,rgba(201,147,31,0) 300deg,#f8e6b4 340deg);display:flex;align-items:center;justify-content:center"><div style="width:19px;height:19px;border-radius:50%;background:#0c1520;display:flex;align-items:center;justify-content:center;font:800 11px/1 Archivo,sans-serif;color:#f0cf7d">L</div></div>
+<span style="font:500 10px/1.5 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(255,255,255,.45);white-space:nowrap">HOLDS AT FAVICON SIZE</span>
+</div>
+</div>
+<div style="background:#f4f2ec;padding:30px 40px;display:flex;align-items:center;gap:20px">
+<div style="width:64px;height:64px;border-radius:50%;background:conic-gradient(from 155deg,#c9931f 0deg,#a8761a 90deg,#6d4b0d 190deg,rgba(109,75,13,0) 232deg,rgba(109,75,13,0) 300deg,#c9931f 340deg);display:flex;align-items:center;justify-content:center"><div style="width:48px;height:48px;border-radius:50%;background:#f4f2ec;display:flex;align-items:center;justify-content:center;font:800 25px/1 Archivo,sans-serif;color:#111311">L</div></div>
+<div><div style="font:800 24px/1 Archivo,sans-serif;color:#111311;letter-spacing:.1em">LEON</div><div style="margin-top:6px;font:500 9px/1 'IBM Plex Mono',monospace;letter-spacing:.2em;color:rgba(17,19,17,.55)">ROOFING &amp; RESTORATION</div></div>
+<span style="margin-left:auto;font:500 10px/1.5 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.4)">LIGHT / 1-COLOR</span>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="3b">
+<div class="dv-olabel"><a class="dv-oid" href="#3b">3b</a>Ring + mane blades. Keeps the lion energy as three abstract gold blades — no illustration to license.</div>
+<div class="dv-card" style="width:520px;background:#0c1520">
+<div style="padding:44px 40px;display:flex;flex-direction:column;gap:34px">
+<div style="display:flex;align-items:center;gap:22px">
+<div style="width:96px;height:96px;border-radius:50%;background:conic-gradient(from 200deg,#f8e6b4 0deg,#e6bb5c 100deg,#c9931f 205deg,rgba(201,147,31,0) 250deg,rgba(201,147,31,0) 312deg,#f8e6b4 352deg);display:flex;align-items:center;justify-content:center">
+<div style="width:74px;height:74px;border-radius:50%;background:#0c1520;display:flex;align-items:center;justify-content:center;gap:5px">
+<div style="width:9px;height:40px;background:linear-gradient(180deg,#f8e6b4,#c9931f);transform:skewX(-16deg)"></div>
+<div style="width:9px;height:52px;background:linear-gradient(180deg,#f8e6b4,#c9931f);transform:skewX(-16deg)"></div>
+<div style="width:9px;height:30px;background:linear-gradient(180deg,#f8e6b4,#c9931f);transform:skewX(-16deg)"></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:5px;flex:none">
+<div style="font:800 36px/1 Archivo,sans-serif;color:#fff;letter-spacing:.06em">LEON</div>
+<div style="font:500 9.5px/1.6 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#e6bb5c;white-space:nowrap">ROOFING &amp; RESTORATION</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:22px;padding-top:6px;border-top:1px solid rgba(255,255,255,.12)">
+<div style="width:46px;height:46px;border-radius:50%;background:conic-gradient(from 200deg,#f8e6b4 0deg,#e6bb5c 100deg,#c9931f 205deg,rgba(201,147,31,0) 250deg,rgba(201,147,31,0) 312deg,#f8e6b4 352deg);display:flex;align-items:center;justify-content:center"><div style="width:35px;height:35px;border-radius:50%;background:#0c1520;display:flex;align-items:center;justify-content:center;gap:3px"><div style="width:4px;height:18px;background:#e6bb5c;transform:skewX(-16deg)"></div><div style="width:4px;height:24px;background:#f8e6b4;transform:skewX(-16deg)"></div><div style="width:4px;height:13px;background:#c9931f;transform:skewX(-16deg)"></div></div></div>
+<span style="font:500 10px/1.5 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(255,255,255,.45);white-space:nowrap">APP ICON / TRUCK DECAL</span>
+</div>
+</div>
+<div style="background:#f2b21a;padding:30px 40px;display:flex;align-items:center;gap:20px">
+<div style="width:62px;height:62px;border-radius:50%;background:conic-gradient(from 200deg,#12100b 0deg,#12100b 205deg,rgba(18,16,11,0) 250deg,rgba(18,16,11,0) 312deg,#12100b 352deg);display:flex;align-items:center;justify-content:center"><div style="width:48px;height:48px;border-radius:50%;background:#f2b21a;display:flex;align-items:center;justify-content:center;gap:3px"><div style="width:5px;height:20px;background:#12100b;transform:skewX(-16deg)"></div><div style="width:5px;height:27px;background:#12100b;transform:skewX(-16deg)"></div><div style="width:5px;height:15px;background:#12100b;transform:skewX(-16deg)"></div></div></div>
+<div><div style="font:800 24px/1 Archivo,sans-serif;color:#12100b;letter-spacing:.06em">LEON</div><div style="margin-top:5px;font:500 9px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:rgba(18,16,11,.7)">ROOFING &amp; RESTORATION</div></div>
+<span style="margin-left:auto;font:500 10px/1.5 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(18,16,11,.45)">ON BRAND AMBER</span>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="3c">
+<div class="dv-olabel"><a class="dv-oid" href="#3c">3c</a>Square badge, stacked — closest to your current file’s format, redrawn as pure geometry.</div>
+<div class="dv-card" style="width:520px;background:#f4f2ec">
+<div style="padding:40px;display:flex;gap:32px;align-items:center">
+<div style="width:150px;height:150px;background:#0c1520;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px">
+<div style="width:86px;height:86px;border-radius:50%;background:conic-gradient(from 165deg,#f8e6b4 0deg,#e6bb5c 95deg,#c9931f 200deg,rgba(201,147,31,0) 244deg,rgba(201,147,31,0) 306deg,#f8e6b4 348deg);display:flex;align-items:center;justify-content:center"><div style="width:66px;height:66px;border-radius:50%;background:#0c1520;display:flex;align-items:center;justify-content:center;font:800 34px/1 Archivo,sans-serif;color:#f0cf7d;letter-spacing:-.04em">L</div></div>
+<div style="font:800 13px/1 Archivo,sans-serif;color:#fff;letter-spacing:.2em">LEON</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<div><div style="font:800 27px/1.1 Archivo,sans-serif;color:#111311;letter-spacing:-.01em">Leon Water<br>Mitigation</div><div style="margin-top:9px;font:500 9.5px/1.6 'IBM Plex Mono',monospace;letter-spacing:.16em;color:rgba(17,19,17,.55)">A DIVISION OF LEON<br>ROOFING &amp; RESTORATION, INC.</div></div>
+<div style="display:flex;gap:8px"><span style="width:22px;height:22px;border-radius:4px;background:#0c1520"></span><span style="width:22px;height:22px;border-radius:4px;background:#f2b21a"></span><span style="width:22px;height:22px;border-radius:4px;background:linear-gradient(135deg,#f8e6b4,#c9931f)"></span><span style="width:22px;height:22px;border-radius:4px;background:#f4f2ec;border:1px solid rgba(17,19,17,.15)"></span></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="3d">
+<div class="dv-olabel"><a class="dv-oid" href="#3d">3d</a><a class="dv-oid" href="#3b">3b</a> applied in the <a class="dv-oid" href="#2a">2a</a> header — gold mark against the amber CTA</div>
+<div class="dv-card" style="width:1180px">
+<div style="background:#f2b21a;color:#12100b;padding:9px 32px;display:flex;justify-content:space-between;align-items:center;font:600 12.5px/1 Archivo,sans-serif"><span>Crews staged across Miami-Dade &amp; Broward · 45-minute average arrival</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:500">LIC. CFC1428XXX · IICRC WRT/ASD · MOLD MRSR3XXX</span></div>
+<div style="background:#0c1520;color:#fff">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:16px 32px;border-bottom:1px solid rgba(255,255,255,.10)">
+<div style="display:flex;align-items:center;gap:14px">
+<div style="width:46px;height:46px;border-radius:50%;background:conic-gradient(from 200deg,#f8e6b4 0deg,#e6bb5c 100deg,#c9931f 205deg,rgba(201,147,31,0) 250deg,rgba(201,147,31,0) 312deg,#f8e6b4 352deg);display:flex;align-items:center;justify-content:center"><div style="width:35px;height:35px;border-radius:50%;background:#0c1520;display:flex;align-items:center;justify-content:center;gap:3px"><div style="width:4px;height:18px;background:#e6bb5c;transform:skewX(-16deg)"></div><div style="width:4px;height:24px;background:#f8e6b4;transform:skewX(-16deg)"></div><div style="width:4px;height:13px;background:#c9931f;transform:skewX(-16deg)"></div></div></div>
+<div style="display:flex;flex-direction:column;gap:3px;flex:none"><span style="font:800 20px/1 Archivo,sans-serif;letter-spacing:.1em">LEON</span><span style="font:500 8.5px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#e6bb5c;white-space:nowrap">ROOFING &amp; RESTORATION</span></div>
+</div>
+<div style="display:flex;align-items:center;gap:26px;font:500 13.5px/1 Archivo,sans-serif;color:rgba(255,255,255,.82)"><span>Water Extraction</span><span>Structural Drying</span><span>Mold</span><span>Insurance Claims</span><span>Service Areas</span><div style="display:flex;align-items:center;gap:10px;background:#f2b21a;color:#12100b;padding:11px 18px;border-radius:6px;font-weight:700;font-size:14px"><span style="width:7px;height:7px;border-radius:50%;background:#12100b"></span>{{ phone }}</div></div>
+</div>
+<div style="padding:52px 32px 46px;display:grid;grid-template-columns:1.08fr .92fr;gap:36px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:22px">
+<div style="display:inline-flex;align-items:center;gap:9px;font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#f2b21a"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>ANSWERING LIVE — 24 HOURS, 7 DAYS</div>
+<h1 style="margin:0;font:800 58px/.96 Archivo,sans-serif;letter-spacing:-.025em">Water doesn’t wait.<br><span style="color:#f2b21a">Neither do we.</span></h1>
+<p style="margin:0;max-width:470px;font:400 17px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.72)">Emergency water extraction, structural drying, and mold control across South Florida — documented for your insurer from hour one.</p>
+<div style="display:flex;gap:12px"><div style="background:#f2b21a;color:#12100b;padding:16px 26px;border-radius:7px;font:700 16px/1 Archivo,sans-serif">Call {{ phone }}</div><div style="border:1px solid rgba(255,255,255,.28);padding:16px 26px;border-radius:7px;font:600 16px/1 Archivo,sans-serif">Request an inspection →</div></div>
+</div>
+<div class="phd" style="height:280px;border-radius:8px">PHOTO — NIGHT EXTRACTION · 520×560</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: “use <a class="dv-oid" href="#3b">3b</a> everywhere in <a class="dv-oid" href="#2a">2a</a>” · “make the mark a water-drop instead of mane blades” · “export the logo as an SVG file”</p>
+</section>
+
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Water mitigation only — <a class="dv-oid" href="#1a">1a</a> “Dispatch” vs <a class="dv-oid" href="#1c">1c</a> “Grid” built out: homepage, service page, mobile</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>DISPATCH — full homepage, services scoped to water mitigation</div>
+<div class="dv-card" style="width:1180px">
+<div style="background:#f2b21a;color:#12100b;padding:9px 32px;display:flex;justify-content:space-between;align-items:center;font:600 12.5px/1 Archivo,sans-serif">
+<span>Crews staged across Miami-Dade &amp; Broward · 45-minute average arrival</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-weight:500">LIC. CFC1428XXX · IICRC WRT/ASD · MOLD MRSR3XXX</span>
+</div>
+<div style="background:#0c1520;color:#fff">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:20px 32px;border-bottom:1px solid rgba(255,255,255,.10)">
+<div style="display:flex;align-items:center;gap:12px">
+<div style="width:34px;height:34px;background:#f2b21a;transform:rotate(45deg);border-radius:4px"></div>
+<div style="display:flex;flex-direction:column;gap:2px">
+<span style="font:800 19px/1 Archivo,sans-serif;letter-spacing:.14em">LEON</span>
+<span style="font:500 8.5px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:rgba(255,255,255,.55)">ROOFING &amp; RESTORATION</span>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:26px;font:500 13.5px/1 Archivo,sans-serif;color:rgba(255,255,255,.82)">
+<span>Water Extraction</span><span>Structural Drying</span><span>Mold</span><span>Insurance Claims</span><span>Service Areas</span>
+<div style="display:flex;align-items:center;gap:10px;background:#f2b21a;color:#12100b;padding:11px 18px;border-radius:6px;font-weight:700;font-size:14px"><span style="width:7px;height:7px;border-radius:50%;background:#12100b"></span>{{ phone }}</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1.08fr .92fr;min-height:452px">
+<div style="padding:64px 44px 56px 32px;display:flex;flex-direction:column;justify-content:center;gap:24px">
+<div style="display:inline-flex;align-items:center;gap:9px;font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#f2b21a"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>ANSWERING LIVE — 24 HOURS, 7 DAYS</div>
+<h1 style="margin:0;font:800 62px/.96 Archivo,sans-serif;letter-spacing:-.025em;text-wrap:balance">Water doesn’t wait.<br><span style="color:#f2b21a">Neither do we.</span></h1>
+<p style="margin:0;max-width:490px;font:400 17.5px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.72);text-wrap:pretty">Emergency water extraction, structural drying, and mold control across South Florida. We stop the spread in the first hours — and document every reading your insurer will ask for.</p>
+<div style="display:flex;gap:12px;padding-top:6px">
+<div style="background:#f2b21a;color:#12100b;padding:17px 26px;border-radius:7px;font:700 16px/1 Archivo,sans-serif">Call {{ phone }}</div>
+<div style="border:1px solid rgba(255,255,255,.28);color:#fff;padding:17px 26px;border-radius:7px;font:600 16px/1 Archivo,sans-serif">Request an inspection →</div>
+</div>
+<div style="display:flex;gap:34px;padding-top:14px;font:500 12.5px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">
+<span>No trip charge on emergencies</span><span>Direct insurance billing</span><span>Free moisture inspection</span>
+</div>
+</div>
+<div class="phd" style="border-left:1px solid rgba(255,255,255,.10)">PHOTO — TECH IN LEON-BRANDED GEAR,<br>EXTRACTION HOSE, FLOODED TILE<br>FLOOR, NIGHT · 720×900</div>
+</div>
+</div>
+<div style="background:#12100b;color:#fff;display:grid;grid-template-columns:repeat(4,1fr)">
+<div style="padding:30px 32px;border-right:1px solid rgba(255,255,255,.10)"><div style="font:800 32px/1 Archivo,sans-serif;color:#f2b21a">45 min</div><div style="margin-top:7px;font:400 12.5px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">Average on-site arrival, county-wide</div></div>
+<div style="padding:30px 32px;border-right:1px solid rgba(255,255,255,.10)"><div style="font:800 32px/1 Archivo,sans-serif;color:#f2b21a">4,100+</div><div style="margin-top:7px;font:400 12.5px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">Water losses mitigated since 2009</div></div>
+<div style="padding:30px 32px;border-right:1px solid rgba(255,255,255,.10)"><div style="font:800 32px/1 Archivo,sans-serif;color:#f2b21a">3–5 days</div><div style="margin-top:7px;font:400 12.5px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">Typical structure back to dry standard</div></div>
+<div style="padding:30px 32px"><div style="font:800 32px/1 Archivo,sans-serif;color:#f2b21a">$0</div><div style="margin-top:7px;font:400 12.5px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">Out of pocket on most covered claims</div></div>
+</div>
+<div style="background:#f7f5f1;padding:56px 32px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:26px">
+<h2 style="margin:0;font:700 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520">Water mitigation, start to dry</h2>
+<span style="font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(12,21,32,.45)">RESIDENTIAL &amp; COMMERCIAL</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+<div style="background:#fff;border:1px solid rgba(12,21,32,.10);border-radius:10px;overflow:hidden">
+<div class="ph" style="height:126px">PHOTO — TRUCK-MOUNT EXTRACTOR<br>WAND ON SOAKED CARPET</div>
+<div style="padding:22px 22px 26px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">01 — HOUR ONE</div><h3 style="margin:12px 0 9px;font:700 20px/1.2 Archivo,sans-serif;color:#0c1520">Emergency water extraction</h3><p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">Truck-mounted extraction of standing water from floors, cavities, and carpet pad — day or night.</p></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.10);border-radius:10px;overflow:hidden">
+<div class="ph" style="height:126px">PHOTO — AIR MOVERS + LGR DEHU<br>RUNNING IN DRIED ROOM</div>
+<div style="padding:22px 22px 26px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">02 — DAYS 1–5</div><h3 style="margin:12px 0 9px;font:700 20px/1.2 Archivo,sans-serif;color:#0c1520">Structural drying</h3><p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">LGR dehumidifiers and air movers sized to the load, with daily readings until we hit dry standard.</p></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.10);border-radius:10px;overflow:hidden">
+<div class="ph" style="height:126px">PHOTO — TECH IN PPE APPLYING<br>ANTIMICROBIAL TO STUDS</div>
+<div style="padding:22px 22px 26px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">03 — CONTAINMENT</div><h3 style="margin:12px 0 9px;font:700 20px/1.2 Archivo,sans-serif;color:#0c1520">Mold control &amp; remediation</h3><p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">Negative-air containment, antimicrobial treatment, and licensed remediation when growth has started.</p></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.10);border-radius:10px;overflow:hidden">
+<div class="ph" style="height:126px">PHOTO — CREW CLEARING STORM<br>WATER FROM GARAGE</div>
+<div style="padding:22px 22px 26px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">04 — STORM SEASON</div><h3 style="margin:12px 0 9px;font:700 20px/1.2 Archivo,sans-serif;color:#0c1520">Storm &amp; flood cleanup</h3><p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">Category 3 water handling, sewage backup sanitation, and debris removal after hurricanes and surge.</p></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.10);border-radius:10px;overflow:hidden">
+<div class="ph" style="height:126px">PHOTO — LABELED CONTENTS BOXES<br>ON PADS, PACK-OUT</div>
+<div style="padding:22px 22px 26px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">05 — CONTENTS</div><h3 style="margin:12px 0 9px;font:700 20px/1.2 Archivo,sans-serif;color:#0c1520">Pack-out &amp; contents care</h3><p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">Inventoried pack-out, off-site drying of furniture and documents, and return once you’re dry.</p></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.10);border-radius:10px;overflow:hidden">
+<div class="ph" style="height:126px">PHOTO — TABLET SHOWING MOISTURE<br>LOG BESIDE BASEBOARD</div>
+<div style="padding:22px 22px 26px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">06 — ADMIN</div><h3 style="margin:12px 0 9px;font:700 20px/1.2 Archivo,sans-serif;color:#0c1520">Claim documentation</h3><p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">Photo log, Xactimate scope, and drying logs filed for you. We speak adjuster so you don’t have to.</p></div>
+</div>
+</div>
+</div>
+<div style="background:#0c1520;color:#fff;padding:52px 32px;display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center">
+<div>
+<h2 style="margin:0 0 14px;font:700 32px/1.15 Archivo,sans-serif;letter-spacing:-.02em">What the first four hours look like</h2>
+<p style="margin:0;font:400 15.5px/1.6 Archivo,sans-serif;color:rgba(255,255,255,.68);text-wrap:pretty">Most of the cost of water damage happens after the water stops. Here’s the sequence we run, every time.</p>
+</div>
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)"><span style="font:500 11px/1.5 'IBM Plex Mono',monospace;color:#f2b21a">0:00</span><div><div style="font:600 15px/1.3 Archivo,sans-serif">Live dispatch</div><div style="font:400 13.5px/1.45 Archivo,sans-serif;color:rgba(255,255,255,.6)">A person answers and walks you through the shutoff while the truck rolls.</div></div></div>
+<div style="display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)"><span style="font:500 11px/1.5 'IBM Plex Mono',monospace;color:#f2b21a">0:45</span><div><div style="font:600 15px/1.3 Archivo,sans-serif">Crew on site</div><div style="font:400 13.5px/1.45 Archivo,sans-serif;color:rgba(255,255,255,.6)">Source confirmed stopped, standing water extracted, safety hazards cleared.</div></div></div>
+<div style="display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)"><span style="font:600 11px/1.5 'IBM Plex Mono',monospace;color:#f2b21a">2:00</span><div><div style="font:600 15px/1.3 Archivo,sans-serif">Moisture map &amp; photo log</div><div style="font:400 13.5px/1.45 Archivo,sans-serif;color:rgba(255,255,255,.6)">Every wet cavity marked and metered before anything gets cut or removed.</div></div></div>
+<div style="display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0"><span style="font:500 11px/1.5 'IBM Plex Mono',monospace;color:#f2b21a">4:00</span><div><div style="font:600 15px/1.3 Archivo,sans-serif">Drying set, claim opened</div><div style="font:400 13.5px/1.45 Archivo,sans-serif;color:rgba(255,255,255,.6)">Equipment placed to a written drying plan and your carrier notified the same day.</div></div></div>
+</div>
+</div>
+<div style="background:#f7f5f1;padding:52px 32px;display:grid;grid-template-columns:1fr 1fr;gap:40px">
+<div>
+<span style="font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:rgba(12,21,32,.5)">INSURANCE</span>
+<h2 style="margin:12px 0 14px;font:700 30px/1.15 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520">We bill your carrier directly</h2>
+<p style="margin:0 0 20px;font:400 15.5px/1.6 Archivo,sans-serif;color:rgba(12,21,32,.7);text-wrap:pretty">You pay your deductible; we invoice the rest. If a claim comes back underpaid, our daily readings and photo log are what get it reopened — and we join the adjuster call.</p>
+<div style="display:flex;flex-direction:column;gap:10px;font:400 14.5px/1.4 Archivo,sans-serif;color:#0c1520">
+<div style="display:flex;gap:11px;align-items:center"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>Same-day claim opening and adjuster contact</div>
+<div style="display:flex;gap:11px;align-items:center"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>Xactimate scopes in the format carriers accept</div>
+<div style="display:flex;gap:11px;align-items:center"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>Signed, time-stamped moisture logs every visit</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="background:#fff;border:1px solid rgba(12,21,32,.1);border-radius:10px;padding:22px 24px">
+<p style="margin:0 0 12px;font:400 16px/1.5 Archivo,sans-serif;color:#0c1520;text-wrap:pretty">“Water heater let go while we were away. Leon had fans running before I got home and handled six weeks of adjuster calls so I didn’t have to.”</p>
+<div style="display:flex;align-items:center;gap:11px"><div class="ph" style="width:34px;height:34px;border-radius:50%;font-size:7px">AVATAR</div><div style="font:400 12.5px/1.4 Archivo,sans-serif;color:rgba(12,21,32,.6)"><strong style="font-weight:600;color:#0c1520">Marisol R.</strong> · Coral Gables</div></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.1);border-radius:10px;padding:22px 24px">
+<p style="margin:0 0 12px;font:400 16px/1.5 Archivo,sans-serif;color:#0c1520;text-wrap:pretty">“Two units flooded on a Sunday. They were extracting within the hour and gave me a drying log I could forward straight to the association.”</p>
+<div style="display:flex;align-items:center;gap:11px"><div class="ph" style="width:34px;height:34px;border-radius:50%;font-size:7px">AVATAR</div><div style="font:400 12.5px/1.4 Archivo,sans-serif;color:rgba(12,21,32,.6)"><strong style="font-weight:600;color:#0c1520">D. Okafor</strong> · Property manager, Brickell</div></div>
+</div>
+</div>
+</div>
+<div style="background:#0c1520;color:#fff;padding:44px 32px;display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center">
+<h2 style="margin:0;font:700 28px/1.2 Archivo,sans-serif;letter-spacing:-.02em">Where we respond</h2>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px 18px;font:400 14px/1.5 Archivo,sans-serif;color:rgba(255,255,255,.72)">
+<span>Hialeah</span><span>Miami</span><span>Coral Gables</span><span>Doral</span><span>Miami Beach</span><span>Kendall</span><span>Aventura</span><span>Homestead</span><span>Hollywood</span><span>Fort Lauderdale</span><span>Pembroke Pines</span><span>Weston</span>
+</div>
+</div>
+<div style="background:#f2b21a;color:#12100b;padding:44px 32px;display:flex;align-items:center;justify-content:space-between;gap:32px">
+<div><h2 style="margin:0 0 8px;font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em">Standing in water right now?</h2><p style="margin:0;font:500 15.5px/1.4 Archivo,sans-serif;opacity:.8">Call and we’ll walk you through the shutoff while the truck rolls.</p></div>
+<div style="background:#12100b;color:#fff;padding:19px 30px;border-radius:8px;font:800 24px/1 Archivo,sans-serif;white-space:nowrap">{{ phone }}</div>
+</div>
+<div style="background:#12100b;color:rgba(255,255,255,.6);padding:34px 32px;display:flex;justify-content:space-between;align-items:flex-end;font:400 12.5px/1.6 Archivo,sans-serif">
+<div><div style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.14em;color:#fff;margin-bottom:9px">LEON</div>Roofing &amp; Restoration, Inc. · Hialeah, FL<br>Serving Miami-Dade &amp; Broward · Lic. CFC1428XXX</div>
+<div style="display:flex;gap:36px"><span>Extraction</span><span>Drying</span><span>Mold</span><span>Claims</span><span>Careers</span></div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="2b">
+<div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a>DISPATCH — service page: Emergency Water Extraction</div>
+<div class="dv-card" style="width:1180px">
+<div style="background:#0c1520;color:#fff">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:1px solid rgba(255,255,255,.10)">
+<div style="display:flex;align-items:center;gap:11px"><div style="width:28px;height:28px;background:#f2b21a;transform:rotate(45deg);border-radius:3px"></div><span style="font:800 17px/1 Archivo,sans-serif;letter-spacing:.14em">LEON</span></div>
+<div style="display:flex;align-items:center;gap:24px;font:500 13px/1 Archivo,sans-serif;color:rgba(255,255,255,.8)"><span style="color:#f2b21a">Water Extraction</span><span>Structural Drying</span><span>Mold</span><span>Insurance Claims</span><span>Service Areas</span><div style="background:#f2b21a;color:#12100b;padding:10px 16px;border-radius:6px;font-weight:700">{{ phone }}</div></div>
+</div>
+<div style="padding:14px 32px;font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:rgba(255,255,255,.5)">HOME / SERVICES / EMERGENCY WATER EXTRACTION</div>
+<div style="display:grid;grid-template-columns:1.1fr .9fr;gap:0">
+<div style="padding:30px 40px 52px 32px;display:flex;flex-direction:column;gap:20px">
+<h1 style="margin:0;font:800 52px/1 Archivo,sans-serif;letter-spacing:-.03em;text-wrap:balance">Emergency water extraction</h1>
+<p style="margin:0;font:400 17px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.72);max-width:520px;text-wrap:pretty">Standing water gets into cavities within minutes and into drywall within hours. We arrive with truck-mounted extraction, pull the water out of the assembly — not just the surface — and set drying the same visit.</p>
+<div style="display:flex;gap:12px"><div style="background:#f2b21a;color:#12100b;padding:16px 24px;border-radius:7px;font:700 15.5px/1 Archivo,sans-serif">Call {{ phone }}</div><div style="border:1px solid rgba(255,255,255,.28);padding:16px 24px;border-radius:7px;font:600 15.5px/1 Archivo,sans-serif">Text photos of the damage</div></div>
+<div style="display:flex;gap:26px;font:500 12px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.6)"><span>Arrives in ~45 min</span><span>No trip charge</span><span>Insurance billed direct</span></div>
+</div>
+<div class="phd" style="border-left:1px solid rgba(255,255,255,.1)">PHOTO — EXTRACTION WAND, WATER<br>LINE ON WALL · 620×420</div>
+</div>
+</div>
+<div style="background:#f7f5f1;padding:48px 32px;display:grid;grid-template-columns:1.35fr .65fr;gap:36px;align-items:start">
+<div>
+<h2 style="margin:0 0 20px;font:700 27px/1.2 Archivo,sans-serif;color:#0c1520;letter-spacing:-.02em">What’s included on every call</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(12,21,32,.12);border:1px solid rgba(12,21,32,.12);border-radius:10px;overflow:hidden">
+<div style="background:#fff;padding:20px 22px"><h3 style="margin:0 0 7px;font:700 16px/1.25 Archivo,sans-serif;color:#0c1520">Source verification</h3><p style="margin:0;font:400 13.8px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">We confirm the leak is stopped before drying starts — no drying a live source.</p></div>
+<div style="background:#fff;padding:20px 22px"><h3 style="margin:0 0 7px;font:700 16px/1.25 Archivo,sans-serif;color:#0c1520">Truck-mount extraction</h3><p style="margin:0;font:400 13.8px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">Standing water, carpet pad, and sub-floor cavities pulled to damp, not wet.</p></div>
+<div style="background:#fff;padding:20px 22px"><h3 style="margin:0 0 7px;font:700 16px/1.25 Archivo,sans-serif;color:#0c1520">Moisture mapping</h3><p style="margin:0;font:400 13.8px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">Thermal imaging and pin meters mark the true wet line, room by room.</p></div>
+<div style="background:#fff;padding:20px 22px"><h3 style="margin:0 0 7px;font:700 16px/1.25 Archivo,sans-serif;color:#0c1520">Category assessment</h3><p style="margin:0;font:400 13.8px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">Clean, grey, or black water classified — it sets what can be saved.</p></div>
+<div style="background:#fff;padding:20px 22px"><h3 style="margin:0 0 7px;font:700 16px/1.25 Archivo,sans-serif;color:#0c1520">Antimicrobial application</h3><p style="margin:0;font:400 13.8px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">Applied to affected assemblies to stop growth during the drying window.</p></div>
+<div style="background:#fff;padding:20px 22px"><h3 style="margin:0 0 7px;font:700 16px/1.25 Archivo,sans-serif;color:#0c1520">Written drying plan</h3><p style="margin:0;font:400 13.8px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">Equipment count, target readings, and a date you should be dry by.</p></div>
+</div>
+<h2 style="margin:34px 0 16px;font:700 27px/1.2 Archivo,sans-serif;color:#0c1520;letter-spacing:-.02em">Common questions</h2>
+<div style="display:flex;flex-direction:column;gap:1px;background:rgba(12,21,32,.12);border:1px solid rgba(12,21,32,.12);border-radius:10px;overflow:hidden">
+<div style="background:#fff;padding:18px 22px;display:flex;justify-content:space-between;align-items:center"><span style="font:600 15px/1.3 Archivo,sans-serif;color:#0c1520">Will my insurance cover this?</span><span style="color:#b8850c;font-size:17px">−</span></div>
+<div style="background:#fff;padding:0 22px 20px;font:400 14.2px/1.6 Archivo,sans-serif;color:rgba(12,21,32,.68);text-wrap:pretty">Sudden and accidental water losses — burst supply lines, failed heaters, appliance overflows — are typically covered. Long-term seepage usually isn’t. We document the cause on day one either way, and tell you honestly which one you have before you file.</div>
+<div style="background:#fff;padding:18px 22px;display:flex;justify-content:space-between;align-items:center"><span style="font:600 15px/1.3 Archivo,sans-serif;color:#0c1520">Do I have to tear out the drywall?</span><span style="color:rgba(12,21,32,.4);font-size:17px">+</span></div>
+<div style="background:#fff;padding:18px 22px;display:flex;justify-content:space-between;align-items:center"><span style="font:600 15px/1.3 Archivo,sans-serif;color:#0c1520">How long does the equipment stay?</span><span style="color:rgba(12,21,32,.4);font-size:17px">+</span></div>
+<div style="background:#fff;padding:18px 22px;display:flex;justify-content:space-between;align-items:center"><span style="font:600 15px/1.3 Archivo,sans-serif;color:#0c1520">Can you work with my HOA or property manager?</span><span style="color:rgba(12,21,32,.4);font-size:17px">+</span></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;position:sticky;top:0">
+<div style="background:#0c1520;color:#fff;border-radius:12px;padding:24px">
+<div style="display:flex;align-items:center;gap:8px;font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#f2b21a;margin-bottom:14px"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>DISPATCH OPEN NOW</div>
+<div style="font:800 26px/1.1 Archivo,sans-serif;margin-bottom:6px">{{ phone }}</div>
+<p style="margin:0 0 16px;font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(255,255,255,.65)">Live answer, 24/7. Average arrival 45 minutes across Miami-Dade and Broward.</p>
+<div style="background:#f2b21a;color:#12100b;padding:14px;border-radius:7px;text-align:center;font:700 14.5px/1 Archivo,sans-serif">Request a crew</div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:12px;padding:22px">
+<div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(12,21,32,.5);margin-bottom:12px">CREDENTIALS</div>
+<div style="display:flex;flex-direction:column;gap:9px;font:400 13.5px/1.4 Archivo,sans-serif;color:#0c1520"><span>IICRC WRT &amp; ASD certified techs</span><span>FL Lic. CFC1428XXX</span><span>Mold remediation MRSR3XXX</span><span>$2M liability insured</span></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:12px;overflow:hidden">
+<div class="ph" style="height:96px">PHOTO — CREW TRUCK, LEON DECAL</div>
+<div style="padding:18px 20px"><div style="font:600 14.5px/1.3 Archivo,sans-serif;color:#0c1520;margin-bottom:6px">Next: structural drying</div><p style="margin:0;font:400 13.2px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.65)">How we get from extracted to dry standard in 3–5 days →</p></div>
+</div>
+</div>
+</div>
+<div style="background:#f2b21a;color:#12100b;padding:34px 32px;display:flex;align-items:center;justify-content:space-between"><span style="font:800 28px/1 Archivo,sans-serif;letter-spacing:-.02em">Every hour matters. Call now.</span><span style="background:#12100b;color:#fff;padding:16px 26px;border-radius:8px;font:800 21px/1 Archivo,sans-serif">{{ phone }}</span></div>
+</div>
+</div>
+
+<div class="dv-opt" id="2c">
+<div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a>DISPATCH mobile — home and service page</div>
+<div style="display:flex;gap:20px">
+<div class="dv-card" style="width:390px;border-radius:26px">
+<div style="background:#0c1520;color:#fff">
+<div style="display:flex;justify-content:space-between;padding:11px 22px 6px;font:600 12px/1 Archivo,sans-serif;color:rgba(255,255,255,.85)"><span>2:14</span><span>▮▮▮ ⌁</span></div>
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:1px solid rgba(255,255,255,.1)"><div style="display:flex;align-items:center;gap:9px"><div style="width:24px;height:24px;background:#f2b21a;transform:rotate(45deg);border-radius:3px"></div><span style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.12em">LEON</span></div><span style="font:600 13px/1 Archivo,sans-serif;color:rgba(255,255,255,.7)">MENU</span></div>
+<div style="padding:24px 18px 20px;display:flex;flex-direction:column;gap:15px">
+<div style="display:flex;align-items:center;gap:8px;font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#f2b21a"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>DISPATCH ANSWERING NOW</div>
+<h1 style="margin:0;font:800 38px/.98 Archivo,sans-serif;letter-spacing:-.025em">Water doesn’t wait.</h1>
+<p style="margin:0;font:400 15px/1.5 Archivo,sans-serif;color:rgba(255,255,255,.7)">Emergency extraction, drying, and mold control in Miami-Dade &amp; Broward. 45-minute average arrival.</p>
+<div style="background:#f2b21a;color:#12100b;padding:19px;border-radius:9px;text-align:center;font:800 20px/1 Archivo,sans-serif">Call {{ phone }}</div>
+<div style="border:1px solid rgba(255,255,255,.28);padding:17px;border-radius:9px;text-align:center;font:600 15px/1 Archivo,sans-serif">Text photos of the damage</div>
+</div>
+<div class="phd" style="height:140px">PHOTO — NIGHT EXTRACTION · 390×280</div>
+<div style="background:#12100b;display:grid;grid-template-columns:1fr 1fr">
+<div style="padding:18px;border-right:1px solid rgba(255,255,255,.1)"><div style="font:800 24px/1 Archivo,sans-serif;color:#f2b21a">45 min</div><div style="font:400 11.5px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.6);margin-top:5px">Average arrival</div></div>
+<div style="padding:18px"><div style="font:800 24px/1 Archivo,sans-serif;color:#f2b21a">$0</div><div style="font:400 11.5px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.6);margin-top:5px">Out of pocket, most claims</div></div>
+</div>
+<div style="padding:22px 18px;display:flex;flex-direction:column;gap:12px">
+<div style="font:700 19px/1.2 Archivo,sans-serif">Water mitigation services</div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-top:1px solid rgba(255,255,255,.12);font:500 14px/1.3 Archivo,sans-serif"><span>Emergency extraction</span><span style="color:#f2b21a">→</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-top:1px solid rgba(255,255,255,.12);font:500 14px/1.3 Archivo,sans-serif"><span>Structural drying</span><span style="color:#f2b21a">→</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-top:1px solid rgba(255,255,255,.12);font:500 14px/1.3 Archivo,sans-serif"><span>Mold remediation</span><span style="color:#f2b21a">→</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-top:1px solid rgba(255,255,255,.12);font:500 14px/1.3 Archivo,sans-serif"><span>Storm &amp; flood cleanup</span><span style="color:#f2b21a">→</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-top:1px solid rgba(255,255,255,.12);font:500 14px/1.3 Archivo,sans-serif"><span>Claim documentation</span><span style="color:#f2b21a">→</span></div>
+</div>
+<div style="background:#f2b21a;color:#12100b;padding:20px 18px;display:flex;flex-direction:column;gap:12px"><div style="font:800 22px/1.1 Archivo,sans-serif">Standing in water?</div><div style="background:#12100b;color:#fff;padding:16px;border-radius:8px;text-align:center;font:800 18px/1 Archivo,sans-serif">{{ phone }}</div></div>
+<div style="background:#12100b;padding:16px 18px;display:flex;justify-content:space-between;font:500 10px/1.5 'IBM Plex Mono',monospace;color:rgba(255,255,255,.5);letter-spacing:.06em"><span>LIC CFC1428XXX</span><span>IICRC CERTIFIED</span></div>
+</div>
+</div>
+<div class="dv-card" style="width:390px;border-radius:26px">
+<div style="background:#f7f5f1">
+<div style="background:#0c1520;color:#fff">
+<div style="display:flex;justify-content:space-between;padding:11px 22px 6px;font:600 12px/1 Archivo,sans-serif;color:rgba(255,255,255,.85)"><span>9:41</span><span>▮▮▮ ⌁</span></div>
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 18px"><div style="display:flex;align-items:center;gap:9px"><div style="width:24px;height:24px;background:#f2b21a;transform:rotate(45deg);border-radius:3px"></div><span style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.12em">LEON</span></div><span style="font:600 13px/1 Archivo,sans-serif;color:rgba(255,255,255,.7)">MENU</span></div>
+<div style="padding:6px 18px 24px;display:flex;flex-direction:column;gap:13px">
+<div style="font:500 9.5px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:rgba(255,255,255,.5)">SERVICES / EXTRACTION</div>
+<h1 style="margin:0;font:800 32px/1 Archivo,sans-serif;letter-spacing:-.025em">Emergency water extraction</h1>
+<p style="margin:0;font:400 14.5px/1.5 Archivo,sans-serif;color:rgba(255,255,255,.7)">Truck-mounted extraction that pulls water out of the assembly, not just the surface — with drying set the same visit.</p>
+<div style="background:#f2b21a;color:#12100b;padding:17px;border-radius:9px;text-align:center;font:800 18px/1 Archivo,sans-serif">Call {{ phone }}</div>
+</div>
+</div>
+<div class="ph" style="height:120px">PHOTO — EXTRACTION WAND · 390×240</div>
+<div style="padding:22px 18px;display:flex;flex-direction:column;gap:11px">
+<div style="font:700 19px/1.2 Archivo,sans-serif;color:#0c1520">Included on every call</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:9px;padding:16px 18px"><div style="font:700 14.5px/1.2 Archivo,sans-serif;color:#0c1520">Source verification</div><p style="margin:6px 0 0;font:400 13px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">We confirm the leak is stopped before drying starts.</p></div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:9px;padding:16px 18px"><div style="font:700 14.5px/1.2 Archivo,sans-serif;color:#0c1520">Moisture mapping</div><p style="margin:6px 0 0;font:400 13px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">Thermal imaging and pin meters mark the true wet line.</p></div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:9px;padding:16px 18px"><div style="font:700 14.5px/1.2 Archivo,sans-serif;color:#0c1520">Written drying plan</div><p style="margin:6px 0 0;font:400 13px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">Equipment count, target readings, and a dry-by date.</p></div>
+</div>
+<div style="padding:0 18px 22px"><div style="background:#0c1520;color:#fff;border-radius:11px;padding:20px"><div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#f2b21a;margin-bottom:10px">INSURANCE</div><p style="margin:0;font:400 14px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.72)">We bill your carrier directly and file the photo log, scope, and daily readings for you.</p></div></div>
+<div style="background:#12100b;color:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;bottom:0"><div style="font:600 12px/1.3 Archivo,sans-serif;color:rgba(255,255,255,.7)">24/7 dispatch</div><div style="background:#f2b21a;color:#12100b;padding:12px 18px;border-radius:7px;font:800 15px/1 Archivo,sans-serif">Call now</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="2d">
+<div class="dv-olabel"><a class="dv-oid" href="#2d">2d</a>GRID — full homepage, services scoped to water mitigation</div>
+<div class="dv-card" style="width:1180px">
+<div style="background:#111311;color:#f4f2ec">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid rgba(244,242,236,.16);font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em"><span style="display:flex;gap:14px;align-items:center"><span style="width:9px;height:9px;background:#4ee39a;border-radius:2px"></span>DISPATCH OPEN · 24/7</span><span>MIAMI-DADE / BROWARD</span><span>{{ phone }}</span></div>
+<div style="display:flex;justify-content:space-between;align-items:flex-end;padding:26px 28px 0"><div style="font:800 26px/1 Archivo,sans-serif;letter-spacing:-.02em">LEON<span style="color:#4ee39a">.</span></div><div style="display:flex;gap:22px;font:500 12.5px/1 Archivo,sans-serif;color:rgba(244,242,236,.7)"><span>EXTRACTION</span><span>DRYING</span><span>MOLD</span><span>STORM</span><span>CLAIMS</span><span>CONTACT</span></div></div>
+<div style="padding:8px 28px 30px">
+<h1 style="margin:0;font:800 122px/.86 Archivo,sans-serif;letter-spacing:-.045em">WE EXTRACT.<br>WE DRY IT.<br><span style="color:#4ee39a">WE FILE IT.</span></h1>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(244,242,236,.16)">
+<p style="margin:0;grid-column:span 2;font:400 17px/1.55 Archivo,sans-serif;color:rgba(244,242,236,.74);text-wrap:pretty">Emergency water extraction, structural drying, and mold control across South Florida — with the moisture readings, photo log, and scope your insurer needs, filed the same day.</p>
+<div style="font:400 13px/1.5 Archivo,sans-serif;color:rgba(244,242,236,.55)"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a;margin-bottom:8px">RESPONSE</div>45-minute average arrival, day or night. No trip charge on emergencies.</div>
+<div style="font:400 13px/1.5 Archivo,sans-serif;color:rgba(244,242,236,.55)"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a;margin-bottom:8px">CREDENTIALS</div>FL Lic. CFC1428XXX · IICRC WRT/ASD · Mold MRSR3XXX.</div>
+</div>
+<div style="display:flex;gap:12px;margin-top:28px"><div style="background:#4ee39a;color:#0d1a13;padding:17px 28px;font:700 16px/1 Archivo,sans-serif;border-radius:3px">CALL {{ phone }}</div><div style="border:1px solid rgba(244,242,236,.32);padding:17px 28px;font:600 16px/1 Archivo,sans-serif;border-radius:3px">FREE MOISTURE INSPECTION</div></div>
+</div>
+</div>
+<div style="background:#f4f2ec;padding:0 28px">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(17,19,17,.16)">
+<div style="background:#f4f2ec;padding:34px 24px 30px 0"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">01 / HOUR ONE</div><h3 style="margin:14px 0 10px;font:800 26px/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">EMERGENCY<br>EXTRACTION</h3><p style="margin:0;font:400 14px/1.55 Archivo,sans-serif;color:rgba(17,19,17,.65)">Truck-mounted removal of standing water from floors, pad, and cavities.</p></div>
+<div style="background:#f4f2ec;padding:34px 24px 30px 28px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">02 / DAYS 1–5</div><h3 style="margin:14px 0 10px;font:800 26px/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">STRUCTURAL<br>DRYING</h3><p style="margin:0;font:400 14px/1.55 Archivo,sans-serif;color:rgba(17,19,17,.65)">LGR dehumidification, air movers, daily readings to dry standard.</p></div>
+<div style="background:#f4f2ec;padding:34px 0 30px 28px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">03 / CONTAINMENT</div><h3 style="margin:14px 0 10px;font:800 26px/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">MOLD<br>REMEDIATION</h3><p style="margin:0;font:400 14px/1.55 Archivo,sans-serif;color:rgba(17,19,17,.65)">Negative-air containment, antimicrobial, licensed removal and clearance.</p></div>
+<div style="background:#f4f2ec;padding:34px 24px 34px 0"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">04 / STORM SEASON</div><h3 style="margin:14px 0 10px;font:800 26px/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">STORM &amp;<br>FLOOD</h3><p style="margin:0;font:400 14px/1.55 Archivo,sans-serif;color:rgba(17,19,17,.65)">Surge and sewage backup handling, sanitation, and debris removal.</p></div>
+<div style="background:#f4f2ec;padding:34px 24px 34px 28px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">05 / CONTENTS</div><h3 style="margin:14px 0 10px;font:800 26px/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">PACK-OUT &amp;<br>CONTENTS</h3><p style="margin:0;font:400 14px/1.55 Archivo,sans-serif;color:rgba(17,19,17,.65)">Inventoried pack-out, off-site drying of furniture and documents.</p></div>
+<div style="background:#f4f2ec;padding:34px 0 34px 28px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">06 / ADMIN</div><h3 style="margin:14px 0 10px;font:800 26px/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">CLAIM<br>DOCUMENTATION</h3><p style="margin:0;font:400 14px/1.55 Archivo,sans-serif;color:rgba(17,19,17,.65)">Photo logs, Xactimate scope, adjuster calls, direct carrier billing.</p></div>
+</div>
+</div>
+<div style="background:#f4f2ec;padding:44px 28px 52px;display:grid;grid-template-columns:1fr 1fr;gap:28px">
+<div class="ph" style="height:300px;border-radius:4px">PHOTO — WIDE SHOT, DRYING EQUIPMENT<br>STAGED IN GUTTED ROOM · 560×600</div>
+<div style="display:flex;flex-direction:column;justify-content:space-between">
+<div><h2 style="margin:0 0 18px;font:800 40px/1.06 Archivo,sans-serif;letter-spacing:-.03em;color:#111311">MOST WATER CLAIMS ARE LOST IN THE FIRST DAY.</h2><p style="margin:0;font:400 15.5px/1.6 Archivo,sans-serif;color:rgba(17,19,17,.68);text-wrap:pretty">Carriers deny what nobody documented. Before we cut a single piece of drywall, we record the source, the extent, and the readings — and we keep recording until the structure is dry.</p></div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:26px">
+<div style="border-top:2px solid #111311;padding-top:12px"><div style="font:800 34px/1 Archivo,sans-serif;color:#111311">100%</div><div style="font:400 12px/1.4 Archivo,sans-serif;color:rgba(17,19,17,.6);margin-top:6px">Jobs with a full photo and moisture log</div></div>
+<div style="border-top:2px solid #111311;padding-top:12px"><div style="font:800 34px/1 Archivo,sans-serif;color:#111311">3–5</div><div style="font:400 12px/1.4 Archivo,sans-serif;color:rgba(17,19,17,.6);margin-top:6px">Days to a dry, signed-off structure</div></div>
+<div style="border-top:2px solid #111311;padding-top:12px"><div style="font:800 34px/1 Archivo,sans-serif;color:#111311">4,100+</div><div style="font:400 12px/1.4 Archivo,sans-serif;color:rgba(17,19,17,.6);margin-top:6px">Water losses since 2009</div></div>
+</div>
+</div>
+</div>
+<div style="background:#111311;color:#f4f2ec;padding:46px 28px">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(244,242,236,.18);border:1px solid rgba(244,242,236,.18)">
+<div style="background:#111311;padding:24px 20px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a">0:00</div><div style="margin-top:12px;font:700 17px/1.2 Archivo,sans-serif">LIVE DISPATCH</div><p style="margin:8px 0 0;font:400 13px/1.5 Archivo,sans-serif;color:rgba(244,242,236,.6)">A person answers and walks you through the shutoff.</p></div>
+<div style="background:#111311;padding:24px 20px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a">0:45</div><div style="margin-top:12px;font:700 17px/1.2 Archivo,sans-serif">CREW ON SITE</div><p style="margin:8px 0 0;font:400 13px/1.5 Archivo,sans-serif;color:rgba(244,242,236,.6)">Source confirmed stopped, standing water extracted.</p></div>
+<div style="background:#111311;padding:24px 20px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a">2:00</div><div style="margin-top:12px;font:700 17px/1.2 Archivo,sans-serif">MOISTURE MAP</div><p style="margin:8px 0 0;font:400 13px/1.5 Archivo,sans-serif;color:rgba(244,242,236,.6)">Every wet cavity metered before anything is cut.</p></div>
+<div style="background:#111311;padding:24px 20px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a">4:00</div><div style="margin-top:12px;font:700 17px/1.2 Archivo,sans-serif">DRYING SET</div><p style="margin:8px 0 0;font:400 13px/1.5 Archivo,sans-serif;color:rgba(244,242,236,.6)">Written drying plan running, claim opened same day.</p></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px">
+<div><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a;margin-bottom:14px">INSURANCE</div><h2 style="margin:0 0 14px;font:800 30px/1.1 Archivo,sans-serif;letter-spacing:-.025em">WE BILL YOUR CARRIER DIRECTLY.</h2><p style="margin:0;font:400 15px/1.6 Archivo,sans-serif;color:rgba(244,242,236,.7);text-wrap:pretty">You pay your deductible; we invoice the rest. Underpaid claims get reopened on the strength of the log — and we sit on the adjuster call with you.</p></div>
+<div style="display:flex;flex-direction:column;gap:14px;justify-content:center">
+<p style="margin:0;font:400 19px/1.5 Archivo,sans-serif;color:#f4f2ec;text-wrap:pretty">“Two units flooded on a Sunday. Extracting within the hour, and the drying log went straight to the association.”</p>
+<div style="font:500 11px/1.5 'IBM Plex Mono',monospace;letter-spacing:.08em;color:rgba(244,242,236,.55)">D. OKAFOR — PROPERTY MANAGER, BRICKELL</div>
+</div>
+</div>
+</div>
+<div style="background:#4ee39a;color:#0d1a13;padding:34px 28px;display:flex;justify-content:space-between;align-items:center"><span style="font:800 30px/1 Archivo,sans-serif;letter-spacing:-.025em">FLOODED? CALL NOW.</span><span style="font:800 30px/1 Archivo,sans-serif;letter-spacing:-.02em">{{ phone }}</span></div>
+<div style="background:#111311;color:rgba(244,242,236,.5);padding:24px 28px;display:flex;justify-content:space-between;font:500 11px/1.6 'IBM Plex Mono',monospace;letter-spacing:.08em"><span>LEON ROOFING &amp; RESTORATION, INC.</span><span>HIALEAH FL · EST. 2009 · LIC CFC1428XXX</span></div>
+</div>
+</div>
+
+<div class="dv-opt" id="2e">
+<div class="dv-olabel"><a class="dv-oid" href="#2e">2e</a>GRID — service page: Structural Drying</div>
+<div class="dv-card" style="width:1180px">
+<div style="background:#111311;color:#f4f2ec">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:14px 28px;border-bottom:1px solid rgba(244,242,236,.16);font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em"><span style="display:flex;gap:12px;align-items:center"><span style="width:9px;height:9px;background:#4ee39a;border-radius:2px"></span>DISPATCH OPEN · 24/7</span><span>SERVICES / STRUCTURAL DRYING</span><span>{{ phone }}</span></div>
+<div style="display:flex;justify-content:space-between;align-items:flex-end;padding:22px 28px 26px"><div style="font:800 24px/1 Archivo,sans-serif;letter-spacing:-.02em">LEON<span style="color:#4ee39a">.</span></div><div style="display:flex;gap:22px;font:500 12.5px/1 Archivo,sans-serif;color:rgba(244,242,236,.7)"><span>EXTRACTION</span><span style="color:#4ee39a">DRYING</span><span>MOLD</span><span>STORM</span><span>CLAIMS</span><span>CONTACT</span></div></div>
+<div style="padding:0 28px 34px;display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:end">
+<div>
+<h1 style="margin:0;font:800 78px/.9 Archivo,sans-serif;letter-spacing:-.04em">STRUCTURAL<br>DRYING</h1>
+<p style="margin:22px 0 0;max-width:520px;font:400 16.5px/1.55 Archivo,sans-serif;color:rgba(244,242,236,.72);text-wrap:pretty">Extraction is the easy half. Getting framing, sub-floor, and cavity air back below dry standard is what stops mold — and what a carrier pays for only if you can prove it happened.</p>
+<div style="display:flex;gap:12px;margin-top:26px"><div style="background:#4ee39a;color:#0d1a13;padding:16px 26px;font:700 15.5px/1 Archivo,sans-serif;border-radius:3px">CALL {{ phone }}</div><div style="border:1px solid rgba(244,242,236,.32);padding:16px 26px;font:600 15.5px/1 Archivo,sans-serif;border-radius:3px">GET A DRYING PLAN</div></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(244,242,236,.18);border:1px solid rgba(244,242,236,.18)">
+<div style="background:#111311;padding:18px"><div style="font:800 26px/1 Archivo,sans-serif;color:#4ee39a">3–5</div><div style="margin-top:6px;font:400 12px/1.4 Archivo,sans-serif;color:rgba(244,242,236,.6)">Days typical</div></div>
+<div style="background:#111311;padding:18px"><div style="font:800 26px/1 Archivo,sans-serif;color:#4ee39a">2×/day</div><div style="margin-top:6px;font:400 12px/1.4 Archivo,sans-serif;color:rgba(244,242,236,.6)">Readings logged</div></div>
+<div style="background:#111311;padding:18px"><div style="font:800 26px/1 Archivo,sans-serif;color:#4ee39a">LGR</div><div style="margin-top:6px;font:400 12px/1.4 Archivo,sans-serif;color:rgba(244,242,236,.6)">Dehumidification</div></div>
+<div style="background:#111311;padding:18px"><div style="font:800 26px/1 Archivo,sans-serif;color:#4ee39a">S500</div><div style="margin-top:6px;font:400 12px/1.4 Archivo,sans-serif;color:rgba(244,242,236,.6)">IICRC standard</div></div>
+</div>
+</div>
+</div>
+<div class="ph" style="height:230px">PHOTO — ROW OF AIR MOVERS ALONG WET BASEBOARD, LONG LENS · 1180×460</div>
+<div style="background:#f4f2ec;padding:46px 28px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:36px">
+<div>
+<h2 style="margin:0 0 18px;font:800 30px/1.1 Archivo,sans-serif;letter-spacing:-.025em;color:#111311">HOW WE DRY A STRUCTURE</h2>
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:32px 1fr;gap:14px;padding:15px 0;border-top:1px solid rgba(17,19,17,.18)"><span style="font:500 11px/1.6 'IBM Plex Mono',monospace;color:rgba(17,19,17,.5)">01</span><div><div style="font:700 15.5px/1.3 Archivo,sans-serif;color:#111311">Psychrometric baseline</div><div style="font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">Temperature, humidity, and grains-per-pound recorded inside, outside, and in the affected air.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:14px;padding:15px 0;border-top:1px solid rgba(17,19,17,.18)"><span style="font:500 11px/1.6 'IBM Plex Mono',monospace;color:rgba(17,19,17,.5)">02</span><div><div style="font:700 15.5px/1.3 Archivo,sans-serif;color:#111311">Equipment sized to the load</div><div style="font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">Air movers and LGR dehumidifiers calculated per S500 — not guessed by room count.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:14px;padding:15px 0;border-top:1px solid rgba(17,19,17,.18)"><span style="font:500 11px/1.6 'IBM Plex Mono',monospace;color:rgba(17,19,17,.5)">03</span><div><div style="font:700 15.5px/1.3 Archivo,sans-serif;color:#111311">Targeted cavity drying</div><div style="font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">Injectidry mats and wall systems dry hardwood and cavities without demolition where possible.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:14px;padding:15px 0;border-top:1px solid rgba(17,19,17,.18);border-bottom:1px solid rgba(17,19,17,.18)"><span style="font:500 11px/1.6 'IBM Plex Mono',monospace;color:rgba(17,19,17,.5)">04</span><div><div style="font:700 15.5px/1.3 Archivo,sans-serif;color:#111311">Daily monitoring to sign-off</div><div style="font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">Same techs, same meters, twice-daily readings until materials match dry standard — then we pull equipment.</div></div></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="background:#111311;color:#f4f2ec;padding:24px">
+<div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a;margin-bottom:12px">DRYING LOG — SAMPLE</div>
+<div style="display:grid;grid-template-columns:1fr auto auto;gap:9px 16px;font:500 12px/1.4 'IBM Plex Mono',monospace;color:rgba(244,242,236,.75)">
+<span style="color:rgba(244,242,236,.45)">LOCATION</span><span style="color:rgba(244,242,236,.45)">DAY 1</span><span style="color:rgba(244,242,236,.45)">DAY 4</span>
+<span>Living — sub-floor</span><span>28.4%</span><span style="color:#4ee39a">11.2%</span>
+<span>Hall — base plate</span><span>31.0%</span><span style="color:#4ee39a">12.6%</span>
+<span>Bedroom 2 — drywall</span><span>24.7%</span><span style="color:#4ee39a">10.8%</span>
+<span>Affected air GPP</span><span>92</span><span style="color:#4ee39a">41</span>
+</div>
+<p style="margin:16px 0 0;font:400 12.5px/1.5 Archivo,sans-serif;color:rgba(244,242,236,.55)">You get this log daily — and so does your adjuster.</p>
+</div>
+<div style="border:1px solid rgba(17,19,17,.18);padding:22px">
+<div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5);margin-bottom:12px">RELATED</div>
+<div style="display:flex flex-direction:column;gap:10px;font:600 14.5px/1.4 Archivo,sans-serif;color:#111311;flex-direction:column;display:flex"><span>Emergency water extraction →</span><span>Mold remediation &amp; clearance →</span><span>Insurance claim documentation →</span></div>
+</div>
+</div>
+</div>
+</div>
+<div style="background:#4ee39a;color:#0d1a13;padding:30px 28px;display:flex;justify-content:space-between;align-items:center"><span style="font:800 26px/1 Archivo,sans-serif;letter-spacing:-.025em">WET TODAY MEANS MOLD IN 48 HOURS.</span><span style="font:800 26px/1 Archivo,sans-serif">{{ phone }}</span></div>
+<div style="background:#111311;color:rgba(244,242,236,.5);padding:22px 28px;display:flex;justify-content:space-between;font:500 11px/1.6 'IBM Plex Mono',monospace;letter-spacing:.08em"><span>LEON ROOFING &amp; RESTORATION, INC.</span><span>MIAMI-DADE / BROWARD · LIC CFC1428XXX</span></div>
+</div>
+</div>
+
+<div class="dv-opt" id="2f">
+<div class="dv-olabel"><a class="dv-oid" href="#2f">2f</a>GRID mobile — home and service page</div>
+<div style="display:flex;gap:20px">
+<div class="dv-card" style="width:390px;border-radius:26px">
+<div style="background:#111311;color:#f4f2ec">
+<div style="display:flex;justify-content:space-between;padding:11px 20px 6px;font:600 12px/1 Archivo,sans-serif;color:rgba(244,242,236,.85)"><span>2:14</span><span>▮▮▮ ⌁</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 20px;border-bottom:1px solid rgba(244,242,236,.18);font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.1em"><span style="display:flex;gap:8px;align-items:center"><span style="width:8px;height:8px;background:#4ee39a;border-radius:2px"></span>DISPATCH OPEN</span><span>MIAMI-DADE / BROWARD</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px"><div style="font:800 20px/1 Archivo,sans-serif;letter-spacing:-.02em">LEON<span style="color:#4ee39a">.</span></div><span style="font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(244,242,236,.7)">MENU</span></div>
+<div style="padding:6px 20px 26px">
+<h1 style="margin:0;font:800 52px/.88 Archivo,sans-serif;letter-spacing:-.04em">WE<br>EXTRACT.<br>WE DRY IT.<br><span style="color:#4ee39a">WE FILE IT.</span></h1>
+<p style="margin:20px 0 0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(244,242,236,.72)">Emergency water extraction, drying, and mold control. 45-minute average arrival, 24/7.</p>
+<div style="background:#4ee39a;color:#0d1a13;padding:18px;border-radius:3px;text-align:center;font:800 18px/1 Archivo,sans-serif;margin-top:20px">CALL {{ phone }}</div>
+<div style="border:1px solid rgba(244,242,236,.32);padding:16px;border-radius:3px;text-align:center;font:600 14.5px/1 Archivo,sans-serif;margin-top:10px">FREE MOISTURE INSPECTION</div>
+</div>
+</div>
+<div style="background:#f4f2ec;padding:0 20px">
+<div style="display:flex;flex-direction:column">
+<div style="padding:22px 0;border-bottom:1px solid rgba(17,19,17,.18)"><div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">01 / HOUR ONE</div><h3 style="margin:10px 0 8px;font:800 24px/1.05 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">EMERGENCY<br>EXTRACTION</h3><p style="margin:0;font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">Standing water out of floors, pad, and cavities.</p></div>
+<div style="padding:22px 0;border-bottom:1px solid rgba(17,19,17,.18)"><div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">02 / DAYS 1–5</div><h3 style="margin:10px 0 8px;font:800 24px/1.05 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">STRUCTURAL<br>DRYING</h3><p style="margin:0;font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">LGR dehumidification with daily logged readings.</p></div>
+<div style="padding:22px 0"><div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">03 / CONTAINMENT</div><h3 style="margin:10px 0 8px;font:800 24px/1.05 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">MOLD<br>REMEDIATION</h3><p style="margin:0;font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">Containment, antimicrobial, licensed clearance.</p></div>
+</div>
+</div>
+<div class="ph" style="height:150px">PHOTO — EQUIPMENT IN GUTTED ROOM · 390×300</div>
+<div style="background:#4ee39a;color:#0d1a13;padding:22px 20px;display:flex;flex-direction:column;gap:10px"><span style="font:800 26px/1 Archivo,sans-serif;letter-spacing:-.025em">FLOODED?<br>CALL NOW.</span><span style="font:800 22px/1 Archivo,sans-serif">{{ phone }}</span></div>
+<div style="background:#111311;color:rgba(244,242,236,.5);padding:16px 20px;font:500 10px/1.6 'IBM Plex Mono',monospace;letter-spacing:.08em;display:flex;justify-content:space-between"><span>LEON ROOFING &amp; RESTORATION</span><span>LIC CFC1428XXX</span></div>
+</div>
+</div>
+<div class="dv-card" style="width:390px;border-radius:26px">
+<div style="background:#f4f2ec">
+<div style="background:#111311;color:#f4f2ec">
+<div style="display:flex;justify-content:space-between;padding:11px 20px 6px;font:600 12px/1 Archivo,sans-serif;color:rgba(244,242,236,.85)"><span>9:41</span><span>▮▮▮ ⌁</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:12px 20px;border-bottom:1px solid rgba(244,242,236,.18);font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.1em"><span>SERVICES / DRYING</span><span>{{ phone }}</span></div>
+<div style="padding:20px 20px 26px">
+<h1 style="margin:0;font:800 42px/.9 Archivo,sans-serif;letter-spacing:-.04em">STRUCTURAL<br>DRYING</h1>
+<p style="margin:18px 0 0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(244,242,236,.72)">Getting framing and cavity air below dry standard is what actually stops mold — and what carriers pay for when it’s documented.</p>
+<div style="background:#4ee39a;color:#0d1a13;padding:17px;border-radius:3px;text-align:center;font:800 17px/1 Archivo,sans-serif;margin-top:18px">CALL {{ phone }}</div>
+</div>
+<div style="padding:0 20px 24px"><div style="border:1px solid rgba(244,242,236,.2);padding:18px"><div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a;margin-bottom:12px">DRYING LOG — SAMPLE</div><div style="display:grid;grid-template-columns:1fr auto auto;gap:8px 14px;font:500 11px/1.4 'IBM Plex Mono',monospace;color:rgba(244,242,236,.75)"><span style="color:rgba(244,242,236,.45)">LOC</span><span style="color:rgba(244,242,236,.45)">D1</span><span style="color:rgba(244,242,236,.45)">D4</span><span>Sub-floor</span><span>28.4%</span><span style="color:#4ee39a">11.2%</span><span>Base plate</span><span>31.0%</span><span style="color:#4ee39a">12.6%</span><span>Air GPP</span><span>92</span><span style="color:#4ee39a">41</span></div></div></div>
+</div>
+<div style="padding:22px 20px">
+<h2 style="margin:0 0 14px;font:800 24px/1.1 Archivo,sans-serif;letter-spacing:-.025em;color:#111311">HOW WE DRY IT</h2>
+<div style="display:grid;grid-template-columns:28px 1fr;gap:12px;padding:14px 0;border-top:1px solid rgba(17,19,17,.18)"><span style="font:500 10.5px/1.6 'IBM Plex Mono',monospace;color:rgba(17,19,17,.5)">01</span><div><div style="font:700 14.5px/1.3 Archivo,sans-serif;color:#111311">Psychrometric baseline</div><div style="font:400 13px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">Inside, outside, and affected air recorded.</div></div></div>
+<div style="display:grid;grid-template-columns:28px 1fr;gap:12px;padding:14px 0;border-top:1px solid rgba(17,19,17,.18)"><span style="font:500 10.5px/1.6 'IBM Plex Mono',monospace;color:rgba(17,19,17,.5)">02</span><div><div style="font:700 14.5px/1.3 Archivo,sans-serif;color:#111311">Equipment sized to load</div><div style="font:400 13px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">Calculated per S500, not by room count.</div></div></div>
+<div style="display:grid;grid-template-columns:28px 1fr;gap:12px;padding:14px 0;border-top:1px solid rgba(17,19,17,.18);border-bottom:1px solid rgba(17,19,17,.18)"><span style="font:500 10.5px/1.6 'IBM Plex Mono',monospace;color:rgba(17,19,17,.5)">03</span><div><div style="font:700 14.5px/1.3 Archivo,sans-serif;color:#111311">Daily monitoring to sign-off</div><div style="font:400 13px/1.5 Archivo,sans-serif;color:rgba(17,19,17,.65)">Twice-daily readings until dry standard.</div></div></div>
+</div>
+<div style="background:#111311;color:#f4f2ec;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;bottom:0"><span style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:rgba(244,242,236,.6)">24/7 DISPATCH</span><span style="background:#4ee39a;color:#0d1a13;padding:12px 18px;font:800 14px/1 Archivo,sans-serif;border-radius:3px">CALL NOW</span></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: “go with <a class="dv-oid" href="#2a">2a</a> — add a mold remediation page and a request-a-crew form” · “put <a class="dv-oid" href="#2d">2d</a>’s type scale on <a class="dv-oid" href="#2a">2a</a>’s dark navy” · “3 logo lockups for Leon”</p>
+</section>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Leon Water Mitigation &amp; Plumbing — three homepage directions + mobile emergency screen</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>“Dispatch” — dark, urgent, one signal color. Built for the 2am burst-pipe call.</div>
+<div class="dv-card" style="width:1180px">
+
+<div style="background:#f2b21a;color:#12100b;padding:9px 32px;display:flex;justify-content:space-between;align-items:center;font:600 12.5px/1 Archivo,sans-serif;letter-spacing:.02em">
+<span>Crews staged in Miami-Dade &amp; Broward · 45-minute average arrival</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-weight:500">LIC. CFC1428XXX · IICRC CERTIFIED</span>
+</div>
+
+<div style="background:#0c1520;color:#fff">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:20px 32px;border-bottom:1px solid rgba(255,255,255,.10)">
+<div style="display:flex;align-items:center;gap:12px">
+<div style="width:34px;height:34px;background:#f2b21a;transform:rotate(45deg);border-radius:4px"></div>
+<div style="display:flex;flex-direction:column;gap:2px">
+<span style="font:800 19px/1 Archivo,sans-serif;letter-spacing:.14em">LEON</span>
+<span style="font:500 8.5px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:rgba(255,255,255,.55)">ROOFING &amp; RESTORATION</span>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:30px;font:500 13.5px/1 Archivo,sans-serif;color:rgba(255,255,255,.82)">
+<span>Water Damage</span><span>Plumbing</span><span>Insurance Claims</span><span>Service Areas</span><span>Reviews</span>
+<div style="display:flex;align-items:center;gap:10px;background:#f2b21a;color:#12100b;padding:11px 18px;border-radius:6px;font-weight:700;font-size:14px">
+<span style="width:7px;height:7px;border-radius:50%;background:#12100b"></span>{{ phone }}
+</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1.08fr .92fr;min-height:452px">
+<div style="padding:64px 44px 56px 32px;display:flex;flex-direction:column;justify-content:center;gap:24px">
+<div style="display:inline-flex;align-items:center;gap:9px;font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#f2b21a">
+<span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>ANSWERING LIVE — 24 HOURS, 7 DAYS
+</div>
+<h1 style="margin:0;font:800 62px/.96 Archivo,sans-serif;letter-spacing:-.025em;text-wrap:balance">Water doesn’t wait.<br><span style="color:#f2b21a">Neither do we.</span></h1>
+<p style="margin:0;max-width:480px;font:400 17.5px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.72);text-wrap:pretty">Burst pipe, slab leak, storm flooding — we extract, dry, and document the damage, then handle the plumbing repair that caused it. One crew, one invoice, one insurance file.</p>
+<div style="display:flex;gap:12px;padding-top:6px">
+<div style="background:#f2b21a;color:#12100b;padding:17px 26px;border-radius:7px;font:700 16px/1 Archivo,sans-serif">Call {{ phone }}</div>
+<div style="border:1px solid rgba(255,255,255,.28);color:#fff;padding:17px 26px;border-radius:7px;font:600 16px/1 Archivo,sans-serif">Book a plumber →</div>
+</div>
+<div style="display:flex;gap:34px;padding-top:14px;font:500 12.5px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">
+<span>No trip charge on emergencies</span><span>Direct insurance billing</span><span>Upfront flat pricing</span>
+</div>
+</div>
+<div class="phd" style="border-left:1px solid rgba(255,255,255,.10)">PHOTO — TECH IN LEON-BRANDED<br>GEAR, EXTRACTION HOSE, FLOODED<br>TILE FLOOR, NIGHT · 720×900</div>
+</div>
+</div>
+
+<div style="background:#12100b;color:#fff;display:grid;grid-template-columns:repeat(3,1fr)">
+<div style="padding:30px 32px;border-right:1px solid rgba(255,255,255,.10)"><div style="font:800 34px/1 Archivo,sans-serif;color:#f2b21a">45 min</div><div style="margin-top:7px;font:400 13px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">Average on-site arrival, county-wide</div></div>
+<div style="padding:30px 32px;border-right:1px solid rgba(255,255,255,.10)"><div style="font:800 34px/1 Archivo,sans-serif;color:#f2b21a">4,100+</div><div style="margin-top:7px;font:400 13px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">Mitigation and repair jobs since 2009</div></div>
+<div style="padding:30px 32px"><div style="font:800 34px/1 Archivo,sans-serif;color:#f2b21a">$0</div><div style="margin-top:7px;font:400 13px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">Out of pocket on most covered claims</div></div>
+</div>
+
+<div style="background:#f7f5f1;padding:56px 32px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:26px">
+<h2 style="margin:0;font:700 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520">Two problems, one phone call</h2>
+<span style="font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(12,21,32,.45)">RESIDENTIAL &amp; COMMERCIAL</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+<div style="background:#fff;border:1px solid rgba(12,21,32,.10);border-radius:10px;overflow:hidden">
+<div class="ph" style="height:132px">PHOTO — AIR MOVERS + DEHU<br>IN DRIED-OUT LIVING ROOM</div>
+<div style="padding:22px 22px 26px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">01 — MITIGATE</div><h3 style="margin:12px 0 9px;font:700 21px/1.2 Archivo,sans-serif;color:#0c1520">Water damage &amp; drying</h3><p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">Truck-mounted extraction, moisture mapping, and monitored drying with daily readings you can hand to your adjuster.</p></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.10);border-radius:10px;overflow:hidden">
+<div class="ph" style="height:132px">PHOTO — PLUMBER AT OPEN WALL,<br>PEX REPIPE IN PROGRESS</div>
+<div style="padding:22px 22px 26px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">02 — REPAIR</div><h3 style="margin:12px 0 9px;font:700 21px/1.2 Archivo,sans-serif;color:#0c1520">Licensed plumbing</h3><p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">Slab leak location, repipes, water heaters, sewer camera and hydro-jetting. Flat price quoted before we start.</p></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.10);border-radius:10px;overflow:hidden">
+<div class="ph" style="height:132px">PHOTO — MOISTURE METER READING<br>ON BASEBOARD, CLOSE CROP</div>
+<div style="padding:22px 22px 26px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">03 — DOCUMENT</div><h3 style="margin:12px 0 9px;font:700 21px/1.2 Archivo,sans-serif;color:#0c1520">Claim paperwork</h3><p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">Photo log, Xactimate scope, and drying logs filed for you. We speak adjuster so you don’t have to.</p></div>
+</div>
+</div>
+</div>
+
+<div style="background:#0c1520;color:#fff;padding:52px 32px;display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center">
+<div>
+<h2 style="margin:0 0 14px;font:700 32px/1.15 Archivo,sans-serif;letter-spacing:-.02em">What the first four hours look like</h2>
+<p style="margin:0;font:400 15.5px/1.6 Archivo,sans-serif;color:rgba(255,255,255,.68);text-wrap:pretty">Most of the cost of water damage happens after the water stops. Here’s the sequence we run, every time.</p>
+</div>
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)"><span style="font:500 11px/1.5 'IBM Plex Mono',monospace;color:#f2b21a">0:00</span><div><div style="font:600 15px/1.3 Archivo,sans-serif">Live dispatch</div><div style="font:400 13.5px/1.45 Archivo,sans-serif;color:rgba(255,255,255,.6)">A person answers and shuts your water off over the phone if needed.</div></div></div>
+<div style="display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)"><span style="font:500 11px/1.5 'IBM Plex Mono',monospace;color:#f2b21a">0:45</span><div><div style="font:600 15px/1.3 Archivo,sans-serif">Crew on site</div><div style="font:400 13.5px/1.45 Archivo,sans-serif;color:rgba(255,255,255,.6)">Source found and stopped, standing water extracted.</div></div></div>
+<div style="display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)"><span style="font:500 11px/1.5 'IBM Plex Mono',monospace;color:#f2b21a">2:00</span><div><div style="font:600 15px/1.3 Archivo,sans-serif">Moisture map &amp; photo log</div><div style="font:400 13.5px/1.45 Archivo,sans-serif;color:rgba(255,255,255,.6)">Every wet cavity marked before anything gets cut or removed.</div></div></div>
+<div style="display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0"><span style="font:500 11px/1.5 'IBM Plex Mono',monospace;color:#f2b21a">4:00</span><div><div style="font:600 15px/1.3 Archivo,sans-serif">Drying set, claim opened</div><div style="font:400 13.5px/1.45 Archivo,sans-serif;color:rgba(255,255,255,.6)">Equipment placed and your carrier notified the same day.</div></div></div>
+</div>
+</div>
+
+<div style="background:#f2b21a;color:#12100b;padding:44px 32px;display:flex;align-items:center;justify-content:space-between;gap:32px">
+<div><h2 style="margin:0 0 8px;font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em">Standing in water right now?</h2><p style="margin:0;font:500 15.5px/1.4 Archivo,sans-serif;opacity:.8">Call and we’ll walk you through the shutoff while the truck rolls.</p></div>
+<div style="display:flex;align-items:center;gap:14px;background:#12100b;color:#fff;padding:19px 30px;border-radius:8px;font:800 24px/1 Archivo,sans-serif;white-space:nowrap">{{ phone }}</div>
+</div>
+
+<div style="background:#12100b;color:rgba(255,255,255,.6);padding:34px 32px;display:flex;justify-content:space-between;align-items:flex-end;font:400 12.5px/1.6 Archivo,sans-serif">
+<div><div style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.14em;color:#fff;margin-bottom:9px">LEON</div>Roofing &amp; Restoration, Inc. · Hialeah, FL<br>Serving Miami-Dade &amp; Broward · Lic. CFC1428XXX</div>
+<div style="display:flex;gap:40px"><span>Water Damage</span><span>Plumbing</span><span>Claims</span><span>Careers</span></div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>“Calm authority” — light, editorial serif, reassuring. Reads like a trusted local firm, not a call center.</div>
+<div class="dv-card" style="width:1180px">
+
+<div style="background:#fbfaf7">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:22px 40px;border-bottom:1px solid rgba(11,58,93,.12)">
+<div style="display:flex;align-items:center;gap:11px">
+<div style="width:30px;height:30px;border-radius:50%;background:#0b3a5d;display:flex;align-items:center;justify-content:center;color:#fff;font:700 14px/1 Archivo,sans-serif">L</div>
+<span style="font:600 22px/1 'Source Serif 4',Georgia,serif;color:#0b3a5d;letter-spacing:-.01em">Leon <span style="font:400 22px/1 'Source Serif 4',serif;color:rgba(11,58,93,.6)">Water &amp; Plumbing</span></span>
+</div>
+<div style="display:flex;align-items:center;gap:28px;font:500 13.5px/1 Archivo,sans-serif;color:#0b3a5d">
+<span>Water Mitigation</span><span>Plumbing</span><span>Claims Help</span><span>Our Team</span><span>Areas</span>
+<div style="border:1.5px solid #0b3a5d;padding:10px 16px;border-radius:100px;font-weight:600">{{ phone }}</div>
+</div>
+</div>
+
+<div style="padding:70px 40px 60px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:22px">
+<span style="font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:rgba(11,58,93,.55)">FAMILY-OWNED IN MIAMI SINCE 2009</span>
+<h1 style="margin:0;font:400 60px/1.04 'Source Serif 4',Georgia,serif;letter-spacing:-.02em;color:#0b3a5d;text-wrap:balance">The flood is the emergency. <em style="font-style:italic">The paperwork shouldn’t be.</em></h1>
+<p style="margin:0;max-width:470px;font:400 17px/1.6 Archivo,sans-serif;color:rgba(11,58,93,.72);text-wrap:pretty">We dry the house and fix the pipe that broke it — then file the photos, readings, and scope your insurer needs. Licensed plumbers and IICRC-certified technicians on the same truck.</p>
+<div style="display:flex;gap:12px;align-items:center;padding-top:4px">
+<div style="background:#0b3a5d;color:#fff;padding:16px 26px;border-radius:100px;font:600 15.5px/1 Archivo,sans-serif">Call {{ phone }}</div>
+<div style="color:#0b3a5d;padding:16px 4px;font:600 15.5px/1 Archivo,sans-serif;border-bottom:1.5px solid rgba(11,58,93,.3)">Request an inspection</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:150px 150px;gap:10px">
+<div class="ph" style="grid-column:span 2;border-radius:6px">PHOTO — CREW GREETING HOMEOWNER AT DOOR, DAYLIGHT · 560×300</div>
+<div class="ph" style="border-radius:6px">PHOTO — DEHUMIDIFIER</div>
+<div class="ph" style="border-radius:6px">PHOTO — HANDS ON PIPE FITTING</div>
+</div>
+</div>
+</div>
+
+<div style="background:#0b3a5d;color:#fff;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;font:500 13.5px/1 Archivo,sans-serif">
+<span style="opacity:.85">24/7 emergency response · Miami-Dade, Broward &amp; the Keys</span>
+<div style="display:flex;gap:28px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;opacity:.7"><span>IICRC</span><span>FL CFC1428XXX</span><span>BBB A+</span><span>MOLD MRSR3XXX</span></div>
+</div>
+
+<div style="background:#fbfaf7;padding:60px 40px">
+<h2 style="margin:0 0 6px;font:400 36px/1.15 'Source Serif 4',Georgia,serif;color:#0b3a5d;letter-spacing:-.02em">What we handle</h2>
+<p style="margin:0 0 30px;font:400 15.5px/1.5 Archivo,sans-serif;color:rgba(11,58,93,.6)">Two licensed trades under one roof — so nobody hands you off mid-job.</p>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(11,58,93,.14);border:1px solid rgba(11,58,93,.14);border-radius:8px;overflow:hidden">
+<div style="background:#fff;padding:26px 22px 30px"><div style="width:26px;height:26px;border-radius:50%;background:#0b3a5d;opacity:.12;margin-bottom:16px"></div><h3 style="margin:0 0 9px;font:600 17.5px/1.25 Archivo,sans-serif;color:#0b3a5d">Flood &amp; storm water</h3><p style="margin:0;font:400 13.8px/1.55 Archivo,sans-serif;color:rgba(11,58,93,.66)">Extraction, structural drying, antimicrobial treatment, and contents pack-out.</p></div>
+<div style="background:#fff;padding:26px 22px 30px"><div style="width:26px;height:26px;border-radius:50%;background:#0b3a5d;opacity:.12;margin-bottom:16px"></div><h3 style="margin:0 0 9px;font:600 17.5px/1.25 Archivo,sans-serif;color:#0b3a5d">Leak detection</h3><p style="margin:0;font:400 13.8px/1.55 Archivo,sans-serif;color:rgba(11,58,93,.66)">Acoustic and thermal slab-leak location — we find it before we open anything.</p></div>
+<div style="background:#fff;padding:26px 22px 30px"><div style="width:26px;height:26px;border-radius:50%;background:#0b3a5d;opacity:.12;margin-bottom:16px"></div><h3 style="margin:0 0 9px;font:600 17.5px/1.25 Archivo,sans-serif;color:#0b3a5d">Drains &amp; sewer</h3><p style="margin:0;font:400 13.8px/1.55 Archivo,sans-serif;color:rgba(11,58,93,.66)">Camera inspection, hydro-jetting, root cutting, and line replacement.</p></div>
+<div style="background:#fff;padding:26px 22px 30px"><div style="width:26px;height:26px;border-radius:50%;background:#0b3a5d;opacity:.12;margin-bottom:16px"></div><h3 style="margin:0 0 9px;font:600 17.5px/1.25 Archivo,sans-serif;color:#0b3a5d">Repipe &amp; heaters</h3><p style="margin:0;font:400 13.8px/1.55 Archivo,sans-serif;color:rgba(11,58,93,.66)">Whole-home PEX and copper repipes, tank and tankless installs.</p></div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1.05fr .95fr">
+<div style="background:#fff;padding:56px 40px">
+<span style="font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:rgba(11,58,93,.5)">INSURANCE</span>
+<h2 style="margin:14px 0 16px;font:400 33px/1.15 'Source Serif 4',Georgia,serif;color:#0b3a5d;letter-spacing:-.02em">We bill your carrier directly</h2>
+<p style="margin:0 0 22px;font:400 15.5px/1.62 Archivo,sans-serif;color:rgba(11,58,93,.7);text-wrap:pretty">You pay your deductible; we invoice the rest. If your claim gets underpaid, our documentation is what gets it reopened — and we sit on the call with the adjuster.</p>
+<div style="display:flex;flex-direction:column;gap:11px;font:400 14.5px/1.4 Archivo,sans-serif;color:#0b3a5d">
+<div style="display:flex;gap:11px;align-items:center"><span style="width:6px;height:6px;border-radius:50%;background:#0b3a5d"></span>Same-day claim opening and adjuster contact</div>
+<div style="display:flex;gap:11px;align-items:center"><span style="width:6px;height:6px;border-radius:50%;background:#0b3a5d"></span>Xactimate scopes in the format carriers accept</div>
+<div style="display:flex;gap:11px;align-items:center"><span style="width:6px;height:6px;border-radius:50%;background:#0b3a5d"></span>Daily moisture logs, signed and time-stamped</div>
+</div>
+</div>
+<div style="background:#eef1f0;padding:56px 40px;display:flex;flex-direction:column;gap:20px;justify-content:center">
+<p style="margin:0;font:400 22px/1.45 'Source Serif 4',Georgia,serif;color:#0b3a5d;text-wrap:pretty">“Water heater let go while we were away. Leon had fans running before I got home and dealt with Citizens for six weeks so I didn’t have to.”</p>
+<div style="display:flex;align-items:center;gap:12px"><div class="ph" style="width:38px;height:38px;border-radius:50%;font-size:7px">AVATAR</div><div style="font:400 13px/1.4 Archivo,sans-serif;color:rgba(11,58,93,.65)"><strong style="font-weight:600;color:#0b3a5d">Marisol R.</strong><br>Coral Gables · Google review</div></div>
+</div>
+</div>
+
+<div style="background:#0b3a5d;color:#fff;padding:38px 40px;display:flex;align-items:center;justify-content:space-between">
+<h2 style="margin:0;font:400 30px/1.2 'Source Serif 4',Georgia,serif">Talk to a technician, not a script.</h2>
+<div style="display:flex;gap:12px"><div style="background:#fff;color:#0b3a5d;padding:15px 24px;border-radius:100px;font:600 15px/1 Archivo,sans-serif">{{ phone }}</div><div style="border:1.5px solid rgba(255,255,255,.5);padding:15px 24px;border-radius:100px;font:600 15px/1 Archivo,sans-serif">Book online</div></div>
+</div>
+<div style="background:#08293f;color:rgba(255,255,255,.55);padding:26px 40px;font:400 12.5px/1.6 Archivo,sans-serif;display:flex;justify-content:space-between"><span>© 2026 Leon Water Mitigation &amp; Plumbing, LLC</span><span>Hialeah · Miami · Fort Lauderdale · Key Largo</span></div>
+</div>
+</div>
+
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>“Grid report” — oversized type, no hero photo, data-forward. Most distinctive; least like every plumber site.</div>
+<div class="dv-card" style="width:1180px">
+
+<div style="background:#111311;color:#f4f2ec">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid rgba(244,242,236,.16);font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em">
+<span style="display:flex;gap:14px;align-items:center"><span style="width:9px;height:9px;background:#4ee39a;border-radius:2px"></span>DISPATCH OPEN · 24/7</span>
+<span>MIAMI-DADE / BROWARD</span><span>{{ phone }}</span>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:flex-end;padding:26px 28px 0">
+<div style="font:800 26px/1 Archivo,sans-serif;letter-spacing:-.02em">LEON<span style="color:#4ee39a">.</span></div>
+<div style="display:flex;gap:24px;font:500 12.5px/1 Archivo,sans-serif;color:rgba(244,242,236,.7)"><span>MITIGATION</span><span>PLUMBING</span><span>CLAIMS</span><span>WORK</span><span>CONTACT</span></div>
+</div>
+<div style="padding:8px 28px 30px">
+<h1 style="margin:0;font:800 128px/.86 Archivo,sans-serif;letter-spacing:-.045em">WE DRY IT.<br>WE FIX IT.<br><span style="color:#4ee39a">WE FILE IT.</span></h1>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(244,242,236,.16)">
+<p style="margin:0;grid-column:span 2;font:400 17px/1.55 Archivo,sans-serif;color:rgba(244,242,236,.74);text-wrap:pretty">Emergency water extraction, structural drying, and licensed plumbing repair across South Florida. One crew handles the flood and the failure that caused it — and documents both for your insurer.</p>
+<div style="font:400 13px/1.5 Archivo,sans-serif;color:rgba(244,242,236,.55)"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a;margin-bottom:8px">RESPONSE</div>45-minute average arrival, day or night, no trip charge on emergencies.</div>
+<div style="font:400 13px/1.5 Archivo,sans-serif;color:rgba(244,242,236,.55)"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#4ee39a;margin-bottom:8px">CREDENTIALS</div>FL Lic. CFC1428XXX · IICRC WRT/ASD · Mold MRSR3XXX.</div>
+</div>
+<div style="display:flex;gap:12px;margin-top:28px">
+<div style="background:#4ee39a;color:#0d1a13;padding:17px 28px;font:700 16px/1 Archivo,sans-serif;border-radius:3px">CALL {{ phone }}</div>
+<div style="border:1px solid rgba(244,242,236,.32);padding:17px 28px;font:600 16px/1 Archivo,sans-serif;border-radius:3px">GET A FLAT QUOTE</div>
+</div>
+</div>
+</div>
+
+<div style="background:#f4f2ec;padding:0 28px 4px">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(17,19,17,.16)">
+<div style="background:#f4f2ec;padding:34px 0 30px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">01 / EMERGENCY</div><h3 style="margin:14px 0 10px;font:800 27px/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">WATER<br>MITIGATION</h3><p style="margin:0;padding-right:24px;font:400 14px/1.55 Archivo,sans-serif;color:rgba(17,19,17,.65)">Extraction, moisture mapping, monitored drying, antimicrobial, contents care.</p></div>
+<div style="background:#f4f2ec;padding:34px 0 30px 28px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">02 / SCHEDULED</div><h3 style="margin:14px 0 10px;font:800 27px/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">LICENSED<br>PLUMBING</h3><p style="margin:0;padding-right:24px;font:400 14px/1.55 Archivo,sans-serif;color:rgba(17,19,17,.65)">Slab leaks, repipes, water heaters, drains, sewer camera, hydro-jetting.</p></div>
+<div style="background:#f4f2ec;padding:34px 0 30px 28px"><div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(17,19,17,.5)">03 / ADMIN</div><h3 style="margin:14px 0 10px;font:800 27px/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:#111311">CLAIM<br>SUPPORT</h3><p style="margin:0;padding-right:24px;font:400 14px/1.55 Archivo,sans-serif;color:rgba(17,19,17,.65)">Photo logs, Xactimate scope, adjuster calls, direct carrier billing.</p></div>
+</div>
+</div>
+
+<div style="background:#f4f2ec;padding:44px 28px 52px;display:grid;grid-template-columns:1fr 1fr;gap:28px">
+<div class="ph" style="height:300px;border-radius:4px">PHOTO — WIDE SHOT, EQUIPMENT<br>STAGED IN GUTTED ROOM · 560×600</div>
+<div style="display:flex;flex-direction:column;justify-content:space-between">
+<div>
+<h2 style="margin:0 0 18px;font:800 40px/1.06 Archivo,sans-serif;letter-spacing:-.03em;color:#111311">MOST WATER CLAIMS ARE LOST IN THE FIRST DAY.</h2>
+<p style="margin:0;font:400 15.5px/1.6 Archivo,sans-serif;color:rgba(17,19,17,.68);text-wrap:pretty">Carriers deny what nobody documented. Before we cut a single piece of drywall, we record the source, the extent, and the readings — and we keep recording until the structure is dry.</p>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px">
+<div style="border-top:2px solid #111311;padding-top:12px"><div style="font:800 40px/1 Archivo,sans-serif;color:#111311">100%</div><div style="font:400 12.5px/1.4 Archivo,sans-serif;color:rgba(17,19,17,.6);margin-top:6px">Jobs with a full photo and moisture log</div></div>
+<div style="border-top:2px solid #111311;padding-top:12px"><div style="font:800 40px/1 Archivo,sans-serif;color:#111311">3–5</div><div style="font:400 12.5px/1.4 Archivo,sans-serif;color:rgba(17,19,17,.6);margin-top:6px">Typical days to a dry, signed-off structure</div></div>
+</div>
+</div>
+</div>
+
+<div style="background:#4ee39a;color:#0d1a13;padding:34px 28px;display:flex;justify-content:space-between;align-items:center">
+<span style="font:800 30px/1 Archivo,sans-serif;letter-spacing:-.025em">FLOODED? CALL NOW.</span>
+<span style="font:800 30px/1 Archivo,sans-serif;letter-spacing:-.02em">{{ phone }}</span>
+</div>
+<div style="background:#111311;color:rgba(244,242,236,.5);padding:24px 28px;display:flex;justify-content:space-between;font:500 11px/1.6 'IBM Plex Mono',monospace;letter-spacing:.08em"><span>LEON ROOFING &amp; RESTORATION, INC.</span><span>HIALEAH FL · EST. 2009 · LIC CFC1428XXX</span></div>
+</div>
+</div>
+
+<div class="dv-opt" id="1d">
+<div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a>Mobile emergency screen (direction <a class="dv-oid" href="#1a">1a</a>) — where most 2am traffic actually lands.</div>
+<div class="dv-card" style="width:390px;border-radius:26px">
+<div style="background:#0c1520;color:#fff">
+<div style="display:flex;justify-content:space-between;padding:11px 22px 6px;font:600 12px/1 Archivo,sans-serif;color:rgba(255,255,255,.85)"><span>2:14</span><span>▮▮▮ ⌁</span></div>
+<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:1px solid rgba(255,255,255,.1)">
+<div style="display:flex;align-items:center;gap:9px"><div style="width:24px;height:24px;background:#f2b21a;transform:rotate(45deg);border-radius:3px"></div><span style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.12em">LEON</span></div>
+<span style="font:600 13px/1 Archivo,sans-serif;color:rgba(255,255,255,.7)">MENU</span>
+</div>
+<div style="padding:26px 18px 22px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:center;gap:8px;font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#f2b21a"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>DISPATCH ANSWERING NOW</div>
+<h1 style="margin:0;font:800 38px/.98 Archivo,sans-serif;letter-spacing:-.025em">Water doesn’t wait.</h1>
+<p style="margin:0;font:400 15px/1.5 Archivo,sans-serif;color:rgba(255,255,255,.7)">Burst pipe or flooding in Miami-Dade or Broward? We’ll talk you through the shutoff while a crew rolls.</p>
+<div style="background:#f2b21a;color:#12100b;padding:19px;border-radius:9px;text-align:center;font:800 20px/1 Archivo,sans-serif">Call {{ phone }}</div>
+<div style="border:1px solid rgba(255,255,255,.28);padding:17px;border-radius:9px;text-align:center;font:600 15px/1 Archivo,sans-serif">Text photos of the damage</div>
+</div>
+<div class="phd" style="height:150px">PHOTO — NIGHT EXTRACTION · 390×300</div>
+<div style="padding:20px 18px;display:flex;flex-direction:column;gap:10px;border-top:1px solid rgba(255,255,255,.1)">
+<div style="display:flex;justify-content:space-between;font:500 13.5px/1.4 Archivo,sans-serif"><span>Water extraction &amp; drying</span><span style="color:#f2b21a">→</span></div>
+<div style="height:1px;background:rgba(255,255,255,.1)"></div>
+<div style="display:flex;justify-content:space-between;font:500 13.5px/1.4 Archivo,sans-serif"><span>Emergency plumbing repair</span><span style="color:#f2b21a">→</span></div>
+<div style="height:1px;background:rgba(255,255,255,.1)"></div>
+<div style="display:flex;justify-content:space-between;font:500 13.5px/1.4 Archivo,sans-serif"><span>Insurance claim help</span><span style="color:#f2b21a">→</span></div>
+</div>
+<div style="background:#12100b;padding:18px;display:flex;justify-content:space-between;font:500 11px/1.5 'IBM Plex Mono',monospace;color:rgba(255,255,255,.5);letter-spacing:.06em"><span>LIC CFC1428XXX</span><span>IICRC CERTIFIED</span></div>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: “build out <a class="dv-oid" href="#1a">1a</a> into the water-damage service page + booking flow” · “<a class="dv-oid" href="#1c">1c</a> type scale with <a class="dv-oid" href="#1b">1b</a>’s light palette” · “give me a real logo lockup for Leon in 3 styles”</p>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;phone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;(786) 702-2090&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { phone: this.props.phone ?? "(786) 702-2090" };
+  }
+}
+</script>
+</body>
+</html>

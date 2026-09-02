@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><script src="site-content.js"></script><style>
+body{margin:0;background:#f7f5f1;font-family:Archivo,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#0c1520;text-decoration:none}a:hover{color:#b8850c}
+input,select,textarea,button{font-family:Archivo,Helvetica,sans-serif}
+</style></helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#f7f5f1">
+
+<div style="background:#f2b21a;color:#12100b;padding:8px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;font:600 12px/1.3 Archivo,sans-serif;flex-wrap:wrap">
+<span>{{ c.topbar }}</span>
+<div style="display:flex;gap:18px;font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.1em">
+<sc-for list="{{ c.strip }}" as="cred" hint-placeholder-count="4"><span>{{ cred }}</span></sc-for>
+</div>
+</div>
+
+<div style="background:#0c1520;color:#fff;position:sticky;top:0;z-index:40;box-shadow:0 2px 14px rgba(0,0,0,.18)">
+<div style="max-width:1400px;margin:0 auto;padding:12px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+<div style="display:flex;align-items:center;gap:12px;cursor:pointer" onClick="{{ goHome }}">
+<img src="assets/leon-lion-mark-900.png" alt="Leon Roofing &amp; Restoration" style="width:44px;height:auto;display:block">
+<div style="display:flex;flex-direction:column;gap:3px;flex:none">
+<span style="font:800 20px/1 Archivo,sans-serif;letter-spacing:.09em">LEON</span>
+<span style="font:500 8px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#e6bb5c;white-space:nowrap">ROOFING &amp; RESTORATION</span>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:24px">
+<sc-for list="{{ navItems }}" as="item" hint-placeholder-count="5">
+<span onClick="{{ item.go }}" style="font:500 13.5px/1 Archivo,sans-serif;color:rgba(255,255,255,.82);cursor:pointer;padding:6px 0;border-bottom:1.5px solid transparent" style-hover="color:#fff;border-bottom-color:#f2b21a">{{ item.label }}</span>
+</sc-for>
+<span onClick="{{ toggleLang }}" style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.25);border-radius:5px;padding:8px 10px;cursor:pointer" style-hover="color:#fff;border-color:#f2b21a">{{ langToggleLabel }}</span>
+<a href="tel:7867022090" style="display:flex;align-items:center;gap:9px;background:#f2b21a;color:#12100b;padding:11px 18px;border-radius:6px;font:700 14px/1 Archivo,sans-serif;text-decoration:none" style-hover="background:#ffc63c"><span style="width:7px;height:7px;border-radius:50%;background:#12100b"></span>{{ phone }}</a>
+</div>
+</div>
+</div>
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<div>
+<div style="background:#0c1520;color:#fff">
+<div style="max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr">
+<div style="padding:72px 48px 66px 32px;display:flex;flex-direction:column;justify-content:center;gap:24px">
+<div style="display:inline-flex;align-items:center;gap:9px;font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#f2b21a"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>{{ c.emergency }}</div>
+<h1 style="margin:0;font:800 64px/.95 Archivo,sans-serif;letter-spacing:-.03em;text-wrap:balance">{{ c.home.h1a }}<br><span style="color:#f2b21a">{{ c.home.h1b }}</span></h1>
+<p style="margin:0;max-width:520px;font:400 17.5px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.74);text-wrap:pretty">{{ c.home.sub }}</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:4px">
+<a href="tel:7867022090" style="background:#f2b21a;color:#12100b;padding:17px 26px;border-radius:7px;font:700 16px/1 Archivo,sans-serif;text-decoration:none" style-hover="background:#ffc63c">{{ c.ctaCall }} {{ phone }}</a>
+<span onClick="{{ goContact }}" style="border:1px solid rgba(255,255,255,.28);color:#fff;padding:17px 26px;border-radius:7px;font:600 16px/1 Archivo,sans-serif;cursor:pointer" style-hover="border-color:#f2b21a;color:#f2b21a">{{ c.ctaForm }} →</span>
+</div>
+<div style="display:flex;gap:30px;flex-wrap:wrap;padding-top:12px;font:500 12.5px/1.4 Archivo,sans-serif;color:rgba(255,255,255,.62)">
+<sc-for list="{{ c.home.bullets }}" as="b" hint-placeholder-count="3"><span>{{ b }}</span></sc-for>
+</div>
+</div>
+<div role="img" aria-label="Leon technician scanning for moisture with a thermal camera" style="display:flex;align-items:center;justify-content:center;background:{{ heroBg }};border-left:1px solid rgba(255,255,255,.1);min-height:460px">
+<div style="font:500 10px/1.7 'IBM Plex Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5);text-align:center;padding:20px">{{ c.home.heroPhoto }}</div>
+</div>
+</div>
+</div>
+
+<div style="background:#12100b;color:#fff;padding:52px 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center">
+<div>
+<h2 style="margin:0 0 14px;font:700 32px/1.13 Archivo,sans-serif;letter-spacing:-.02em">{{ c.home.proofTitle }}</h2>
+<p style="margin:0;font:400 15.5px/1.62 Archivo,sans-serif;color:rgba(255,255,255,.68);text-wrap:pretty">{{ c.home.proofBody }}</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);border-radius:10px;overflow:hidden">
+<sc-for list="{{ c.home.proofPoints }}" as="p" hint-placeholder-count="3">
+<div style="background:#12100b;padding:24px 22px">
+<div style="width:22px;height:22px;border-radius:50%;background:#f2b21a;opacity:.9;margin-bottom:16px"></div>
+<h3 style="margin:0 0 8px;font:700 16.5px/1.25 Archivo,sans-serif">{{ p.h }}</h3>
+<p style="margin:0;font:400 13.5px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.62)">{{ p.p }}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+
+<div style="background:#f7f5f1;padding:64px 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:8px">
+<h2 style="margin:0;font:700 34px/1.1 Archivo,sans-serif;letter-spacing:-.025em;color:#0c1520">{{ c.home.servicesTitle }}</h2>
+<span onClick="{{ goServices }}" style="font:600 13.5px/1 Archivo,sans-serif;color:#b8850c;cursor:pointer;white-space:nowrap">{{ c.servicesPage.title }} →</span>
+</div>
+<p style="margin:0 0 28px;font:400 15.5px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.62)">{{ c.home.servicesSub }}</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px">
+<sc-for list="{{ homeServices }}" as="s" hint-placeholder-count="6">
+<div onClick="{{ s.go }}" style="background:#fff;border:1px solid rgba(12,21,32,.11);border-radius:10px;overflow:hidden;cursor:pointer;transition:box-shadow .15s,transform .15s" style-hover="box-shadow:0 10px 26px rgba(12,21,32,.12);transform:translateY(-2px)">
+<div role="img" aria-label="{{ s.title }}" style="height:112px;background:{{ s.cardBg }};display:flex;align-items:center;justify-content:center;padding:14px;font:500 9.5px/1.6 'IBM Plex Mono',monospace;letter-spacing:.08em;color:rgba(0,0,0,.42);text-align:center">{{ s.photo }}</div>
+<div style="padding:20px 22px 24px">
+<div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8850c">{{ s.num }}</div>
+<h3 style="margin:11px 0 8px;font:700 20px/1.2 Archivo,sans-serif;color:#0c1520;letter-spacing:-.01em">{{ s.title }}</h3>
+<p style="margin:0;font:400 14.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">{{ s.blurb }}</p>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+
+<div style="background:#0c1520;color:#fff;padding:60px 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px">
+<h2 style="margin:0 0 10px;font:700 32px/1.13 Archivo,sans-serif;letter-spacing:-.02em">{{ c.home.processTitle }}</h2>
+<p style="margin:0 0 32px;max-width:640px;font:400 15.5px/1.6 Archivo,sans-serif;color:rgba(255,255,255,.66)">{{ c.home.processSub }}</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16)">
+<sc-for list="{{ c.home.process }}" as="st" hint-placeholder-count="5">
+<div style="background:#0c1520;padding:24px 20px 28px">
+<div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.13em;color:#f2b21a">{{ st.t }}</div>
+<h3 style="margin:14px 0 8px;font:700 17px/1.22 Archivo,sans-serif">{{ st.h }}</h3>
+<p style="margin:0;font:400 13.5px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.62)">{{ st.p }}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+
+<div style="background:#fff;border-top:1px solid rgba(12,21,32,.08)">
+<div style="max-width:1400px;margin:0 auto;display:grid;grid-template-columns:.95fr 1.05fr">
+<div style="padding:56px 40px 56px 32px;display:flex;flex-direction:column;justify-content:center;gap:16px">
+<span style="font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:rgba(12,21,32,.5)">EQUIPMENT</span>
+<h2 style="margin:0;font:700 30px/1.15 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520;text-wrap:balance">{{ c.home.equipTitle }}</h2>
+<p style="margin:0;font:400 15.5px/1.62 Archivo,sans-serif;color:rgba(12,21,32,.7);text-wrap:pretty">{{ c.home.equipBody }}</p>
+</div>
+<div role="img" aria-label="Leon service van loaded with drying equipment" style="min-height:380px;background:{{ vanBg }}"></div>
+</div>
+</div>
+
+<div style="background:#f7f5f1;padding:60px 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px">
+<h2 style="margin:0;font:700 32px/1.1 Archivo,sans-serif;letter-spacing:-.025em;color:#0c1520">{{ c.home.workTitle }}</h2>
+<span onClick="{{ goWork }}" style="font:600 13.5px/1 Archivo,sans-serif;color:#b8850c;cursor:pointer;white-space:nowrap">{{ c.workPage.title }} →</span>
+</div>
+<p style="margin:8px 0 26px;font:400 15.5px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.62)">{{ c.home.workSub }}</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px">
+<sc-for list="{{ homeWork }}" as="w" hint-placeholder-count="4">
+<div style="border-radius:9px;overflow:hidden;background:#fff;border:1px solid rgba(12,21,32,.1)">
+<div role="img" aria-label="{{ w.caption }}" style="width:100%;height:200px;background-image:{{ w.bg }};background-size:cover;background-position:center;background-color:#e4e0d9"></div>
+<div style="padding:12px 14px;font:500 12.5px/1.3 Archivo,sans-serif;color:rgba(12,21,32,.7)">{{ w.caption }}</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+
+<div style="background:#fff;padding:58px 0;border-top:1px solid rgba(12,21,32,.08);border-bottom:1px solid rgba(12,21,32,.08)">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:44px">
+<div>
+<span style="font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:rgba(12,21,32,.5)">INSURANCE</span>
+<h2 style="margin:13px 0 14px;font:700 30px/1.15 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520">{{ c.home.claimTitle }}</h2>
+<p style="margin:0 0 20px;font:400 15.5px/1.62 Archivo,sans-serif;color:rgba(12,21,32,.7);text-wrap:pretty">{{ c.home.claimBody }}</p>
+<div style="display:flex;flex-direction:column;gap:10px;font:400 14.5px/1.4 Archivo,sans-serif;color:#0c1520">
+<sc-for list="{{ c.home.claimPoints }}" as="p" hint-placeholder-count="3">
+<div style="display:flex;gap:11px;align-items:center"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a;flex:none"></span>{{ p }}</div>
+</sc-for>
+</div>
+<span onClick="{{ goClaims }}" style="display:inline-block;margin-top:22px;font:600 14px/1 Archivo,sans-serif;color:#b8850c;cursor:pointer">{{ claimsLinkLabel }} →</span>
+</div>
+<div>
+<h2 style="margin:0 0 6px;font:700 24px/1.2 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520">{{ c.home.reviewsTitle }}</h2>
+<div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:rgba(12,21,32,.4);margin-bottom:16px">{{ c.home.reviewsNote }}</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<sc-for list="{{ reviewSlots }}" as="r" hint-placeholder-count="3">
+<div style="border:1px dashed rgba(12,21,32,.28);border-radius:9px;padding:20px 22px;background:#faf9f6">
+<div style="display:flex;gap:4px;margin-bottom:10px"><sc-for list="{{ r.stars }}" as="s" hint-placeholder-count="5"><span style="width:11px;height:11px;background:#f2b21a;border-radius:2px"></span></sc-for></div>
+<div style="height:9px;border-radius:5px;background:rgba(12,21,32,.1);margin-bottom:7px"></div>
+<div style="height:9px;border-radius:5px;background:rgba(12,21,32,.1);width:82%;margin-bottom:7px"></div>
+<div style="height:9px;border-radius:5px;background:rgba(12,21,32,.1);width:54%"></div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</div>
+
+<div style="background:#f2b21a;color:#12100b;padding:44px 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap">
+<div><h2 style="margin:0 0 8px;font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.025em">{{ c.home.ctaTitle }}</h2><p style="margin:0;font:500 15.5px/1.4 Archivo,sans-serif;opacity:.82">{{ c.home.ctaSub }}</p></div>
+<a href="tel:7867022090" style="background:#12100b;color:#fff;padding:19px 30px;border-radius:8px;font:800 24px/1 Archivo,sans-serif;white-space:nowrap;text-decoration:none">{{ phone }}</a>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isService }}" hint-placeholder-val="{{ false }}">
+<div>
+<div style="background:#0c1520;color:#fff">
+<div style="max-width:1400px;margin:0 auto;padding:14px 32px 0;font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:rgba(255,255,255,.45)">{{ crumb }}</div>
+<div style="max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;padding:26px 32px 54px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:20px">
+<h1 style="margin:0;font:800 50px/1 Archivo,sans-serif;letter-spacing:-.03em;text-wrap:balance">{{ svc.title }}</h1>
+<p style="margin:0;max-width:540px;font:400 17px/1.58 Archivo,sans-serif;color:rgba(255,255,255,.74);text-wrap:pretty">{{ svc.intro }}</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<a href="tel:7867022090" style="background:#f2b21a;color:#12100b;padding:16px 24px;border-radius:7px;font:700 15.5px/1 Archivo,sans-serif;text-decoration:none" style-hover="background:#ffc63c">{{ c.ctaCall }} {{ phone }}</a>
+<span onClick="{{ goContact }}" style="border:1px solid rgba(255,255,255,.28);padding:16px 24px;border-radius:7px;font:600 15.5px/1 Archivo,sans-serif;cursor:pointer" style-hover="border-color:#f2b21a;color:#f2b21a">{{ c.ctaForm }}</span>
+</div>
+</div>
+<div role="img" aria-label="{{ svc.title }}" style="min-height:340px;border-radius:8px;background:{{ svcBg }};display:flex;align-items:center;justify-content:center;padding:24px;font:500 10px/1.7 'IBM Plex Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5);text-align:center">{{ svc.photo }}</div>
+</div>
+</div>
+
+<div style="background:#f7f5f1;padding:52px 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1.4fr .6fr;gap:36px;align-items:start">
+<div>
+<h2 style="margin:0 0 18px;font:700 27px/1.2 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520">{{ c.includesTitle }}</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(12,21,32,.12);border:1px solid rgba(12,21,32,.12);border-radius:10px;overflow:hidden">
+<sc-for list="{{ svc.includes }}" as="i" hint-placeholder-count="4">
+<div style="background:#fff;padding:22px 24px"><h3 style="margin:0 0 7px;font:700 16px/1.25 Archivo,sans-serif;color:#0c1520">{{ i.h }}</h3><p style="margin:0;font:400 13.8px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66)">{{ i.p }}</p></div>
+</sc-for>
+</div>
+
+<h2 style="margin:36px 0 16px;font:700 27px/1.2 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520">{{ c.stepsTitle }}</h2>
+<div style="display:flex;flex-direction:column">
+<sc-for list="{{ svcSteps }}" as="st" hint-placeholder-count="4">
+<div style="display:grid;grid-template-columns:38px 1fr;gap:16px;padding:16px 0;border-top:1px solid rgba(12,21,32,.16)">
+<span style="font:500 11px/1.6 'IBM Plex Mono',monospace;color:#b8850c">{{ st.n }}</span>
+<div><div style="font:700 15.5px/1.3 Archivo,sans-serif;color:#0c1520">{{ st.h }}</div><div style="font:400 14px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66)">{{ st.p }}</div></div>
+</div>
+</sc-for>
+</div>
+
+<h2 style="margin:36px 0 16px;font:700 27px/1.2 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520">{{ c.faqTitle }}</h2>
+<div style="display:flex;flex-direction:column;gap:1px;background:rgba(12,21,32,.12);border:1px solid rgba(12,21,32,.12);border-radius:10px;overflow:hidden">
+<sc-for list="{{ faqs }}" as="f" hint-placeholder-count="3">
+<div style="background:#fff">
+<div onClick="{{ f.toggle }}" style="padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer" style-hover="background:#faf9f6">
+<span style="font:600 15px/1.35 Archivo,sans-serif;color:#0c1520">{{ f.q }}</span>
+<span style="color:#b8850c;font:400 19px/1 Archivo,sans-serif;flex:none">{{ f.sign }}</span>
+</div>
+<sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+<div style="padding:0 22px 20px;font:400 14.2px/1.62 Archivo,sans-serif;color:rgba(12,21,32,.68);max-width:760px;text-wrap:pretty">{{ f.a }}</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:16px;position:sticky;top:88px">
+<div style="background:#0c1520;color:#fff;border-radius:12px;padding:24px">
+<div style="display:flex;align-items:center;gap:8px;font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#f2b21a;margin-bottom:13px"><span style="width:6px;height:6px;border-radius:50%;background:#f2b21a"></span>{{ c.sidebarTitle }}</div>
+<a href="tel:7867022090" style="display:block;font:800 25px/1.1 Archivo,sans-serif;color:#fff;margin-bottom:8px;text-decoration:none">{{ phone }}</a>
+<p style="margin:0 0 16px;font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(255,255,255,.65)">{{ c.sidebarBody }}</p>
+<div onClick="{{ goContact }}" style="background:#f2b21a;color:#12100b;padding:14px;border-radius:7px;text-align:center;font:700 14.5px/1 Archivo,sans-serif;cursor:pointer" style-hover="background:#ffc63c">{{ c.ctaForm }}</div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:12px;padding:22px">
+<div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(12,21,32,.5);margin-bottom:13px">{{ c.aboutPage.credsTitle }}</div>
+<div style="display:flex;flex-direction:column;gap:9px;font:400 13.5px/1.4 Archivo,sans-serif;color:#0c1520">
+<sc-for list="{{ c.aboutPage.creds }}" as="cr" hint-placeholder-count="4"><span>{{ cr }}</span></sc-for>
+</div>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:12px;padding:22px">
+<div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(12,21,32,.5);margin-bottom:13px">{{ c.relatedTitle }}</div>
+<div style="display:flex;flex-direction:column;gap:11px">
+<sc-for list="{{ related }}" as="r" hint-placeholder-count="3">
+<span onClick="{{ r.go }}" style="font:600 14px/1.35 Archivo,sans-serif;color:#0c1520;cursor:pointer" style-hover="color:#b8850c">{{ r.title }} →</span>
+</sc-for>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="background:#f2b21a;color:#12100b;padding:34px 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+<span style="font:800 27px/1.15 Archivo,sans-serif;letter-spacing:-.02em">{{ c.home.ctaTitle }}</span>
+<a href="tel:7867022090" style="background:#12100b;color:#fff;padding:16px 26px;border-radius:8px;font:800 21px/1 Archivo,sans-serif;text-decoration:none">{{ phone }}</a>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isServices }}" hint-placeholder-val="{{ false }}">
+<div>
+<div style="background:#0c1520;color:#fff;padding:54px 0 48px">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px">
+<h1 style="margin:0 0 14px;font:800 50px/1 Archivo,sans-serif;letter-spacing:-.03em">{{ c.servicesPage.title }}</h1>
+<p style="margin:0;max-width:620px;font:400 17px/1.58 Archivo,sans-serif;color:rgba(255,255,255,.72)">{{ c.servicesPage.sub }}</p>
+</div>
+</div>
+<div style="background:#f7f5f1;padding:52px 0 64px">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:flex;flex-direction:column;gap:44px">
+<sc-for list="{{ serviceGroups }}" as="g" hint-placeholder-count="2">
+<div>
+<div style="font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:rgba(12,21,32,.5);padding-bottom:14px;border-bottom:1px solid rgba(12,21,32,.18)">{{ g.label }}</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:22px">
+<sc-for list="{{ g.items }}" as="s" hint-placeholder-count="5">
+<div onClick="{{ s.go }}" style="background:#fff;border:1px solid rgba(12,21,32,.11);border-radius:10px;padding:24px;cursor:pointer;display:flex;flex-direction:column;gap:9px" style-hover="box-shadow:0 10px 26px rgba(12,21,32,.12);transform:translateY(-2px)">
+<h3 style="margin:0;font:700 19px/1.22 Archivo,sans-serif;color:#0c1520;letter-spacing:-.01em">{{ s.title }}</h3>
+<p style="margin:0;font:400 14.2px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66);text-wrap:pretty">{{ s.blurb }}</p>
+<span style="margin-top:4px;font:600 13px/1 Archivo,sans-serif;color:#b8850c">→</span>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isWork }}" hint-placeholder-val="{{ false }}">
+<div>
+<div style="background:#0c1520;color:#fff;padding:54px 0 48px">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px">
+<h1 style="margin:0 0 14px;font:800 50px/1 Archivo,sans-serif;letter-spacing:-.03em">{{ c.workPage.title }}</h1>
+<p style="margin:0;max-width:640px;font:400 17px/1.58 Archivo,sans-serif;color:rgba(255,255,255,.72)">{{ c.workPage.sub }}</p>
+</div>
+</div>
+<div style="background:#f7f5f1;padding:44px 0 64px">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px">
+<sc-for list="{{ allWork }}" as="w" hint-placeholder-count="8">
+<div style="background:#fff;border:1px solid rgba(12,21,32,.1);border-radius:10px;overflow:hidden">
+<div role="img" aria-label="{{ w.caption }}" style="width:100%;height:250px;background-image:{{ w.bg }};background-size:cover;background-position:center;background-color:#e4e0d9"></div>
+<div style="padding:13px 15px;display:flex;justify-content:space-between;align-items:center;gap:10px">
+<span style="font:500 13px/1.3 Archivo,sans-serif;color:rgba(12,21,32,.72)">{{ w.caption }}</span>
+<span style="font:500 9.5px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;color:rgba(12,21,32,.35)">{{ w.n }}</span>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isAreas }}" hint-placeholder-val="{{ false }}">
+<div>
+<div style="background:#0c1520;color:#fff;padding:54px 0 48px">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px">
+<h1 style="margin:0 0 14px;font:800 50px/1 Archivo,sans-serif;letter-spacing:-.03em">{{ c.areasPage.title }}</h1>
+<p style="margin:0;max-width:660px;font:400 17px/1.58 Archivo,sans-serif;color:rgba(255,255,255,.72);text-wrap:pretty">{{ c.areasPage.sub }}</p>
+</div>
+</div>
+<div style="background:#f7f5f1;padding:36px 0 64px">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px">
+<div style="height:300px;border-radius:10px;background:repeating-linear-gradient(135deg,#dedad2 0 7px,#e9e5de 7px 14px);display:flex;align-items:center;justify-content:center;font:500 10px/1.6 'IBM Plex Mono',monospace;letter-spacing:.08em;color:rgba(0,0,0,.42);margin-bottom:34px">{{ c.areasPage.mapNote }}</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px">
+<sc-for list="{{ c.areasPage.counties }}" as="ct" hint-placeholder-count="3">
+<div style="background:#fff;border:1px solid rgba(12,21,32,.11);border-radius:10px;padding:26px">
+<h2 style="margin:0 0 16px;font:700 21px/1.2 Archivo,sans-serif;color:#0c1520;letter-spacing:-.01em">{{ ct.name }}</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:9px 16px;font:400 14px/1.4 Archivo,sans-serif;color:rgba(12,21,32,.7)">
+<sc-for list="{{ ct.cities }}" as="city" hint-placeholder-count="10"><span>{{ city }}</span></sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+<div>
+<div style="background:#0c1520;color:#fff;padding:54px 0 52px">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center">
+<div>
+<h1 style="margin:0 0 16px;font:800 46px/1.03 Archivo,sans-serif;letter-spacing:-.03em;text-wrap:balance">{{ c.aboutPage.title }}</h1>
+<p style="margin:0;font:400 17px/1.58 Archivo,sans-serif;color:rgba(255,255,255,.74);text-wrap:pretty">{{ c.aboutPage.sub }}</p>
+</div>
+<div role="img" aria-label="Uriah Leon, Leon Roofing &amp; Restoration" style="min-height:400px;border-radius:8px;background:{{ aboutBg }};display:flex;align-items:center;justify-content:center;padding:20px;font:500 10px/1.7 'IBM Plex Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5);text-align:center">{{ c.aboutPage.photo }}</div>
+</div>
+</div>
+<div style="background:#fff;padding:56px 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1.2fr .8fr;gap:48px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<sc-for list="{{ c.aboutPage.body }}" as="p" hint-placeholder-count="2">
+<p style="margin:0;font:400 17px/1.65 Archivo,sans-serif;color:rgba(12,21,32,.78);text-wrap:pretty">{{ p }}</p>
+</sc-for>
+</div>
+<div style="border-left:1px solid rgba(12,21,32,.14);padding-left:32px">
+<div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(12,21,32,.5);margin-bottom:16px">{{ c.aboutPage.credsTitle }}</div>
+<div style="display:flex;flex-direction:column;gap:12px;font:600 15px/1.35 Archivo,sans-serif;color:#0c1520">
+<sc-for list="{{ c.aboutPage.creds }}" as="cr" hint-placeholder-count="4"><span>{{ cr }}</span></sc-for>
+</div>
+</div>
+</div>
+</div>
+<div style="background:#f7f5f1;padding:56px 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px">
+<h2 style="margin:0 0 24px;font:700 30px/1.15 Archivo,sans-serif;letter-spacing:-.02em;color:#0c1520">{{ c.aboutPage.valuesTitle }}</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:rgba(12,21,32,.14);border:1px solid rgba(12,21,32,.14);border-radius:10px;overflow:hidden">
+<sc-for list="{{ c.aboutPage.values }}" as="v" hint-placeholder-count="4">
+<div style="background:#fff;padding:26px 24px"><h3 style="margin:0 0 8px;font:700 17px/1.25 Archivo,sans-serif;color:#0c1520">{{ v.h }}</h3><p style="margin:0;font:400 14px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66)">{{ v.p }}</p></div>
+</sc-for>
+</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
+<div>
+<div style="background:#0c1520;color:#fff;padding:50px 0 44px">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px">
+<h1 style="margin:0 0 14px;font:800 46px/1 Archivo,sans-serif;letter-spacing:-.03em">{{ c.contactPage.title }}</h1>
+<p style="margin:0;max-width:620px;font:400 16.5px/1.58 Archivo,sans-serif;color:rgba(255,255,255,.72)">{{ c.contactPage.sub }}</p>
+</div>
+</div>
+<div style="background:#f7f5f1;padding:44px 0 64px">
+<div style="max-width:1400px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1.35fr .65fr;gap:32px;align-items:start">
+
+<sc-if value="{{ formSent }}" hint-placeholder-val="{{ false }}">
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:12px;padding:56px 40px;text-align:center">
+<div style="width:44px;height:44px;border-radius:50%;background:#f2b21a;margin:0 auto 20px"></div>
+<h2 style="margin:0 0 10px;font:700 26px/1.2 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.sentTitle }}</h2>
+<p style="margin:0 0 24px;font:400 15.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.66)">{{ c.contactPage.sentBody }}</p>
+<a href="tel:7867022090" style="display:inline-block;background:#0c1520;color:#fff;padding:15px 26px;border-radius:7px;font:700 16px/1 Archivo,sans-serif;text-decoration:none">{{ phone }}</a>
+</div>
+</sc-if>
+
+<sc-if value="{{ formOpen }}" hint-placeholder-val="{{ true }}">
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:12px;padding:32px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.name }}<input type="text" style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc"></label>
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.phone }}<input type="tel" style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc"></label>
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.email }}<input type="email" style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc"></label>
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.address }}<input type="text" style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc"></label>
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.damage }}
+<select style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc">
+<sc-for list="{{ c.contactPage.damageOptions }}" as="o" hint-placeholder-count="4"><option>{{ o }}</option></sc-for>
+</select></label>
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.when }}
+<select style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc">
+<sc-for list="{{ c.contactPage.whenOptions }}" as="o" hint-placeholder-count="4"><option>{{ o }}</option></sc-for>
+</select></label>
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.carrier }}<input type="text" style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc"></label>
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.claim }}<input type="text" style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc"></label>
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.role }}
+<select style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc">
+<sc-for list="{{ c.contactPage.roleOptions }}" as="o" hint-placeholder-count="4"><option>{{ o }}</option></sc-for>
+</select></label>
+<label style="display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.callback }}
+<select style="padding:13px 14px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:15px;color:#0c1520;background:#fdfdfc">
+<sc-for list="{{ c.contactPage.callbackOptions }}" as="o" hint-placeholder-count="4"><option>{{ o }}</option></sc-for>
+</select></label>
+</div>
+<div style="margin-top:18px;display:flex;flex-direction:column;gap:7px;font:600 12px/1 Archivo,sans-serif;color:#0c1520">{{ c.contactPage.fields.photos }}
+<div style="border:1.5px dashed rgba(12,21,32,.28);border-radius:9px;padding:26px;text-align:center;font:400 13.5px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.55);background:#faf9f6;cursor:pointer" style-hover="border-color:#f2b21a;background:#fffdf6">{{ c.contactPage.dropNote }}</div>
+</div>
+<div onClick="{{ submit }}" style="margin-top:22px;background:#f2b21a;color:#12100b;padding:17px;border-radius:8px;text-align:center;font:700 16px/1 Archivo,sans-serif;cursor:pointer" style-hover="background:#ffc63c">{{ c.contactPage.submit }}</div>
+<p style="margin:14px 0 0;font:400 12px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.5)">{{ c.contactPage.privacy }}</p>
+</div>
+</sc-if>
+
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="background:#0c1520;color:#fff;border-radius:12px;padding:26px">
+<div style="font:700 19px/1.2 Archivo,sans-serif;margin-bottom:9px">{{ c.contactPage.urgentTitle }}</div>
+<p style="margin:0 0 18px;font:400 14px/1.55 Archivo,sans-serif;color:rgba(255,255,255,.68)">{{ c.contactPage.urgentBody }}</p>
+<a href="tel:7867022090" style="display:block;background:#f2b21a;color:#12100b;padding:16px;border-radius:8px;text-align:center;font:800 20px/1 Archivo,sans-serif;text-decoration:none">{{ phone }}</a>
+</div>
+<div style="background:#fff;border:1px solid rgba(12,21,32,.12);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:14px">
+<div style="font:500 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:rgba(12,21,32,.5)">CONTACT</div>
+<a href="mailto:leonroofing.restoration@gmail.com" style="font:600 14px/1.4 Archivo,sans-serif;color:#0c1520;word-break:break-all">{{ email }}</a>
+<div style="font:400 14px/1.5 Archivo,sans-serif;color:rgba(12,21,32,.66)">{{ c.topbar }}</div>
+<div style="height:1px;background:rgba(12,21,32,.12)"></div>
+<div style="display:flex;flex-direction:column;gap:9px;font:400 13.5px/1.4 Archivo,sans-serif;color:#0c1520">
+<sc-for list="{{ c.aboutPage.creds }}" as="cr" hint-placeholder-count="4"><span>{{ cr }}</span></sc-for>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+<div style="margin-top:auto;background:#12100b;color:rgba(255,255,255,.6)">
+<div style="max-width:1400px;margin:0 auto;padding:44px 32px 22px;display:grid;grid-template-columns:1.3fr .9fr .9fr .8fr;gap:32px">
+<div>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+<img src="assets/leon-lion-mark-900.png" alt="" style="width:44px;height:auto;display:block">
+<div style="display:flex;flex-direction:column;gap:3px;flex:none"><span style="font:800 17px/1 Archivo,sans-serif;letter-spacing:.1em;color:#fff">LEON</span><span style="font:500 7.5px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#e6bb5c;white-space:nowrap">ROOFING &amp; RESTORATION</span></div>
+</div>
+<p style="margin:0 0 14px;font:400 13.5px/1.6 Archivo,sans-serif;max-width:280px">{{ c.footer.tag }}</p>
+<a href="mailto:leonroofing.restoration@gmail.com" style="font:400 13px/1.5 Archivo,sans-serif;color:rgba(255,255,255,.6);word-break:break-all">{{ email }}</a>
+</div>
+<div>
+<div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.13em;color:rgba(255,255,255,.4);margin-bottom:14px">{{ c.footer.colTitle1 }}</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ footerCol1 }}" as="s" hint-placeholder-count="5"><span onClick="{{ s.go }}" style="font:400 13.5px/1.35 Archivo,sans-serif;cursor:pointer" style-hover="color:#f2b21a">{{ s.title }}</span></sc-for>
+</div>
+</div>
+<div>
+<div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.13em;color:rgba(255,255,255,.4);margin-bottom:14px">{{ c.footer.colTitle2 }}</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ footerCol2 }}" as="s" hint-placeholder-count="5"><span onClick="{{ s.go }}" style="font:400 13.5px/1.35 Archivo,sans-serif;cursor:pointer" style-hover="color:#f2b21a">{{ s.title }}</span></sc-for>
+</div>
+</div>
+<div>
+<div style="font:500 10px/1 'IBM Plex Mono',monospace;letter-spacing:.13em;color:rgba(255,255,255,.4);margin-bottom:14px">{{ c.footer.colTitle3 }}</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ navItems }}" as="item" hint-placeholder-count="5"><span onClick="{{ item.go }}" style="font:400 13.5px/1.35 Archivo,sans-serif;cursor:pointer" style-hover="color:#f2b21a">{{ item.label }}</span></sc-for>
+</div>
+</div>
+</div>
+<div style="max-width:1400px;margin:0 auto;padding:16px 32px 34px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font:500 10.5px/1.6 'IBM Plex Mono',monospace;letter-spacing:.07em;color:rgba(255,255,255,.42)">
+<span>{{ c.footer.legal }}</span>
+<span>EPA 608 · OSHA 10 · 60+ YEARS · FULLY INSURED</span>
+</div>
+</div>
+
+<div style="position:fixed;right:22px;bottom:22px;z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+<sc-if value="{{ chatOpen }}" hint-placeholder-val="{{ false }}">
+<div style="width:290px;background:#fff;border-radius:14px;box-shadow:0 18px 44px rgba(12,21,32,.28);overflow:hidden;border:1px solid rgba(12,21,32,.1)">
+<div style="background:#0c1520;color:#fff;padding:16px 18px;display:flex;justify-content:space-between;align-items:center">
+<span style="font:700 14.5px/1.2 Archivo,sans-serif">{{ chatTitle }}</span>
+<span onClick="{{ toggleChat }}" style="cursor:pointer;color:rgba(255,255,255,.6);font:400 17px/1 Archivo,sans-serif">×</span>
+</div>
+<div style="padding:18px">
+<p style="margin:0 0 14px;font:400 13.5px/1.55 Archivo,sans-serif;color:rgba(12,21,32,.7)">{{ chatBody }}</p>
+<input type="tel" placeholder="{{ c.contactPage.fields.phone }}" style="width:100%;box-sizing:border-box;padding:12px 13px;border:1px solid rgba(12,21,32,.22);border-radius:7px;font-size:14.5px;margin-bottom:10px;background:#fdfdfc">
+<div style="background:#f2b21a;color:#12100b;padding:13px;border-radius:7px;text-align:center;font:700 14px/1 Archivo,sans-serif;cursor:pointer">{{ chatSend }}</div>
+</div>
+</div>
+</sc-if>
+<div onClick="{{ toggleChat }}" style="background:#0c1520;color:#fff;padding:15px 20px;border-radius:100px;box-shadow:0 10px 26px rgba(12,21,32,.3);font:700 14.5px/1 Archivo,sans-serif;cursor:pointer;display:flex;align-items:center;gap:10px" style-hover="background:#12222f">
+<span style="width:8px;height:8px;border-radius:50%;background:#f2b21a"></span>{{ chatLabel }}
+</div>
+</div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;phone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;(786) 702-2090&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { route: "home", slug: null, lang: "en", openFaq: 0, sent: false, chatOpen: false, ready: !!window.LEON_CONTENT };
+
+  componentDidMount() {
+    if (!this.state.ready) {
+      const t = setInterval(() => {
+        if (window.LEON_CONTENT) { clearInterval(t); this.setState({ ready: true }); }
+      }, 60);
+      this._t = t;
+    }
+  }
+  componentWillUnmount() { if (this._t) clearInterval(this._t); }
+
+  go(route, slug) {
+    this.setState({ route, slug: slug || null, openFaq: 0, sent: false });
+    if (typeof window !== "undefined" && window.scrollTo) window.scrollTo({ top: 0 });
+  }
+
+  renderVals() {
+    const C = window.LEON_CONTENT;
+    const phone = this.props.phone ?? "(786) 702-2090";
+    const email = "leonroofing.restoration@gmail.com";
+    if (!C) return { phone, email, isHome: true };
+
+    const c = C[this.state.lang] || C.en;
+    const svcBy = {};
+    c.services.forEach(s => { svcBy[s.slug] = s; });
+    const stripeDark = "repeating-linear-gradient(135deg,rgba(255,255,255,.10) 0 7px,rgba(255,255,255,.04) 7px 14px)";
+    const stripeLight = "repeating-linear-gradient(135deg,#dedad2 0 7px,#e9e5de 7px 14px)";
+    const photoBg = (img, fb) => (img ? "url(" + img + ") center 22%/cover no-repeat" : fb);
+    const withGo = s => Object.assign({}, s, {
+      go: () => this.go("service", s.slug),
+      cardBg: photoBg(s.img, stripeLight)
+    });
+
+    const route = this.state.route;
+    const svc = route === "service" ? svcBy[this.state.slug] : null;
+
+    const homeOrder = ["water-extraction", "structural-drying", "mold", "hvac", "thermal-imaging", "tarping", "roofing", "roof-cleaning"];
+    const homeServices = homeOrder.map((sl, i) => Object.assign(withGo(svcBy[sl]), { num: String(i + 1).padStart(2, "0") }));
+
+    const work = c.workPage.captions.map((caption, i) => {
+      const src = "assets/work/job-" + String(i + 1).padStart(2, "0") + ".jpg";
+      return { src, bg: "url(" + src + ")", caption, n: String(i + 1).padStart(2, "0") };
+    });
+
+    const groups = c.servicesPage.groups.map(g => ({ label: g.label, items: g.items.map(sl => withGo(svcBy[sl])) }));
+
+    const faqs = svc ? svc.faqs.map((f, i) => ({
+      q: f.q, a: f.a,
+      open: this.state.openFaq === i,
+      sign: this.state.openFaq === i ? "\u2212" : "+",
+      toggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i }))
+    })) : [];
+
+    const relatedSlugs = svc
+      ? c.services.filter(s => s.slug !== svc.slug).slice(0, 3).map(s => s.slug)
+      : [];
+
+    const chat = this.state.lang === "es"
+      ? { label: "Envíenos un mensaje", title: "Escríbanos", body: "Déjenos su número y le llamamos. Si es una emergencia activa, llamar es más rápido.", send: "Enviar" }
+      : { label: "Text us", title: "Text us", body: "Leave your number and we’ll call you back. For an active emergency, calling is faster.", send: "Send" };
+
+    return {
+      c, phone, email, svc,
+      heroBg: photoBg(c.home.heroImg, stripeDark),
+      vanBg: photoBg("assets/photos/van.jpg", stripeLight),
+      aboutBg: photoBg(c.aboutPage.img, stripeDark),
+      svcBg: svc ? photoBg(svc.img, stripeDark) : stripeDark,
+      isHome: route === "home",
+      isService: route === "service" && !!svc,
+      isServices: route === "services",
+      isWork: route === "work",
+      isAreas: route === "areas",
+      isAbout: route === "about",
+      isContact: route === "contact",
+      formSent: route === "contact" && this.state.sent,
+      formOpen: route === "contact" && !this.state.sent,
+      navItems: c.nav.map(n => ({ label: n.label, go: () => this.go(n.slug) })),
+      langToggleLabel: c.other,
+      toggleLang: () => this.setState(s => ({ lang: s.lang === "en" ? "es" : "en" })),
+      goHome: () => this.go("home"),
+      goServices: () => this.go("services"),
+      goWork: () => this.go("work"),
+      goContact: () => this.go("contact"),
+      goClaims: () => this.go("service", "claims"),
+      claimsLinkLabel: svcBy["claims"].title,
+      homeServices,
+      homeWork: work.slice(0, 4),
+      allWork: work,
+      serviceGroups: groups,
+      footerCol1: groups[0].items,
+      footerCol2: groups[1].items,
+      svcSteps: svc ? svc.steps.map((st, i) => Object.assign({ n: String(i + 1).padStart(2, "0") }, st)) : [],
+      faqs,
+      related: relatedSlugs.map(sl => withGo(svcBy[sl])),
+      crumb: svc ? (c.nav[0].label + " / " + svc.title).toUpperCase() : "",
+      reviewSlots: [1, 2, 3].map(i => ({ stars: [1, 2, 3, 4, 5] })),
+      submit: () => this.setState({ sent: true }),
+      chatOpen: this.state.chatOpen,
+      toggleChat: () => this.setState(s => ({ chatOpen: !s.chatOpen })),
+      chatLabel: chat.label, chatTitle: chat.title, chatBody: chat.body, chatSend: chat.send
+    };
+  }
+}
+</script>
+</body>
+</html>
