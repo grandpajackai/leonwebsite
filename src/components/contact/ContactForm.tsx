@@ -1,0 +1,133 @@
+"use client";
+
+import { useState, type FormEvent } from "react";
+import type { SiteContent } from "@/content/types";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/i18n";
+
+const inputClass =
+  "rounded-btn border border-navy/22 bg-[#fdfdfc] px-3.5 py-[13px] font-sans text-[15px] text-navy";
+const labelClass =
+  "flex flex-col gap-[7px] font-sans text-xs font-semibold leading-none text-navy";
+
+export default function ContactForm({ c }: { c: SiteContent }) {
+  const [sent, setSent] = useState(false);
+  const [fileCount, setFileCount] = useState(0);
+
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setSent(true);
+  }
+
+  if (sent) {
+    return (
+      <div className="rounded-panel border border-navy/12 bg-white px-10 py-14 text-center">
+        <div className="mx-auto mb-5 h-11 w-11 rounded-full bg-amber" />
+        <h2 className="m-0 mb-2.5 font-sans text-[26px] font-bold leading-[1.2] text-navy">
+          {c.contactPage.sentTitle}
+        </h2>
+        <p className="m-0 mb-6 font-sans text-[15.5px] font-normal leading-[1.55] text-navy/66">
+          {c.contactPage.sentBody}
+        </p>
+        <a
+          href={PHONE_TEL}
+          className="inline-block rounded-btn bg-navy px-[26px] py-[15px] font-sans text-base font-bold leading-none text-white"
+        >
+          {PHONE_DISPLAY}
+        </a>
+      </div>
+    );
+  }
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      className="rounded-panel border border-navy/12 bg-white p-8"
+    >
+      <div className="grid grid-cols-1 gap-[18px] sm:grid-cols-2">
+        <label className={labelClass}>
+          {c.contactPage.fields.name}
+          <input type="text" name="name" required className={inputClass} />
+        </label>
+        <label className={labelClass}>
+          {c.contactPage.fields.phone}
+          <input type="tel" name="phone" required className={inputClass} />
+        </label>
+        <label className={labelClass}>
+          {c.contactPage.fields.email}
+          <input type="email" name="email" className={inputClass} />
+        </label>
+        <label className={labelClass}>
+          {c.contactPage.fields.address}
+          <input type="text" name="address" className={inputClass} />
+        </label>
+        <label className={labelClass}>
+          {c.contactPage.fields.damage}
+          <select name="damage" className={inputClass}>
+            {c.contactPage.damageOptions.map((o) => (
+              <option key={o}>{o}</option>
+            ))}
+          </select>
+        </label>
+        <label className={labelClass}>
+          {c.contactPage.fields.when}
+          <select name="when" className={inputClass}>
+            {c.contactPage.whenOptions.map((o) => (
+              <option key={o}>{o}</option>
+            ))}
+          </select>
+        </label>
+        <label className={labelClass}>
+          {c.contactPage.fields.carrier}
+          <input type="text" name="carrier" className={inputClass} />
+        </label>
+        <label className={labelClass}>
+          {c.contactPage.fields.claim}
+          <input type="text" name="claim" className={inputClass} />
+        </label>
+        <label className={labelClass}>
+          {c.contactPage.fields.role}
+          <select name="role" className={inputClass}>
+            {c.contactPage.roleOptions.map((o) => (
+              <option key={o}>{o}</option>
+            ))}
+          </select>
+        </label>
+        <label className={labelClass}>
+          {c.contactPage.fields.callback}
+          <select name="callback" className={inputClass}>
+            {c.contactPage.callbackOptions.map((o) => (
+              <option key={o}>{o}</option>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      <label className="mt-[18px] flex flex-col gap-[7px] font-sans text-xs font-semibold leading-none text-navy">
+        {c.contactPage.fields.photos}
+        <span className="cursor-pointer rounded-[9px] border-[1.5px] border-dashed border-navy/28 bg-[#faf9f6] px-5 py-[26px] text-center font-sans text-[13.5px] font-normal leading-[1.5] text-navy/55 transition-colors hover:border-amber hover:bg-[#fffdf6]">
+          {fileCount > 0
+            ? `${fileCount} ${fileCount === 1 ? "photo" : "photos"} selected`
+            : c.contactPage.dropNote}
+          <input
+            type="file"
+            name="photos"
+            accept="image/*"
+            multiple
+            className="hidden"
+            onChange={(e) => setFileCount(e.target.files?.length ?? 0)}
+          />
+        </span>
+      </label>
+
+      <button
+        type="submit"
+        className="mt-[22px] w-full rounded-[8px] bg-amber py-[17px] text-center font-sans text-base font-bold leading-none text-ink transition-colors hover:bg-amber-hover"
+      >
+        {c.contactPage.submit}
+      </button>
+      <p className="m-0 mt-3.5 font-sans text-xs font-normal leading-[1.5] text-navy/50">
+        {c.contactPage.privacy}
+      </p>
+    </form>
+  );
+}
