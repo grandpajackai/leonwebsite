@@ -1,0 +1,1158 @@
+{
+  "lang": "EN",
+  "other": "ES",
+  "phoneLabel": "Call",
+  "nav": [
+    {
+      "slug": "services",
+      "label": "Services"
+    },
+    {
+      "slug": "work",
+      "label": "Our Work"
+    },
+    {
+      "slug": "areas",
+      "label": "Service Areas"
+    },
+    {
+      "slug": "about",
+      "label": "About"
+    },
+    {
+      "slug": "contact",
+      "label": "Contact"
+    }
+  ],
+  "strip": [
+    "EPA 608 CERTIFIED",
+    "OSHA 10",
+    "60+ YEARS OF EXPERIENCE",
+    "FULLY INSURED"
+  ],
+  "topbar": "Live answer 24/7 — Miami-Dade, Broward & Palm Beach",
+  "ctaCall": "Call",
+  "ctaForm": "Request a crew",
+  "ctaText": "Text photos of the damage",
+  "emergency": "ANSWERING LIVE — 24 HOURS, 7 DAYS",
+  "home": {
+    "h1a": "Water doesn’t wait.",
+    "h1b": "Neither do we.",
+    "sub": "Emergency water, mold, storm and fire damage restoration across South Florida — then the rebuild that puts the house back. One company from the first phone call to the last coat of paint.",
+    "bullets": [
+      "No trip charge on emergencies",
+      "Direct insurance billing",
+      "Free damage inspection"
+    ],
+    "heroPhoto": "",
+    "heroImg": "assets/photos/thermal.jpg",
+    "proofTitle": "Sixty years of doing the whole job",
+    "proofBody": "Leon has been building and repairing South Florida homes for three generations. That matters most on a water loss: the crew that dries your house is the crew that rebuilds it, so nothing gets lost in the handoff between a mitigation company and a contractor.",
+    "proofPoints": [
+      {
+        "h": "One company, whole job",
+        "p": "Extraction, drying, mold clearance, rebuild and roof — under one roof and one invoice."
+      },
+      {
+        "h": "Answered by a person",
+        "p": "Day, night, weekend, holiday. You get a human who can dispatch, not a call center script."
+      },
+      {
+        "h": "Documented for your carrier",
+        "p": "Photo log, moisture readings and scope filed the same day the work starts."
+      }
+    ],
+    "servicesTitle": "What we do",
+    "servicesSub": "Emergency response first, reconstruction second — the same crew all the way through.",
+    "processTitle": "What the first hours look like",
+    "processSub": "Most of the cost of water damage happens after the water stops. This is the sequence we run, every time.",
+    "process": [
+      {
+        "t": "CALL",
+        "h": "Live dispatch",
+        "p": "A person answers and walks you through the shutoff while a crew is assigned."
+      },
+      {
+        "t": "ON SITE",
+        "h": "Source stopped, water out",
+        "p": "We confirm the leak is stopped, then extract standing water and clear hazards."
+      },
+      {
+        "t": "DOCUMENT",
+        "h": "Moisture map & photo log",
+        "p": "Every wet cavity metered and photographed before anything is cut or removed."
+      },
+      {
+        "t": "DRY",
+        "h": "Drying plan running",
+        "p": "Equipment sized to the load, readings logged daily, carrier notified same day."
+      },
+      {
+        "t": "REBUILD",
+        "h": "Put back better",
+        "p": "Drywall, tile, cabinetry, paint and roof — finished by our own carpenters."
+      }
+    ],
+    "equipTitle": "Trucks stocked before the phone rings",
+    "equipBody": "Extractors, LGR dehumidifiers, air movers, air scrubbers, thermal cameras and ladders ride with the crew — so the first visit is the one where work actually starts, not the one where we measure and come back.",
+    "workTitle": "Recent work",
+    "workSub": "Rebuilds, remodels and repairs from our own job sites.",
+    "reviewsTitle": "What customers say",
+    "reviewsNote": "REVIEW SLOTS — PASTE REAL GOOGLE REVIEWS HERE",
+    "areasTitle": "Where we work",
+    "claimTitle": "We bill your carrier directly",
+    "claimBody": "You pay your deductible; we invoice the rest. If a claim comes back underpaid, the daily readings and photo log are what get it reopened — and we join the adjuster call with you.",
+    "claimPoints": [
+      "Same-day claim opening and adjuster contact",
+      "Scopes in the format carriers accept",
+      "Signed, time-stamped moisture logs every visit"
+    ],
+    "ctaTitle": "Standing in water right now?",
+    "ctaSub": "Call and we’ll walk you through the shutoff while the truck rolls."
+  },
+  "servicesPage": {
+    "title": "Services",
+    "sub": "Emergency restoration and the reconstruction that follows. Every service below is performed by our own crews.",
+    "groups": [
+      {
+        "label": "EMERGENCY RESTORATION",
+        "items": [
+          "water-extraction",
+          "structural-drying",
+          "mold",
+          "storm",
+          "sewage",
+          "tarping"
+        ]
+      },
+      {
+        "label": "HVAC & INSPECTIONS",
+        "items": [
+          "hvac",
+          "thermal-imaging"
+        ]
+      },
+      {
+        "label": "ROOFING & EXTERIOR",
+        "items": [
+          "roofing",
+          "roof-cleaning"
+        ]
+      },
+      {
+        "label": "AFTER THE EMERGENCY",
+        "items": [
+          "packout",
+          "claims",
+          "rebuild",
+          "commercial"
+        ]
+      }
+    ]
+  },
+  "workPage": {
+    "title": "Our work",
+    "sub": "Photos from our own job sites — rebuilds, remodels and repairs across Miami-Dade, Broward and Palm Beach.",
+    "captions": [
+      "Bathroom rebuild",
+      "Tile replacement",
+      "Shower waterproofing",
+      "Drywall repair",
+      "Floor leveling",
+      "Bathroom remodel",
+      "Vanity install",
+      "Interior repaint",
+      "Kitchen rebuild",
+      "Cabinet install",
+      "Trim carpentry",
+      "Tile floor install",
+      "Wall finishing",
+      "Dining room rebuild",
+      "Fixture replacement",
+      "Shower tile",
+      "Baseboard replacement",
+      "Bedroom rebuild",
+      "Interior finishing",
+      "Full unit remodel"
+    ]
+  },
+  "areasPage": {
+    "title": "Service areas",
+    "sub": "Crews dispatch across three counties, 24 hours a day. If you are outside these lines, call anyway — we will tell you honestly whether we can get there.",
+    "counties": [
+      {
+        "name": "Miami-Dade County",
+        "cities": [
+          "Miami",
+          "Hialeah",
+          "Miami Beach",
+          "Coral Gables",
+          "Doral",
+          "Kendall",
+          "Aventura",
+          "Homestead",
+          "Miami Lakes",
+          "North Miami",
+          "Cutler Bay",
+          "Pinecrest"
+        ]
+      },
+      {
+        "name": "Broward County",
+        "cities": [
+          "Fort Lauderdale",
+          "Hollywood",
+          "Pembroke Pines",
+          "Miramar",
+          "Weston",
+          "Plantation",
+          "Davie",
+          "Coral Springs",
+          "Sunrise",
+          "Pompano Beach",
+          "Deerfield Beach",
+          "Coconut Creek"
+        ]
+      },
+      {
+        "name": "Palm Beach County",
+        "cities": [
+          "West Palm Beach",
+          "Boca Raton",
+          "Delray Beach",
+          "Boynton Beach",
+          "Jupiter",
+          "Palm Beach Gardens",
+          "Wellington",
+          "Lake Worth",
+          "Royal Palm Beach",
+          "Riviera Beach"
+        ]
+      }
+    ],
+    "mapNote": "MAP — THREE-COUNTY COVERAGE AREA · 1120×420"
+  },
+  "aboutPage": {
+    "title": "Sixty years in South Florida homes",
+    "sub": "Leon Roofing & Restoration is a family company. Three generations of carpenters, roofers and remodelers who now handle the emergency end of the same work.",
+    "body": [
+      "We started out building and repairing homes, not chasing water losses. That order matters. When a pipe fails at 2am, the people who show up already know how the house is put together — where the water travels, what is load-bearing, what can be dried and what has to come out.",
+      "It also means we finish. Most mitigation companies dry a structure, pull their equipment and hand you a contractor list. We hold the job through demolition, drywall, tile, cabinetry, paint and roof, with the same foreman answering the phone the whole way."
+    ],
+    "valuesTitle": "How we work",
+    "values": [
+      {
+        "h": "A person answers",
+        "p": "Every call, any hour. No queue, no script, no callback promise."
+      },
+      {
+        "h": "Written before it’s done",
+        "p": "Scope, price and drying targets in writing before we start cutting."
+      },
+      {
+        "h": "Our own crews",
+        "p": "Employees, not day labor. The same faces from extraction through final paint."
+      },
+      {
+        "h": "Honest about coverage",
+        "p": "If we think your loss won’t be covered, we tell you before you file."
+      }
+    ],
+    "credsTitle": "Credentials",
+    "creds": [
+      "EPA 608 Certified",
+      "OSHA 10",
+      "60+ years of experience",
+      "Fully insured"
+    ],
+    "photo": "",
+    "img": "assets/photos/owner.jpg"
+  },
+  "contactPage": {
+    "title": "Request a crew",
+    "sub": "For an active emergency, calling is faster — a person answers 24/7. Use this form for inspections, estimates and claim questions.",
+    "urgentTitle": "Active emergency?",
+    "urgentBody": "Water still running, sewage indoors, or a roof open to the sky — call now instead of filling this out.",
+    "fields": {
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Property address",
+      "damage": "Type of damage",
+      "when": "When did it happen?",
+      "carrier": "Insurance carrier",
+      "claim": "Claim number (if you have one)",
+      "role": "You are the…",
+      "callback": "Best time to call back",
+      "photos": "Photos of the damage"
+    },
+    "damageOptions": [
+      "Water / burst pipe",
+      "Storm or flood",
+      "Mold",
+      "Sewage backup",
+      "Fire or smoke",
+      "Roof leak",
+      "Rebuild / remodel",
+      "Not sure"
+    ],
+    "whenOptions": [
+      "Happening right now",
+      "Today",
+      "Within the last 3 days",
+      "Over a week ago",
+      "Not sure"
+    ],
+    "roleOptions": [
+      "Homeowner",
+      "Tenant",
+      "Property manager",
+      "Business owner",
+      "Insurance adjuster"
+    ],
+    "callbackOptions": [
+      "As soon as possible",
+      "Morning",
+      "Afternoon",
+      "Evening"
+    ],
+    "dropNote": "Drag photos here or tap to upload — the more we can see, the better we can prepare",
+    "submit": "Send request",
+    "privacy": "We use your details to dispatch and quote the job. We don’t sell or share them.",
+    "sentTitle": "Request received",
+    "sentBody": "Someone will call you back. If this is an emergency, call now — a person answers 24/7."
+  },
+  "footer": {
+    "tag": "Restoration and reconstruction across South Florida.",
+    "colTitle1": "Emergency",
+    "colTitle2": "After the emergency",
+    "colTitle3": "Company",
+    "legal": "Leon Roofing & Restoration, Inc. · Miami-Dade · Broward · Palm Beach",
+    "email": "leonroofing.restoration@gmail.com"
+  },
+  "faqTitle": "Common questions",
+  "includesTitle": "What’s included",
+  "stepsTitle": "How it goes",
+  "relatedTitle": "Related services",
+  "sidebarTitle": "Live answer, 24/7",
+  "sidebarBody": "A person picks up any hour, any day — Miami-Dade, Broward and Palm Beach.",
+  "services": [
+    {
+      "slug": "water-extraction",
+      "title": "Emergency water extraction",
+      "blurb": "Standing water pulled out of floors, pad and cavities — day or night.",
+      "intro": "Water gets into wall cavities within minutes and into drywall within hours. We arrive with truck-mounted extraction, pull the water out of the assembly instead of just the surface, and set drying on the same visit.",
+      "photo": "PHOTO — EXTRACTION WAND, WATER LINE ON WALL · 620×420",
+      "includes": [
+        {
+          "h": "Source verification",
+          "p": "We confirm the leak is stopped before any drying starts."
+        },
+        {
+          "h": "Truck-mounted extraction",
+          "p": "Standing water, carpet pad and sub-floor cavities pulled down to damp."
+        },
+        {
+          "h": "Moisture mapping",
+          "p": "Thermal imaging and pin meters mark the true wet line, room by room."
+        },
+        {
+          "h": "Category assessment",
+          "p": "Clean, grey or black water classified — it decides what can be saved."
+        }
+      ],
+      "steps": [
+        {
+          "h": "You call",
+          "p": "A person answers, gets the address, and talks you through the shutoff."
+        },
+        {
+          "h": "We arrive",
+          "p": "Hazards cleared, source confirmed stopped, extraction begins immediately."
+        },
+        {
+          "h": "We document",
+          "p": "Photos and readings recorded before anything is cut or thrown out."
+        },
+        {
+          "h": "We set drying",
+          "p": "Equipment placed to a written plan, and your carrier notified."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Will my insurance cover this?",
+          "a": "Sudden and accidental losses — burst supply lines, failed heaters, appliance overflows — are usually covered. Long-term seepage usually isn’t. We document the cause on day one either way and tell you honestly which one you have."
+        },
+        {
+          "q": "Do you have to tear out the drywall?",
+          "a": "Not always. Clean-water losses caught early can often be dried in place with cavity systems. We open walls when the water was contaminated or the readings say the cavity won’t dry."
+        },
+        {
+          "q": "How fast can you get here?",
+          "a": "A person answers 24/7 and we dispatch immediately. We won’t quote you a fake arrival window — we’ll tell you where the nearest crew is when you call."
+        }
+      ]
+    },
+    {
+      "slug": "structural-drying",
+      "title": "Structural drying",
+      "blurb": "Framing, sub-floor and cavity air brought back below dry standard — with the log to prove it.",
+      "intro": "Extraction is the easy half. Getting framing, sub-floor and cavity air back below dry standard is what actually stops mold, and what a carrier pays for only when you can prove it happened.",
+      "photo": "PHOTO — AIR MOVERS AND LGR DEHUMIDIFIER RUNNING · 620×420",
+      "includes": [
+        {
+          "h": "Psychrometric baseline",
+          "p": "Temperature, humidity and grain depression recorded inside, outside and in affected air."
+        },
+        {
+          "h": "Equipment sized to the load",
+          "p": "Air movers and LGR dehumidifiers calculated to the space, not guessed by room count."
+        },
+        {
+          "h": "Cavity and hardwood systems",
+          "p": "Mat and wall systems dry floors and cavities without unnecessary demolition."
+        },
+        {
+          "h": "Daily monitoring",
+          "p": "Same techs, same meters, readings logged until materials match dry standard."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Baseline",
+          "p": "Readings taken on every affected material and on the outside air."
+        },
+        {
+          "h": "Plan",
+          "p": "Written drying plan with equipment count, targets and a dry-by date."
+        },
+        {
+          "h": "Monitor",
+          "p": "Daily visits, readings logged and sent to you and your adjuster."
+        },
+        {
+          "h": "Sign off",
+          "p": "Equipment pulled only when materials hit dry standard, not on a schedule."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How long does the equipment stay?",
+          "a": "Typically three to five days. Dense materials like hardwood and plaster take longer. We pull equipment on readings, never on a fixed schedule."
+        },
+        {
+          "q": "Is it loud? Can I stay in the house?",
+          "a": "Air movers are loud and the rooms get warm. Most people stay; if the loss is large or contaminated, we’ll tell you plainly that you shouldn’t."
+        },
+        {
+          "q": "Why does the drying log matter?",
+          "a": "It is the evidence that the structure actually reached dry standard. It settles disputes with carriers, buyers, associations and future inspectors."
+        }
+      ]
+    },
+    {
+      "slug": "mold",
+      "title": "Mold remediation",
+      "blurb": "Containment, removal and clearance — done in the right order, with the moisture cause fixed first.",
+      "intro": "Mold is a symptom. We find and stop the water first, then contain the area under negative air, remove affected materials, and treat what stays — so it doesn’t come back in the same corner next season.",
+      "photo": "PHOTO — CONTAINMENT BARRIER AND AIR SCRUBBER · 620×420",
+      "includes": [
+        {
+          "h": "Moisture cause found first",
+          "p": "No remediation starts until the water source is identified and stopped."
+        },
+        {
+          "h": "Negative-air containment",
+          "p": "Sealed work area and HEPA scrubbers so spores don’t travel through the house."
+        },
+        {
+          "h": "Controlled removal",
+          "p": "Affected porous materials bagged and removed; framing cleaned and treated."
+        },
+        {
+          "h": "Post-remediation verification",
+          "p": "Independent clearance testing arranged when the scope calls for it."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Inspect",
+          "p": "Visual assessment plus moisture readings to find the extent, not just the stain."
+        },
+        {
+          "h": "Contain",
+          "p": "Barriers, negative air and protected pathways set before anything is disturbed."
+        },
+        {
+          "h": "Remove",
+          "p": "Affected material out under containment, surfaces HEPA-vacuumed and treated."
+        },
+        {
+          "h": "Verify",
+          "p": "Area dried, cleared, and rebuilt by our own carpenters."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Do I need a mold test first?",
+          "a": "Often not. If you can see growth and know the water source, testing mostly confirms what’s visible. Testing is worth it for clearance, for disputes, or when the source isn’t obvious."
+        },
+        {
+          "q": "Can you just spray it?",
+          "a": "No. Spraying a surface without removing affected material or fixing the moisture is cosmetic — it will return. We’ll tell you what actually has to come out."
+        },
+        {
+          "q": "Is mold covered by insurance?",
+          "a": "Sometimes, and often with a dollar cap, when it follows a covered water loss that was reported promptly. Long-standing humidity issues generally are not."
+        }
+      ]
+    },
+    {
+      "slug": "storm",
+      "title": "Storm & flood cleanup",
+      "blurb": "Hurricane, surge and flood response — tarping, water out, structure dried, debris gone.",
+      "intro": "After a named storm the whole county calls at once. We stage crews and equipment before landfall so we can tarp openings, get water out, and start drying while the roads are still clearing.",
+      "photo": "PHOTO — TARPED ROOF AND CREW CLEARING FLOOD WATER · 620×420",
+      "includes": [
+        {
+          "h": "Emergency board-up and tarping",
+          "p": "Openings closed first so the next rain band doesn’t double the loss."
+        },
+        {
+          "h": "Category 3 water handling",
+          "p": "Flood and surge water treated as contaminated, with the right PPE and disposal."
+        },
+        {
+          "h": "Debris removal",
+          "p": "Saturated materials, ruined contents and yard debris hauled off the property."
+        },
+        {
+          "h": "Full documentation",
+          "p": "Photos, readings and scope built for a storm claim from the first hour."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Before the storm",
+          "p": "Call to get on the pre-storm list; we stage equipment and crews by county."
+        },
+        {
+          "h": "First pass",
+          "p": "Openings tarped or boarded, standing water extracted, power and safety checked."
+        },
+        {
+          "h": "Dry out",
+          "p": "Contaminated material removed, structure sanitized and dried to standard."
+        },
+        {
+          "h": "Rebuild",
+          "p": "Roof, drywall, floors and finishes rebuilt by our own crews."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Do you take pre-storm reservations?",
+          "a": "Yes. Call before landfall and we’ll put your address on the priority list for your county."
+        },
+        {
+          "q": "Is flood damage covered by my homeowner policy?",
+          "a": "Usually not — rising water is normally a separate flood policy, while wind-driven rain through a storm-created opening often is covered. We document which one caused your damage."
+        },
+        {
+          "q": "Can you tarp the roof today?",
+          "a": "If it’s safe to be on it, yes. Wind, lightning and rotten decking are the limits, and we’ll tell you when it isn’t safe."
+        }
+      ]
+    },
+    {
+      "slug": "sewage",
+      "title": "Sewage backup cleanup",
+      "blurb": "Category 3 water handled properly: removed, sanitized, verified — not mopped.",
+      "intro": "A sewage backup is a biohazard, not a mess. Porous materials it touched come out, everything else is cleaned and disinfected under containment, and the structure is dried and verified before anything goes back.",
+      "photo": "PHOTO — TECH IN FULL PPE, CONTAINED WORK AREA · 620×420",
+      "includes": [
+        {
+          "h": "Full PPE and containment",
+          "p": "Sealed work zone, negative air and protected exit path to the truck."
+        },
+        {
+          "h": "Contaminated material removal",
+          "p": "Carpet, pad, saturated drywall and affected contents removed and disposed of legally."
+        },
+        {
+          "h": "Hard-surface sanitation",
+          "p": "Structure cleaned, disinfected and deodorized, including subfloor and framing."
+        },
+        {
+          "h": "Drying and verification",
+          "p": "Structure dried to standard and checked before reconstruction begins."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Stop and isolate",
+          "p": "Source stopped, area isolated, occupants kept out of the contaminated zone."
+        },
+        {
+          "h": "Remove",
+          "p": "Waste water extracted, affected porous materials out and bagged."
+        },
+        {
+          "h": "Sanitize",
+          "p": "Antimicrobial applied to all remaining surfaces, air scrubbed throughout."
+        },
+        {
+          "h": "Dry and rebuild",
+          "p": "Structure dried, verified, then rebuilt and refinished."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I clean it myself?",
+          "a": "We don’t recommend it. Category 3 water carries bacteria and viruses; household cleaners and a shop vac don’t make a floor safe, and the moisture left behind grows mold."
+        },
+        {
+          "q": "Does everything have to be thrown out?",
+          "a": "Porous items that absorbed the water do. Hard surfaces, most furniture frames and many contents can be cleaned and salvaged."
+        },
+        {
+          "q": "How long until we can use the room?",
+          "a": "Usually a few days: removal and sanitation first, then drying to standard, then reconstruction."
+        }
+      ]
+    },
+    {
+      "slug": "packout",
+      "title": "Contents pack-out",
+      "blurb": "Inventoried, moved, dried and returned — your belongings tracked the whole way.",
+      "intro": "When a room has to be gutted or dried aggressively, your belongings shouldn’t be in it. We inventory and photograph everything, move it out, dry and clean what’s salvageable, and bring it back when the space is finished.",
+      "photo": "PHOTO — LABELED BOXES AND WRAPPED FURNITURE ON PADS · 620×420",
+      "includes": [
+        {
+          "h": "Room-by-room inventory",
+          "p": "Every item logged and photographed before it moves, with a copy to you."
+        },
+        {
+          "h": "Careful pack and transport",
+          "p": "Furniture wrapped and padded, electronics and documents handled separately."
+        },
+        {
+          "h": "Cleaning and drying",
+          "p": "Salvageable contents dried, cleaned and deodorized off site."
+        },
+        {
+          "h": "Return and placement",
+          "p": "Items brought back and set where they belong once the room is done."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Assess",
+          "p": "We walk the space with you and mark what leaves and what stays."
+        },
+        {
+          "h": "Inventory",
+          "p": "Photographed and logged, item by item, with condition noted."
+        },
+        {
+          "h": "Store",
+          "p": "Held in a controlled space while your home is dried and rebuilt."
+        },
+        {
+          "h": "Return",
+          "p": "Delivered back, unwrapped and placed, with the inventory reconciled."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Is pack-out covered by insurance?",
+          "a": "Usually yes, as part of a covered loss — and the inventory we build is what supports the contents portion of your claim."
+        },
+        {
+          "q": "What about things I don’t want touched?",
+          "a": "Tell us at the walkthrough. Valuables, firearms, medication and sentimental items are best kept with you."
+        },
+        {
+          "q": "How long can you store it?",
+          "a": "As long as the rebuild takes. The inventory stays open until the last box is back in the house."
+        }
+      ]
+    },
+    {
+      "slug": "claims",
+      "title": "Insurance claims help",
+      "blurb": "Photo log, scope, adjuster calls and direct billing — the paperwork side handled.",
+      "intro": "Carriers deny what nobody documented. From the first hour we build the file: cause of loss, extent, daily readings and a scope in the format adjusters accept — then we bill the carrier directly.",
+      "photo": "",
+      "img": "assets/photos/thermal.jpg",
+      "includes": [
+        {
+          "h": "Cause-of-loss documentation",
+          "p": "What failed, when, and how far the water travelled — recorded on day one."
+        },
+        {
+          "h": "Scope your adjuster accepts",
+          "p": "Line-item scope and pricing in the format carriers work from."
+        },
+        {
+          "h": "Direct carrier billing",
+          "p": "You pay your deductible; we invoice the insurer for the covered work."
+        },
+        {
+          "h": "Adjuster meetings",
+          "p": "We meet the adjuster on site and walk the damage with them."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Open",
+          "p": "Claim opened the same day, with photos and readings already attached."
+        },
+        {
+          "h": "Scope",
+          "p": "Full scope of mitigation and repair submitted, not a rough estimate."
+        },
+        {
+          "h": "Negotiate",
+          "p": "Supplements and disputes handled with documentation, not argument."
+        },
+        {
+          "h": "Close",
+          "p": "Final invoice, warranty and completion photos delivered to both of you."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Should I file before calling you?",
+          "a": "Call us first if water is still active — stopping the damage comes first, and we’ll have the documentation ready when you file, often the same day."
+        },
+        {
+          "q": "What if my claim was underpaid or denied?",
+          "a": "Bring us the file. Underpayment is usually a documentation problem, and a complete photo and moisture log is what gets a claim reopened."
+        },
+        {
+          "q": "Are you a public adjuster?",
+          "a": "No. We’re the contractor: we document our own work, scope it properly and deal with your adjuster directly. For coverage disputes we can refer you to licensed professionals."
+        }
+      ]
+    },
+    {
+      "slug": "rebuild",
+      "title": "Reconstruction & rebuild",
+      "blurb": "Drywall, tile, cabinetry, trim and paint — the same company that dried it puts it back.",
+      "intro": "Most mitigation companies stop when the house is dry. We keep going: framing, drywall, tile, cabinetry, trim, paint and fixtures, finished by our own carpenters, with one foreman on the job start to finish.",
+      "photo": "PHOTO — FINISHED REBUILT BATHROOM · 620×420",
+      "includes": [
+        {
+          "h": "Framing and drywall",
+          "p": "Structure repaired, insulated, hung, taped and finished to match."
+        },
+        {
+          "h": "Tile, flooring and waterproofing",
+          "p": "Showers and wet areas rebuilt properly, with waterproofing done right."
+        },
+        {
+          "h": "Cabinetry and trim",
+          "p": "Cabinets, vanities, baseboards and casing installed by our carpenters."
+        },
+        {
+          "h": "Paint and fixtures",
+          "p": "Finish paint, lighting and plumbing fixtures set and tested."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Scope and price",
+          "p": "Written scope, allowances and schedule before demolition ends."
+        },
+        {
+          "h": "Build",
+          "p": "One foreman, our own crews, sequenced trades and a clean site daily."
+        },
+        {
+          "h": "Walk",
+          "p": "Punch walk with you before we call it finished."
+        },
+        {
+          "h": "Warranty",
+          "p": "Written workmanship warranty and completion photos for your file."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I upgrade while you’re rebuilding?",
+          "a": "Yes, and it’s the cheapest time to do it. Insurance pays like-for-like; you pay the difference for the upgrade."
+        },
+        {
+          "q": "How long does a rebuild take?",
+          "a": "A single bathroom is usually two to three weeks after drying; a whole-floor loss runs longer. You get a schedule with the scope."
+        },
+        {
+          "q": "Do you handle permits?",
+          "a": "Yes, where the work requires them, including inspections through close-out."
+        }
+      ]
+    },
+    {
+      "slug": "roofing",
+      "title": "Roofing",
+      "blurb": "Leak repair, tarping, re-roofs and storm damage — three generations of roofing behind it.",
+      "intro": "Roofing is where this company started. We repair leaks, tarp storm openings and re-roof tile, shingle and flat systems — and because we also do the interior, we fix the ceiling the leak ruined.",
+      "photo": "PHOTO — CREW ON TILE ROOF, MIAMI SKYLINE · 620×420",
+      "includes": [
+        {
+          "h": "Leak diagnosis",
+          "p": "We find where water actually enters, not just where it drips inside."
+        },
+        {
+          "h": "Emergency tarping",
+          "p": "Openings covered fast after storms so the interior stops taking on water."
+        },
+        {
+          "h": "Repairs and re-roofs",
+          "p": "Tile, shingle and flat systems repaired or replaced to current code."
+        },
+        {
+          "h": "Interior repair included",
+          "p": "Stained ceilings, insulation and drywall repaired by the same company."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Inspect",
+          "p": "Roof and attic inspected, with photos of what we find."
+        },
+        {
+          "h": "Report",
+          "p": "Written findings, repair options and price — including what can wait."
+        },
+        {
+          "h": "Repair",
+          "p": "Work performed, permitted and inspected where required."
+        },
+        {
+          "h": "Verify",
+          "p": "Water tested where practical, interior damage repaired and painted."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Repair or replace?",
+          "a": "Depends on the system’s age and how much of it is failing. We’ll show you photos and tell you when a repair is throwing money at a roof that needs replacing."
+        },
+        {
+          "q": "Will insurance pay for a new roof?",
+          "a": "For sudden storm damage, often yes. For age and wear, no. The inspection report tells you which case you’re in."
+        },
+        {
+          "q": "Do you tarp during a storm?",
+          "a": "Only when it’s safe to be on the roof. We won’t put a crew up in lightning or high wind."
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial & property managers",
+      "blurb": "Multi-unit losses, association work and tenant coordination — with documentation you can forward.",
+      "intro": "A unit loss in a building is three problems: the water, the neighbours and the paperwork. We work directly with managers and associations, coordinate access, and produce documentation you can forward without editing.",
+      "photo": "",
+      "img": "assets/photos/van.jpg",
+      "includes": [
+        {
+          "h": "Multi-unit response",
+          "p": "Several units and common areas handled at once, with equipment to match."
+        },
+        {
+          "h": "Tenant coordination",
+          "p": "Scheduled access, clear notices and crews who behave in occupied buildings."
+        },
+        {
+          "h": "Association-ready reporting",
+          "p": "Per-unit photo and moisture documentation, separated for board and carrier."
+        },
+        {
+          "h": "After-hours work",
+          "p": "Nights and weekends when a corridor or lobby can’t be closed during the day."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Call",
+          "p": "One point of contact for the whole building, not per unit."
+        },
+        {
+          "h": "Assess",
+          "p": "Affected units mapped, equipment staged, access schedule agreed."
+        },
+        {
+          "h": "Mitigate",
+          "p": "Water out, drying set and monitored across every affected unit."
+        },
+        {
+          "h": "Report",
+          "p": "Per-unit documentation delivered for the board, carrier and owners."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Do you have a master service agreement?",
+          "a": "Yes — we can set one up so pricing and terms are agreed before an emergency, and dispatch doesn’t wait on approvals."
+        },
+        {
+          "q": "Can you handle several units at once?",
+          "a": "Yes. We stage equipment by building and add crews rather than queuing units."
+        },
+        {
+          "q": "Who gets the documentation?",
+          "a": "Whoever you name: management, the board, the carrier, and individual owners, each with what they need."
+        }
+      ]
+    },
+    {
+      "slug": "tarping",
+      "title": "Emergency tarping & board-up",
+      "blurb": "Roof openings covered and windows boarded the same day — before the next rain band.",
+      "intro": "After a storm, the second loss comes from the sky staying open. We tarp roof openings, board broken windows and doors, and secure the property so the interior stops taking on water while the claim gets sorted.",
+      "photo": "PHOTO — CREW SECURING BLUE TARP OVER A DAMAGED ROOF SECTION · 620×420",
+      "includes": [
+        {
+          "h": "Same-day tarping",
+          "p": "Roof openings covered and battened down to hold through the next storm."
+        },
+        {
+          "h": "Window and door board-up",
+          "p": "Broken openings closed with plywood cut and fastened properly, not taped."
+        },
+        {
+          "h": "Interior protection",
+          "p": "Plastic, containment and water diversion inside so the damage stops spreading."
+        },
+        {
+          "h": "Documented for the claim",
+          "p": "Photos of the opening and the cause recorded before we cover it."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Call",
+          "p": "We take the address and ask what you can see from the ground — no climbing."
+        },
+        {
+          "h": "Assess",
+          "p": "Roof and interior checked; we tell you if it is safe to work today."
+        },
+        {
+          "h": "Secure",
+          "p": "Openings tarped or boarded and the interior protected from the next rain."
+        },
+        {
+          "h": "Repair",
+          "p": "Permanent roof and interior repairs scheduled with the same company."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Does insurance pay for tarping?",
+          "a": "Usually yes. Carriers expect you to mitigate further damage, and emergency tarping is normally a covered expense on a storm claim — we document it so it gets paid."
+        },
+        {
+          "q": "How long does a tarp last?",
+          "a": "A properly installed tarp holds for weeks, not days. It is a bridge to the permanent repair, not a substitute for it."
+        },
+        {
+          "q": "Can you tarp at night?",
+          "a": "Only when it is safe. Wet tile, wind and lightning are hard stops — we will board the interior and return at first light."
+        }
+      ]
+    },
+    {
+      "slug": "thermal-imaging",
+      "title": "Thermal imaging & leak detection",
+      "blurb": "Find the water inside the wall before you open it — infrared plus moisture meters.",
+      "intro": "Stains lie. Water travels along framing and shows up rooms away from the failure. We scan with infrared and confirm with pin and pinless meters, so demolition happens where the water actually is — and nowhere else.",
+      "photo": "",
+      "img": "assets/photos/thermal.jpg",
+      "includes": [
+        {
+          "h": "Infrared scan",
+          "p": "Walls, ceilings and floors scanned for the temperature signature of trapped moisture."
+        },
+        {
+          "h": "Meter confirmation",
+          "p": "Every infrared finding verified with pin and pinless moisture readings."
+        },
+        {
+          "h": "Plumbing and roof leak tracing",
+          "p": "Supply, drain and roof leaks traced to the failure point, not the drip."
+        },
+        {
+          "h": "Written findings",
+          "p": "Annotated images and readings you can hand to an adjuster or a buyer."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Walk",
+          "p": "We map the affected rooms and note what you have already seen."
+        },
+        {
+          "h": "Scan",
+          "p": "Infrared sweep of suspect assemblies, marked as we go."
+        },
+        {
+          "h": "Verify",
+          "p": "Readings taken at every anomaly to rule out shadows and false positives."
+        },
+        {
+          "h": "Report",
+          "p": "Findings, photos and a recommended scope delivered same day."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Does infrared see through walls?",
+          "a": "No — it reads surface temperature. Trapped moisture changes how a surface holds heat, which is what shows up. That is why we confirm every finding with a moisture meter."
+        },
+        {
+          "q": "Can you find a slab leak this way?",
+          "a": "Often yes, especially on hot-water lines. Cold-water slab leaks may also need acoustic listening, which we bring when the scan is inconclusive."
+        },
+        {
+          "q": "Is the inspection free?",
+          "a": "The damage inspection is free. A documented infrared report for a claim, a purchase or a dispute is a paid service, quoted before we start."
+        }
+      ]
+    },
+    {
+      "slug": "hvac",
+      "title": "HVAC service & installation",
+      "blurb": "AC repair, replacement, maintenance and duct work — residential and commercial.",
+      "intro": "In South Florida the air handler is the second most common source of indoor water damage, right behind supply lines. We service, repair and replace residential and light-commercial systems, and we clean and seal the duct work that moves the air.",
+      "photo": "PHOTO — TECH SERVICING A CONDENSER UNIT BESIDE A MIAMI HOME · 620×420",
+      "includes": [
+        {
+          "h": "Repair and diagnostics",
+          "p": "No-cool calls, refrigerant leaks, capacitors, blowers, drain lines and controls."
+        },
+        {
+          "h": "System replacement",
+          "p": "Right-sized straight-cool, heat pump and mini-split systems installed and permitted."
+        },
+        {
+          "h": "Maintenance plans",
+          "p": "Twice-yearly tune-ups with coil cleaning, drain clearing and filter service."
+        },
+        {
+          "h": "Duct cleaning and sealing",
+          "p": "Duct cleaning, sanitizing, sealing and replacement of collapsed or wet runs."
+        },
+        {
+          "h": "Indoor air quality",
+          "p": "UV lights, media filtration and dehumidification for humid, musty houses."
+        },
+        {
+          "h": "Mini-splits and add-ons",
+          "p": "Ductless systems for garages, additions, offices and converted spaces."
+        },
+        {
+          "h": "Smart thermostats & controls",
+          "p": "Thermostats, float switches and leak sensors that shut the system down before it floods."
+        },
+        {
+          "h": "Commercial after-hours service",
+          "p": "Package units and split systems serviced at night so tenant spaces stay open."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Diagnose",
+          "p": "Full system check with readings, not a guess and a part swap."
+        },
+        {
+          "h": "Quote",
+          "p": "Repair-versus-replace options in writing, with efficiency and cost side by side."
+        },
+        {
+          "h": "Install",
+          "p": "Permitted installation, condensate handled properly, old equipment hauled away."
+        },
+        {
+          "h": "Maintain",
+          "p": "Scheduled service so the next failure is not a flooded hallway."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Why does my air handler leak water?",
+          "a": "Almost always a clogged condensate drain or a dirty coil freezing and thawing. Both are cheap to service and expensive to ignore — a blocked drain can soak a ceiling overnight."
+        },
+        {
+          "q": "Do you do commercial systems?",
+          "a": "Light commercial: package units, split systems and mini-splits for offices, retail, restaurants and multi-unit buildings. We also handle after-hours service so a tenant space is not down during business hours."
+        },
+        {
+          "q": "Repair or replace?",
+          "a": "As a rule, a system over twelve years old needing a major component is worth replacing. We show you the numbers both ways and let you decide."
+        }
+      ]
+    },
+    {
+      "slug": "roof-cleaning",
+      "title": "Roof cleaning & soft wash",
+      "blurb": "Algae, mold and stains removed with low pressure — without stripping tile or shingle.",
+      "intro": "Black streaks and green growth are not just cosmetic: they hold moisture against tile and shingle and shorten the life of the roof. We soft wash with low pressure and the right solution, so the roof gets clean without losing granules or cracking tile.",
+      "photo": "PHOTO — HALF-CLEANED TILE ROOF SHOWING THE LINE · 620×420",
+      "includes": [
+        {
+          "h": "Low-pressure soft wash",
+          "p": "Cleaning solution does the work — no pressure washer chewing up your roof."
+        },
+        {
+          "h": "Tile, shingle and flat",
+          "p": "Method matched to your roof system and its age."
+        },
+        {
+          "h": "Gutter and fascia cleaning",
+          "p": "Gutters flushed and fascia wiped down as part of the job."
+        },
+        {
+          "h": "Plant and surface protection",
+          "p": "Landscaping, screens and pool areas covered and rinsed after."
+        }
+      ],
+      "steps": [
+        {
+          "h": "Inspect",
+          "p": "Roof condition checked first — a failing roof gets a repair quote, not a wash."
+        },
+        {
+          "h": "Protect",
+          "p": "Plants, screens and surrounding surfaces covered before anything is applied."
+        },
+        {
+          "h": "Wash",
+          "p": "Solution applied and rinsed at low pressure, working in sections."
+        },
+        {
+          "h": "Rinse",
+          "p": "Everything below the roof rinsed clean, gutters flushed, site left tidy."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Will pressure washing damage my roof?",
+          "a": "High pressure will — it strips shingle granules and forces water under tile. That is why we soft wash instead."
+        },
+        {
+          "q": "How often should a roof be cleaned?",
+          "a": "In South Florida, every two to four years depending on tree cover and shade. Shaded north slopes grow back fastest."
+        },
+        {
+          "q": "Do you also fix what you find?",
+          "a": "Yes. If we find cracked tile, failed flashing or a soft deck while cleaning, we photograph it and quote the repair."
+        }
+      ]
+    }
+  ]
+}
