@@ -4,6 +4,7 @@ import type { Locale, SiteContent } from "@/content/types";
 import { otherLocale, PHONE_DISPLAY, PHONE_TEL } from "@/lib/i18n";
 import Container from "./Container";
 import LocaleSwitchLink from "./LocaleSwitchLink";
+import MobileNav from "./MobileNav";
 
 export default function Header({
   locale,
@@ -38,13 +39,13 @@ export default function Header({
               <span className="font-sans text-xl font-extrabold leading-none tracking-[.09em] text-white">
                 LEON
               </span>
-              <span className="whitespace-nowrap font-mono text-[8px] font-medium leading-none tracking-[.16em] text-gold">
+              <span className="hidden whitespace-nowrap font-mono text-[8px] font-medium leading-none tracking-[.16em] text-gold sm:block">
                 ROOFING &amp; RESTORATION
               </span>
             </span>
           </Link>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3 sm:gap-6">
             <nav className="hidden items-center gap-6 lg:flex">
               {c.nav.map((item) => (
                 <Link
@@ -56,7 +57,11 @@ export default function Header({
                 </Link>
               ))}
             </nav>
-            <LocaleSwitchLink locale={otherLocale(locale)} label={c.other} />
+            <LocaleSwitchLink
+              locale={otherLocale(locale)}
+              label={c.other}
+              className="hidden rounded-[5px] border border-white/25 px-2.5 py-2 font-mono text-[11px] font-semibold leading-none tracking-[.1em] text-white/60 transition-colors hover:border-amber hover:text-white lg:inline-flex"
+            />
             <a
               href={PHONE_TEL}
               className="flex items-center gap-[9px] whitespace-nowrap rounded-btn bg-amber px-3 py-[11px] font-sans text-[13px] font-bold leading-none text-ink transition-colors hover:bg-amber-hover sm:px-[18px] sm:text-sm"
@@ -64,6 +69,12 @@ export default function Header({
               <span className="h-[7px] w-[7px] flex-none rounded-full bg-ink" />
               {PHONE_DISPLAY}
             </a>
+            <MobileNav
+              locale={locale}
+              navItems={c.nav}
+              otherLabel={c.other}
+              ctaCall={c.ctaCall}
+            />
           </div>
         </Container>
       </div>
