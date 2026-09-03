@@ -64,7 +64,9 @@ const redirectHtml = `<!doctype html>
 writeFileSync(path.join(outDir, "index.html"), redirectHtml);
 writeFileSync(path.join(outDir, ".nojekyll"), "");
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://leonroofingandrestoration.com";
+const rawSiteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://leonroofingandrestoration.com";
+const siteUrl = /^https?:\/\//.test(rawSiteUrl) ? rawSiteUrl : `https://${rawSiteUrl}`;
 const host = new URL(siteUrl).hostname;
 writeFileSync(path.join(outDir, "CNAME"), host + "\n");
 console.log(`postbuild-static: wrote CNAME (${host})`);

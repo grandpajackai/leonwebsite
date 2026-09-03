@@ -3,9 +3,15 @@ import type { Locale } from "@/content/types";
 import { locales } from "@/lib/i18n";
 
 // Real domain, confirmed by the client. Can still be overridden via
-// NEXT_PUBLIC_SITE_URL (e.g. for a staging/preview deploy).
+// NEXT_PUBLIC_SITE_URL (e.g. for a staging/preview deploy) — tolerates the
+// var being set to a bare host (e.g. "leonroofingandrestoration.com")
+// instead of a full URL, since new URL() elsewhere in this file and in
+// scripts/postbuild-static.mjs throws on that and previously took the
+// whole static export down with it.
+const rawSiteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://leonroofingandrestoration.com";
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://leonroofingandrestoration.com"
+  /^https?:\/\//.test(rawSiteUrl) ? rawSiteUrl : `https://${rawSiteUrl}`
 ).replace(/\/$/, "");
 
 export const SITE_NAME = "Leon Roofing & Restoration";
