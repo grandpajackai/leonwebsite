@@ -11,11 +11,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [...STATIC_PATHS, ...servicePaths];
 
   return paths.map((path) => {
+    // trailingSlash: true in next.config.mjs means every route's real file
+    // is path/index.html — match that exactly so these don't need an
+    // extra redirect hop to reach the same URL the canonical tag declares.
     const languages = Object.fromEntries(
-      locales.map((locale) => [locale, `${SITE_URL}/${locale}${path}`])
+      locales.map((locale) => [locale, `${SITE_URL}/${locale}${path}/`])
     );
     return {
-      url: `${SITE_URL}/en${path}`,
+      url: `${SITE_URL}/en${path}/`,
       alternates: { languages },
       changeFrequency: path === "" ? "weekly" : "monthly",
       priority: path === "" ? 1 : path.startsWith("/services/") ? 0.8 : 0.6,
