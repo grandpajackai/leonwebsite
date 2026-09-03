@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TextUsWidget from "@/components/TextUsWidget";
 import StickyCallBar from "@/components/StickyCallBar";
+import Analytics from "@/components/Analytics";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 import { localBusinessSchema } from "@/lib/schema";
 import "../globals.css";
@@ -65,6 +66,7 @@ export default function LocaleLayout({
         <Footer locale={locale} c={c} />
         <TextUsWidget locale={locale} c={c} />
         <StickyCallBar locale={locale} />
+        <Analytics />
       </body>
     </html>
   );
