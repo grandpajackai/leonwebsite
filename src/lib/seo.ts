@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import type { Locale } from "@/content/types";
 import { locales } from "@/lib/i18n";
 
-// No production domain exists yet (see README "Domain connection") — this
-// is a placeholder until the client's real domain is confirmed. Override
-// via NEXT_PUBLIC_SITE_URL once it is.
+// Real domain, confirmed by the client. Can still be overridden via
+// NEXT_PUBLIC_SITE_URL (e.g. for a staging/preview deploy).
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.leonroofingrestoration.com"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://leonroofingandrestoration.com"
 ).replace(/\/$/, "");
 
 export const SITE_NAME = "Leon Roofing & Restoration";

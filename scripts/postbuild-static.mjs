@@ -11,9 +11,11 @@
 //                         folder. This file turns that off. Harmless on
 //                         hosts that don't use Jekyll.
 //   - out/CNAME          — tells GitHub Pages which custom domain to serve
-//                          and auto-provision HTTPS for. Derived from
-//                          NEXT_PUBLIC_SITE_URL; skipped (with a warning)
-//                          if that's still the placeholder domain.
+//                          and auto-provision HTTPS for. Same
+//                          NEXT_PUBLIC_SITE_URL / fallback pair as
+//                          src/lib/seo.ts (duplicated, not imported — this
+//                          plain Node script runs outside Next's TS/path-
+//                          alias resolution).
 
 import { writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -62,19 +64,9 @@ const redirectHtml = `<!doctype html>
 writeFileSync(path.join(outDir, "index.html"), redirectHtml);
 writeFileSync(path.join(outDir, ".nojekyll"), "");
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-const placeholder = "https://www.leonroofingrestoration.com";
-if (siteUrl && siteUrl !== placeholder) {
-  const host = new URL(siteUrl).hostname;
-  writeFileSync(path.join(outDir, "CNAME"), host + "\n");
-  console.log(`postbuild-static: wrote CNAME (${host})`);
-} else {
-  console.warn(
-    "postbuild-static: NEXT_PUBLIC_SITE_URL is unset or still the placeholder — " +
-      "skipped writing out/CNAME. GitHub Pages will only be reachable at the " +
-      "default *.github.io URL until this is set to the real domain and the " +
-      "site is rebuilt."
-  );
-}
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://leonroofingandrestoration.com";
+const host = new URL(siteUrl).hostname;
+writeFileSync(path.join(outDir, "CNAME"), host + "\n");
+console.log(`postbuild-static: wrote CNAME (${host})`);
 
 console.log("postbuild-static: wrote index.html + .nojekyll");
