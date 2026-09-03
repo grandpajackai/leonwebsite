@@ -9,6 +9,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TextUsWidget from "@/components/TextUsWidget";
 import StickyCallBar from "@/components/StickyCallBar";
+import { SITE_NAME, SITE_URL } from "@/lib/seo";
+import { localBusinessSchema } from "@/lib/schema";
 import "../globals.css";
 
 const archivo = Archivo({
@@ -30,7 +32,8 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Leon Roofing & Restoration",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_NAME,
   description:
     "Emergency water, mold, storm and fire damage restoration across South Florida — then the rebuild that puts the house back.",
 };
@@ -45,12 +48,18 @@ export default function LocaleLayout({
   if (!isLocale(params.locale)) notFound();
   const locale = params.locale as Locale;
   const c = getContent(locale);
+  const businessSchema = localBusinessSchema(locale, c);
 
   return (
     <html lang={locale}>
       <body
         className={`${archivo.variable} ${plexMono.variable} flex min-h-screen flex-col bg-paper pb-16 font-sans lg:pb-0`}
       >
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+        />
         <Header locale={locale} c={c} />
         <main className="flex-1">{children}</main>
         <Footer locale={locale} c={c} />

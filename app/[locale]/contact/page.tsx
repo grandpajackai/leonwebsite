@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getContent } from "@/content";
 import type { Locale } from "@/content/types";
 import { isLocale } from "@/lib/i18n";
+import { buildMetadata, SITE_NAME } from "@/lib/seo";
 import Container from "@/components/Container";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactSidebar from "@/components/contact/ContactSidebar";
@@ -13,8 +14,14 @@ export function generateMetadata({
   params: { locale: string };
 }): Metadata {
   if (!isLocale(params.locale)) return {};
-  const c = getContent(params.locale as Locale);
-  return { title: `${c.contactPage.title} | LEON`, description: c.contactPage.sub };
+  const locale = params.locale as Locale;
+  const c = getContent(locale);
+  return buildMetadata({
+    locale,
+    path: "/contact",
+    title: `${c.contactPage.title} | ${SITE_NAME}`,
+    description: c.contactPage.sub,
+  });
 }
 
 export default function ContactPage({

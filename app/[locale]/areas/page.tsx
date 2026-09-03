@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getContent } from "@/content";
 import type { Locale } from "@/content/types";
 import { isLocale } from "@/lib/i18n";
+import { buildMetadata, SITE_NAME } from "@/lib/seo";
 import Container from "@/components/Container";
 
 export function generateMetadata({
@@ -11,8 +12,14 @@ export function generateMetadata({
   params: { locale: string };
 }): Metadata {
   if (!isLocale(params.locale)) return {};
-  const c = getContent(params.locale as Locale);
-  return { title: `${c.areasPage.title} | LEON`, description: c.areasPage.sub };
+  const locale = params.locale as Locale;
+  const c = getContent(locale);
+  return buildMetadata({
+    locale,
+    path: "/areas",
+    title: `${c.areasPage.title} | ${SITE_NAME}`,
+    description: c.areasPage.sub,
+  });
 }
 
 export default function AreasPage({

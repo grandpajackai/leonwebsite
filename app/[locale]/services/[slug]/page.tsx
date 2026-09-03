@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getContent } from "@/content";
 import type { Locale } from "@/content/types";
 import { isLocale, locales } from "@/lib/i18n";
+import { buildMetadata, SITE_NAME } from "@/lib/seo";
+import { serviceSchema } from "@/lib/schema";
 import Container from "@/components/Container";
 import ServiceHero from "@/components/service/ServiceHero";
 import IncludesGrid from "@/components/service/IncludesGrid";
@@ -24,10 +26,16 @@ export function generateMetadata({
   params: { locale: string; slug: string };
 }): Metadata {
   if (!isLocale(params.locale)) return {};
-  const c = getContent(params.locale as Locale);
+  const locale = params.locale as Locale;
+  const c = getContent(locale);
   const svc = c.services.find((s) => s.slug === params.slug);
   if (!svc) return {};
-  return { title: `${svc.title} | LEON`, description: svc.blurb };
+  return buildMetadata({
+    locale,
+    path: `/services/${svc.slug}`,
+    title: `${svc.title} | ${SITE_NAME}`,
+    description: svc.blurb,
+  });
 }
 
 export default function ServicePage({
@@ -42,9 +50,15 @@ export default function ServicePage({
   if (!svc) notFound();
 
   const related = c.services.filter((s) => s.slug !== svc.slug).slice(0, 3);
+  const schema = serviceSchema(locale, svc, `/services/${svc.slug}`);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <ServiceHero locale={locale} c={c} svc={svc} />
       <div className="bg-paper py-[52px]">
         <Container className="grid grid-cols-1 items-start gap-9 lg:grid-cols-[1.4fr_.6fr]">

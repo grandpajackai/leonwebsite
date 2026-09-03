@@ -2,7 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { defaultLocale, locales } from "@/lib/i18n";
 
 export const config = {
-  matcher: ["/((?!_next|assets|favicon.ico|robots.txt|sitemap.xml).*)"],
+  matcher: [
+    "/((?!_next|assets|favicon.ico|robots.txt|sitemap.xml|icon|apple-icon|opengraph-image|twitter-image).*)",
+  ],
 };
 
 export function middleware(request: NextRequest) {
