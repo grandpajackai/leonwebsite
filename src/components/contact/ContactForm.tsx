@@ -3,22 +3,12 @@
 import { useState, type FormEvent } from "react";
 import type { SiteContent } from "@/content/types";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/i18n";
+import { WEB3FORMS_ACCESS_KEY, submitToWeb3Forms } from "@/lib/forms";
 
 const inputClass =
   "rounded-btn border border-navy/22 bg-[#fdfdfc] px-3.5 py-[13px] font-sans text-[15px] text-navy";
 const labelClass =
   "flex flex-col gap-[7px] font-sans text-xs font-semibold leading-none text-navy";
-
-// The site is a fully static export (no server anywhere), so form
-// submission goes through Web3Forms — a free relay built for exactly
-// this: a static site POSTs here, they forward it to the destination
-// email tied to this access key. No account/backend of our own needed.
-// Get a key at https://web3forms.com (just enter an email, no signup)
-// and set NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY. Until that's set, the form
-// falls back to the old local-only "success" demo behavior so the site
-// never looks broken in the meantime.
-const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
-const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 type Status = "idle" | "submitting" | "sent" | "error";
 
@@ -50,16 +40,9 @@ export default function ContactForm({ c }: { c: SiteContent }) {
 
     setStatus("submitting");
     const formData = new FormData(e.currentTarget);
-    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
     formData.append("subject", "New request — leonroofingandrestoration.com");
-
-    try {
-      const res = await fetch(WEB3FORMS_ENDPOINT, { method: "POST", body: formData });
-      const result = await res.json();
-      setStatus(result.success ? "sent" : "error");
-    } catch {
-      setStatus("error");
-    }
+    const success = await submitToWeb3Forms(formData);
+    setStatus(success ? "sent" : "error");
   }
 
   if (status === "sent") {
