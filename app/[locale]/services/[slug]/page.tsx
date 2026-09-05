@@ -10,6 +10,7 @@ import ServiceHero from "@/components/service/ServiceHero";
 import IncludesGrid from "@/components/service/IncludesGrid";
 import HowItGoes from "@/components/service/HowItGoes";
 import FaqAccordion from "@/components/service/FaqAccordion";
+import ServiceReviews from "@/components/service/ServiceReviews";
 import ServiceSidebar from "@/components/service/ServiceSidebar";
 import ServiceCtaBand from "@/components/service/ServiceCtaBand";
 
@@ -66,6 +67,9 @@ export default function ServicePage({
             <IncludesGrid title={c.includesTitle} items={svc.includes} />
             <HowItGoes title={c.stepsTitle} steps={svc.steps} />
             <FaqAccordion title={c.faqTitle} faqs={svc.faqs} />
+            {svc.reviews && svc.reviews.length > 0 && (
+              <ServiceReviews locale={locale} reviews={svc.reviews} />
+            )}
           </div>
           <ServiceSidebar locale={locale} c={c} related={related} />
         </Container>

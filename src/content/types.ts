@@ -16,6 +16,12 @@ export interface ProcessStep {
   p: string;
 }
 
+export interface Review {
+  name: string;
+  rating: number;
+  quote: string;
+}
+
 export interface HomeContent {
   h1a: string;
   h1b: string;
@@ -37,6 +43,7 @@ export interface HomeContent {
   workSub: string;
   reviewsTitle: string;
   reviewsNote: string;
+  reviews: Review[];
   areasTitle: string;
   claimTitle: string;
   claimBody: string;
@@ -146,6 +153,7 @@ export interface ServiceContent {
   includes: HeadingBody[];
   steps: ServiceStep[];
   faqs: ServiceFaq[];
+  reviews?: Review[];
 }
 
 export interface SiteContent {

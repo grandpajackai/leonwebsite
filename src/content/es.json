@@ -108,7 +108,24 @@
       "Registros de humedad firmados y fechados en cada visita"
     ],
     "ctaTitle": "¿Tiene agua en casa ahora mismo?",
-    "ctaSub": "Llame y le indicamos cómo cerrar el agua mientras sale el camión."
+    "ctaSub": "Llame y le indicamos cómo cerrar el agua mientras sale el camión.",
+    "reviews": [
+      {
+        "name": "Michael R.",
+        "rating": 5,
+        "quote": "Leon Restoration respondió el mismo día que encontramos agua entrando por el techo. Explicaron todo con claridad, sacaron el agua, instalaron el equipo de secado y nos mantuvieron informados durante todo el proceso. Muy profesionales de principio a fin."
+      },
+      {
+        "name": "Amanda S.",
+        "rating": 5,
+        "quote": "Excelente experiencia. Tuvimos daño por agua en dos cuartos y Leon se encargó de la extracción, el secado y las reparaciones. Fue muy cómodo tratar con una sola empresa en vez de coordinar varios contratistas distintos."
+      },
+      {
+        "name": "Maria F.",
+        "rating": 5,
+        "quote": "Muy impresionada con la comunicación. Alguien realmente contestó el teléfono, el técnico llegó a tiempo y recibimos actualizaciones durante todo el trabajo. Nos ayudaron a documentar el daño por agua y nos explicaron los siguientes pasos. Los recomiendo totalmente."
+      }
+    ]
   },
   "servicesPage": {
     "title": "Servicios",
@@ -506,6 +523,13 @@
           "q": "¿El seguro cubre el moho?",
           "a": "A veces, y con frecuencia con un límite en dólares, cuando sigue a una pérdida de agua cubierta y reportada a tiempo. La humedad de años generalmente no."
         }
+      ],
+      "reviews": [
+        {
+          "name": "Nicole T.",
+          "rating": 5,
+          "quote": "Encontramos moho detrás de una pared después de una fuga pequeña. El equipo contuvo el área, explicó el proceso de remediación y mantuvo todo muy organizado y limpio. Hicieron una situación estresante mucho más fácil de manejar."
+        }
       ]
     },
     {
@@ -849,6 +873,18 @@
           "q": "¿Cubren el techo durante la tormenta?",
           "a": "Solo cuando es seguro subir. No ponemos una cuadrilla arriba con rayos o viento fuerte."
         }
+      ],
+      "reviews": [
+        {
+          "name": "Jennifer M.",
+          "rating": 5,
+          "quote": "Tuvimos una fuga en el techo después de una tormenta fuerte y necesitábamos a alguien rápido. La cuadrilla llegó cuando dijo que llegaría, encontró el problema y protegió el techo antes de que cayera más lluvia. Excelente comunicación y trabajo muy limpio."
+        },
+        {
+          "name": "Stephanie L.",
+          "rating": 5,
+          "quote": "Nos repararon el techo de teja y estoy muy contenta con el trabajo. Me mostraron dónde estaba el problema, explicaron la reparación y terminaron todo sin dejar desorden en la propiedad. Definitivamente los volvería a llamar."
+        }
       ]
     },
     {
@@ -964,6 +1000,13 @@
           "q": "¿Cubren de noche?",
           "a": "Solo cuando es seguro. Teja mojada, viento y rayos son límites absolutos: protegemos el interior y volvemos al amanecer."
         }
+      ],
+      "reviews": [
+        {
+          "name": "Robert G.",
+          "rating": 5,
+          "quote": "Necesitábamos cubrir el techo de emergencia después de que una parte se dañó en una tormenta. Leon respondió rápido y aseguró todo antes de la siguiente lluvia. Empresa muy receptiva y la cuadrilla claramente sabía lo que hacía."
+        }
       ]
     },
     {
@@ -1021,6 +1064,13 @@
         {
           "q": "¿La inspección es gratis?",
           "a": "La inspección de daños es gratis. Un informe infrarrojo documentado para un reclamo, una compra o una disputa es un servicio pagado, cotizado antes de empezar."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Carlos D.",
+          "rating": 5,
+          "quote": "Llamé por humedad en una de nuestras paredes y no sabía de dónde venía. Usaron su equipo para localizar la fuga sin tener que abrir todo. El técnico sabía lo que hacía y se tomó el tiempo de explicarme lo que encontraba."
         }
       ]
     },
@@ -1095,6 +1145,13 @@
           "q": "¿Reparar o reemplazar?",
           "a": "Como regla, un sistema de más de doce años que necesita una pieza mayor conviene reemplazarlo. Le mostramos los números de ambas formas y usted decide."
         }
+      ],
+      "reviews": [
+        {
+          "name": "David P.",
+          "rating": 5,
+          "quote": "Nuestro aire acondicionado dejó de enfriar bien y Leon vino a revisarlo. Diagnosticaron el problema rápido y dejaron todo funcionando de nuevo. El técnico fue profesional, respetuoso con la casa y no trató de vendernos algo que no necesitábamos."
+        }
       ]
     },
     {
@@ -1151,6 +1208,13 @@
         {
           "q": "¿También arreglan lo que encuentran?",
           "a": "Sí. Si vemos teja agrietada, flashing fallado o madera blanda mientras limpiamos, lo fotografiamos y cotizamos la reparación."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Anthony C.",
+          "rating": 5,
+          "quote": "Usamos a Leon para la limpieza del techo y la diferencia fue enorme. El techo se ve muchísimo mejor sin verse dañado ni lavado con demasiada presión. La cuadrilla tuvo cuidado con el jardín y limpió todo después."
         }
       ]
     }

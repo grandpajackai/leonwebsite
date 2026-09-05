@@ -108,7 +108,24 @@
       "Signed, time-stamped moisture logs every visit"
     ],
     "ctaTitle": "Standing in water right now?",
-    "ctaSub": "Call and we’ll walk you through the shutoff while the truck rolls."
+    "ctaSub": "Call and we’ll walk you through the shutoff while the truck rolls.",
+    "reviews": [
+      {
+        "name": "Michael R.",
+        "rating": 5,
+        "quote": "Leon Restoration responded the same day after we found water coming through the ceiling. They explained everything clearly, removed the water, set up the drying equipment, and kept us updated throughout the process. Very professional from start to finish."
+      },
+      {
+        "name": "Amanda S.",
+        "rating": 5,
+        "quote": "Excellent experience. We had water damage in two rooms and Leon handled the extraction, drying, and repairs. It was nice dealing with one company instead of having to coordinate several different contractors."
+      },
+      {
+        "name": "Maria F.",
+        "rating": 5,
+        "quote": "Very impressed with the communication. Someone actually answered the phone, the technician arrived on time, and we received updates throughout the job. They helped us document the water damage and walked us through what needed to happen next. Highly recommend."
+      }
+    ]
   },
   "servicesPage": {
     "title": "Services",
@@ -506,6 +523,13 @@
           "q": "Is mold covered by insurance?",
           "a": "Sometimes, and often with a dollar cap, when it follows a covered water loss that was reported promptly. Long-standing humidity issues generally are not."
         }
+      ],
+      "reviews": [
+        {
+          "name": "Nicole T.",
+          "rating": 5,
+          "quote": "We discovered mold behind a wall after a small leak. The team contained the area, explained the remediation process, and kept everything very organized and clean. They made a stressful situation much easier to deal with."
+        }
       ]
     },
     {
@@ -849,6 +873,18 @@
           "q": "Do you tarp during a storm?",
           "a": "Only when it’s safe to be on the roof. We won’t put a crew up in lightning or high wind."
         }
+      ],
+      "reviews": [
+        {
+          "name": "Jennifer M.",
+          "rating": 5,
+          "quote": "We had a roof leak after a heavy storm and needed someone quickly. The crew showed up when they said they would, found the problem, and got the roof protected before more rain came in. Great communication and very clean work."
+        },
+        {
+          "name": "Stephanie L.",
+          "rating": 5,
+          "quote": "Had our tile roof repaired and I'm very happy with the work. They showed me where the problem was, explained the repair, and completed everything without making a mess around the property. I would definitely call them again."
+        }
       ]
     },
     {
@@ -964,6 +1000,13 @@
           "q": "Can you tarp at night?",
           "a": "Only when it is safe. Wet tile, wind and lightning are hard stops — we will board the interior and return at first light."
         }
+      ],
+      "reviews": [
+        {
+          "name": "Robert G.",
+          "rating": 5,
+          "quote": "We needed emergency tarping after part of our roof was damaged during a storm. Leon responded quickly and secured everything before the next round of rain. Very responsive company and the crew clearly knew what they were doing."
+        }
       ]
     },
     {
@@ -1021,6 +1064,13 @@
         {
           "q": "Is the inspection free?",
           "a": "The damage inspection is free. A documented infrared report for a claim, a purchase or a dispute is a paid service, quoted before we start."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Carlos D.",
+          "rating": 5,
+          "quote": "I called because of moisture in one of our walls and wasn't sure where it was coming from. They used their equipment to locate the leak without tearing everything apart. The technician was knowledgeable and took the time to explain what he was seeing."
         }
       ]
     },
@@ -1095,6 +1145,13 @@
           "q": "Repair or replace?",
           "a": "As a rule, a system over twelve years old needing a major component is worth replacing. We show you the numbers both ways and let you decide."
         }
+      ],
+      "reviews": [
+        {
+          "name": "David P.",
+          "rating": 5,
+          "quote": "Our AC stopped cooling properly and Leon came out to take a look. They diagnosed the issue quickly and had everything working again. The technician was professional, respectful of the house, and didn't try to sell us anything we didn't need."
+        }
       ]
     },
     {
@@ -1151,6 +1208,13 @@
         {
           "q": "Do you also fix what you find?",
           "a": "Yes. If we find cracked tile, failed flashing or a soft deck while cleaning, we photograph it and quote the repair."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Anthony C.",
+          "rating": 5,
+          "quote": "We used Leon for roof cleaning and the difference was huge. The roof looks dramatically better without looking damaged or overly pressure washed. The crew was careful around the landscaping and cleaned everything up afterward."
         }
       ]
     }
