@@ -409,7 +409,8 @@
           "q": "How fast can you get here?",
           "a": "A person answers 24/7 and we dispatch immediately. We won’t quote you a fake arrival window — we’ll tell you where the nearest crew is when you call."
         }
-      ]
+      ],
+      "img": "assets/services/water-extraction.png"
     },
     {
       "slug": "structural-drying",
@@ -466,7 +467,8 @@
           "q": "Why does the drying log matter?",
           "a": "It is the evidence that the structure actually reached dry standard. It settles disputes with carriers, buyers, associations and future inspectors."
         }
-      ]
+      ],
+      "img": "assets/services/structural-drying.png"
     },
     {
       "slug": "mold",
@@ -530,7 +532,8 @@
           "rating": 5,
           "quote": "We discovered mold behind a wall after a small leak. The team contained the area, explained the remediation process, and kept everything very organized and clean. They made a stressful situation much easier to deal with."
         }
-      ]
+      ],
+      "img": "assets/services/mold.png"
     },
     {
       "slug": "storm",
@@ -885,7 +888,8 @@
           "rating": 5,
           "quote": "Had our tile roof repaired and I'm very happy with the work. They showed me where the problem was, explained the repair, and completed everything without making a mess around the property. I would definitely call them again."
         }
-      ]
+      ],
+      "img": "assets/services/roofing.png"
     },
     {
       "slug": "commercial",
@@ -1007,7 +1011,8 @@
           "rating": 5,
           "quote": "We needed emergency tarping after part of our roof was damaged during a storm. Leon responded quickly and secured everything before the next round of rain. Very responsive company and the crew clearly knew what they were doing."
         }
-      ]
+      ],
+      "img": "assets/services/tarping.png"
     },
     {
       "slug": "thermal-imaging",
@@ -1152,7 +1157,8 @@
           "rating": 5,
           "quote": "Our AC stopped cooling properly and Leon came out to take a look. They diagnosed the issue quickly and had everything working again. The technician was professional, respectful of the house, and didn't try to sell us anything we didn't need."
         }
-      ]
+      ],
+      "img": "assets/services/hvac.png"
     },
     {
       "slug": "roof-cleaning",
@@ -1216,7 +1222,8 @@
           "rating": 5,
           "quote": "We used Leon for roof cleaning and the difference was huge. The roof looks dramatically better without looking damaged or overly pressure washed. The crew was careful around the landscaping and cleaned everything up afterward."
         }
-      ]
+      ],
+      "img": "assets/services/roof-cleaning.png"
     }
   ]
 }

@@ -409,7 +409,8 @@
           "q": "¿Qué tan rápido llegan?",
           "a": "Contesta una persona 24/7 y despachamos de inmediato. No prometemos un tiempo falso de llegada: al llamar le decimos dónde está la cuadrilla más cercana."
         }
-      ]
+      ],
+      "img": "assets/services/water-extraction.png"
     },
     {
       "slug": "structural-drying",
@@ -466,7 +467,8 @@
           "q": "¿Por qué importa el registro de secado?",
           "a": "Es la evidencia de que la estructura realmente llegó al estándar seco. Resuelve disputas con aseguradoras, compradores, asociaciones e inspectores futuros."
         }
-      ]
+      ],
+      "img": "assets/services/structural-drying.png"
     },
     {
       "slug": "mold",
@@ -530,7 +532,8 @@
           "rating": 5,
           "quote": "Encontramos moho detrás de una pared después de una fuga pequeña. El equipo contuvo el área, explicó el proceso de remediación y mantuvo todo muy organizado y limpio. Hicieron una situación estresante mucho más fácil de manejar."
         }
-      ]
+      ],
+      "img": "assets/services/mold.png"
     },
     {
       "slug": "storm",
@@ -885,7 +888,8 @@
           "rating": 5,
           "quote": "Nos repararon el techo de teja y estoy muy contenta con el trabajo. Me mostraron dónde estaba el problema, explicaron la reparación y terminaron todo sin dejar desorden en la propiedad. Definitivamente los volvería a llamar."
         }
-      ]
+      ],
+      "img": "assets/services/roofing.png"
     },
     {
       "slug": "commercial",
@@ -1007,7 +1011,8 @@
           "rating": 5,
           "quote": "Necesitábamos cubrir el techo de emergencia después de que una parte se dañó en una tormenta. Leon respondió rápido y aseguró todo antes de la siguiente lluvia. Empresa muy receptiva y la cuadrilla claramente sabía lo que hacía."
         }
-      ]
+      ],
+      "img": "assets/services/tarping.png"
     },
     {
       "slug": "thermal-imaging",
@@ -1152,7 +1157,8 @@
           "rating": 5,
           "quote": "Nuestro aire acondicionado dejó de enfriar bien y Leon vino a revisarlo. Diagnosticaron el problema rápido y dejaron todo funcionando de nuevo. El técnico fue profesional, respetuoso con la casa y no trató de vendernos algo que no necesitábamos."
         }
-      ]
+      ],
+      "img": "assets/services/hvac.png"
     },
     {
       "slug": "roof-cleaning",
@@ -1216,7 +1222,8 @@
           "rating": 5,
           "quote": "Usamos a Leon para la limpieza del techo y la diferencia fue enorme. El techo se ve muchísimo mejor sin verse dañado ni lavado con demasiada presión. La cuadrilla tuvo cuidado con el jardín y limpió todo después."
         }
-      ]
+      ],
+      "img": "assets/services/roof-cleaning.png"
     }
   ]
 }
