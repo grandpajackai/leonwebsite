@@ -17,11 +17,13 @@ const uiCopy = {
     sending: "Sending…",
     errorPrefix: "Something went wrong sending that — please call us instead at",
     errorSuffix: "or try submitting again.",
+    photoNote: "We'll follow up by phone or text for photos — or send them to",
   },
   es: {
     sending: "Enviando…",
     errorPrefix: "Algo salió mal al enviar esto — mejor llámenos al",
     errorSuffix: "o intente enviarlo de nuevo.",
+    photoNote: "Le pediremos las fotos por llamada o mensaje de texto — o envíelas al",
   },
 };
 
@@ -40,6 +42,16 @@ export default function ContactForm({ c }: { c: SiteContent }) {
 
     setStatus("submitting");
     const formData = new FormData(e.currentTarget);
+    // Web3Forms attachments are a paid feature — any file in the request
+    // makes the whole submission fail on the free plan. Drop it and flag
+    // in the email that photos were offered, so we can follow up for them.
+    formData.delete("photos");
+    if (fileCount > 0) {
+      formData.append(
+        "photo_note",
+        `Customer selected ${fileCount} photo${fileCount === 1 ? "" : "s"} to attach — follow up by phone or text to get them.`
+      );
+    }
     formData.append("subject", "New request — leonroofingandrestoration.com");
     const success = await submitToWeb3Forms(formData);
     setStatus(success ? "sent" : "error");
@@ -143,6 +155,12 @@ export default function ContactForm({ c }: { c: SiteContent }) {
             className="hidden"
             onChange={(e) => setFileCount(e.target.files?.length ?? 0)}
           />
+        </span>
+        <span className="font-sans text-[11.5px] font-normal leading-[1.4] text-navy/45">
+          {t.photoNote}{" "}
+          <a href={PHONE_TEL} className="underline">
+            {PHONE_DISPLAY}
+          </a>
         </span>
       </label>
 
