@@ -169,7 +169,7 @@
   },
   "workPage": {
     "title": "Our work",
-    "sub": "Photos from our own job sites — rebuilds, remodels and repairs across Miami-Dade, Broward and Palm Beach.",
+    "sub": "Real photos from Leon crews. Browse by the service performed below, or see recent rebuild and remodel work further down the page.",
     "captions": [
       "Bathroom rebuild",
       "Tile replacement",
@@ -212,7 +212,9 @@
           "North Miami",
           "Cutler Bay",
           "Pinecrest"
-        ]
+        ],
+        "slug": "miami-dade",
+        "intro": "Most of our calls come from Miami-Dade — Miami, Hialeah, Miami Beach, Coral Gables, Doral, Kendall and the rest of the county. Same 24-hour dispatch, same crew from extraction through rebuild, same documentation for your carrier."
       },
       {
         "name": "Broward County",
@@ -229,7 +231,9 @@
           "Pompano Beach",
           "Deerfield Beach",
           "Coconut Creek"
-        ]
+        ],
+        "slug": "broward",
+        "intro": "From Fort Lauderdale to Coral Springs, Broward gets the same crew and the same process as every county we serve — 24-hour dispatch, one company from the first call to the last coat of paint."
       },
       {
         "name": "Palm Beach County",
@@ -244,7 +248,9 @@
           "Lake Worth",
           "Royal Palm Beach",
           "Riviera Beach"
-        ]
+        ],
+        "slug": "palm-beach",
+        "intro": "West Palm Beach, Boca Raton, Delray Beach and the rest of Palm Beach County get the same 24-hour dispatch, the same crew and the same carrier documentation as every job we run."
       }
     ],
     "mapNote": "MAP — THREE-COUNTY COVERAGE AREA · 1120×420"

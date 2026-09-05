@@ -73,6 +73,27 @@ export function serviceSchema(
   };
 }
 
+export function areaSchema(
+  locale: Locale,
+  countyName: string,
+  description: string,
+  path: string
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `Water, Storm & Roof Restoration — ${countyName}`,
+    description,
+    url: `${SITE_URL}/${locale}${path}`,
+    provider: { "@id": `${SITE_URL}/#business` },
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: countyName,
+    },
+    inLanguage: locale,
+  };
+}
+
 export function jsonLdScript(data: object) {
   return JSON.stringify(data);
 }

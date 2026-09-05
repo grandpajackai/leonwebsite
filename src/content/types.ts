@@ -70,8 +70,10 @@ export interface WorkPageContent {
 }
 
 export interface County {
+  slug: string;
   name: string;
   cities: string[];
+  intro: string;
 }
 
 export interface AreasPageContent {

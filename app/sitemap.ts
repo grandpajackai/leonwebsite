@@ -8,7 +8,8 @@ const STATIC_PATHS = ["", "/services", "/work", "/areas", "/about", "/contact"];
 export default function sitemap(): MetadataRoute.Sitemap {
   const en = getContent("en");
   const servicePaths = en.services.map((s) => `/services/${s.slug}`);
-  const paths = [...STATIC_PATHS, ...servicePaths];
+  const areaPaths = en.areasPage.counties.map((c) => `/areas/${c.slug}`);
+  const paths = [...STATIC_PATHS, ...servicePaths, ...areaPaths];
 
   return paths.map((path) => {
     // trailingSlash: true in next.config.mjs means every route's real file

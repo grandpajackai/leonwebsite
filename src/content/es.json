@@ -169,7 +169,7 @@
   },
   "workPage": {
     "title": "Nuestros trabajos",
-    "sub": "Fotos de nuestras propias obras — reconstrucciones, remodelaciones y reparaciones en Miami-Dade, Broward y Palm Beach.",
+    "sub": "Fotos reales de las cuadrillas de Leon. Explore por el servicio realizado a continuación, o vea trabajos recientes de reconstrucción y remodelación más abajo.",
     "captions": [
       "Reconstrucción de baño",
       "Cambio de azulejo",
@@ -212,7 +212,9 @@
           "North Miami",
           "Cutler Bay",
           "Pinecrest"
-        ]
+        ],
+        "slug": "miami-dade",
+        "intro": "La mayoría de nuestras llamadas vienen de Miami-Dade — Miami, Hialeah, Miami Beach, Coral Gables, Doral, Kendall y el resto del condado. El mismo despacho de 24 horas, la misma cuadrilla desde la extracción hasta la reconstrucción, y la misma documentación para su aseguradora."
       },
       {
         "name": "Condado de Broward",
@@ -229,7 +231,9 @@
           "Pompano Beach",
           "Deerfield Beach",
           "Coconut Creek"
-        ]
+        ],
+        "slug": "broward",
+        "intro": "De Fort Lauderdale a Coral Springs, Broward recibe la misma cuadrilla y el mismo proceso que cada condado que atendemos — despacho de 24 horas, una sola empresa desde la primera llamada hasta el último detalle."
       },
       {
         "name": "Condado de Palm Beach",
@@ -244,7 +248,9 @@
           "Lake Worth",
           "Royal Palm Beach",
           "Riviera Beach"
-        ]
+        ],
+        "slug": "palm-beach",
+        "intro": "West Palm Beach, Boca Raton, Delray Beach y el resto del condado de Palm Beach reciben el mismo despacho de 24 horas, la misma cuadrilla y la misma documentación para su aseguradora que cada trabajo que hacemos."
       }
     ],
     "mapNote": "MAPA — COBERTURA DE TRES CONDADOS · 1120×420"

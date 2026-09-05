@@ -5,6 +5,17 @@ import { otherLocale, PHONE_DISPLAY, PHONE_TEL } from "@/lib/i18n";
 import Container from "./Container";
 import LocaleSwitchLink from "./LocaleSwitchLink";
 import MobileNav from "./MobileNav";
+import NavMenu from "./NavMenu";
+
+const viewAll: Record<Locale, string> = {
+  en: "View all services →",
+  es: "Ver todos los servicios →",
+};
+
+const allAreasLabel: Record<Locale, string> = {
+  en: "All service areas →",
+  es: "Todas las áreas →",
+};
 
 export default function Header({
   locale,
@@ -49,15 +60,90 @@ export default function Header({
 
           <div className="flex items-center gap-2 sm:gap-6">
             <nav className="hidden items-center gap-6 lg:flex">
-              {c.nav.map((item) => (
-                <Link
-                  key={item.slug}
-                  href={`/${locale}/${item.slug}`}
-                  className="border-b-[1.5px] border-transparent py-1.5 font-sans text-[13.5px] font-medium leading-none text-white/82 transition-colors hover:border-amber hover:text-white"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {c.nav.map((item) => {
+                if (item.slug === "services") {
+                  return (
+                    <NavMenu
+                      key={item.slug}
+                      label={item.label}
+                      href={`/${locale}/services`}
+                    >
+                      <div className="flex w-[560px] flex-col gap-5">
+                        <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+                          {c.servicesPage.groups.map((group) => (
+                            <div key={group.label}>
+                              <div className="mb-2.5 font-mono text-[10px] font-medium leading-none tracking-[.12em] text-navy/45">
+                                {group.label}
+                              </div>
+                              <div className="flex flex-col gap-1.5">
+                                {group.items.map((slug) => {
+                                  const svc = c.services.find(
+                                    (s) => s.slug === slug
+                                  );
+                                  if (!svc) return null;
+                                  return (
+                                    <Link
+                                      key={slug}
+                                      href={`/${locale}/services/${slug}`}
+                                      className="font-sans text-[13.5px] font-medium leading-[1.4] text-navy/75 transition-colors hover:text-gold-deep"
+                                    >
+                                      {svc.title}
+                                    </Link>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        <Link
+                          href={`/${locale}/services`}
+                          className="border-t border-navy/10 pt-3.5 font-sans text-[13px] font-semibold leading-none text-gold-deep"
+                        >
+                          {viewAll[locale]}
+                        </Link>
+                      </div>
+                    </NavMenu>
+                  );
+                }
+                if (item.slug === "areas") {
+                  return (
+                    <NavMenu
+                      key={item.slug}
+                      label={item.label}
+                      href={`/${locale}/areas`}
+                    >
+                      <div className="flex w-[220px] flex-col gap-4">
+                        <div className="flex flex-col gap-2.5">
+                          {c.areasPage.counties.map((county) => (
+                            <Link
+                              key={county.slug}
+                              href={`/${locale}/areas/${county.slug}`}
+                              className="font-sans text-[13.5px] font-medium leading-[1.4] text-navy/75 transition-colors hover:text-gold-deep"
+                            >
+                              {county.name}
+                            </Link>
+                          ))}
+                        </div>
+                        <Link
+                          href={`/${locale}/areas`}
+                          className="border-t border-navy/10 pt-3.5 font-sans text-[13px] font-semibold leading-none text-gold-deep"
+                        >
+                          {allAreasLabel[locale]}
+                        </Link>
+                      </div>
+                    </NavMenu>
+                  );
+                }
+                return (
+                  <Link
+                    key={item.slug}
+                    href={`/${locale}/${item.slug}`}
+                    className="border-b-[1.5px] border-transparent py-1.5 font-sans text-[13.5px] font-medium leading-none text-white/82 transition-colors hover:border-amber hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </nav>
             <LocaleSwitchLink
               locale={otherLocale(locale)}
@@ -71,12 +157,7 @@ export default function Header({
               <span className="hidden h-[7px] w-[7px] flex-none rounded-full bg-ink sm:block" />
               {PHONE_DISPLAY}
             </a>
-            <MobileNav
-              locale={locale}
-              navItems={c.nav}
-              otherLabel={c.other}
-              ctaCall={c.ctaCall}
-            />
+            <MobileNav locale={locale} c={c} />
           </div>
         </Container>
       </div>
