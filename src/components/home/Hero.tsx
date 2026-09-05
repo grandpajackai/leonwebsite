@@ -43,7 +43,9 @@ export default function Hero({
           </div>
           <div className="flex flex-wrap gap-[30px] pt-3 font-sans text-[12.5px] font-medium leading-[1.4] text-white/62">
             {c.home.bullets.map((b) => (
-              <span key={b}>{b}</span>
+              <span key={b} className="whitespace-nowrap">
+                {b}
+              </span>
             ))}
           </div>
         </div>

@@ -15,11 +15,13 @@ export default function Header({
 }) {
   return (
     <>
-      <div className="flex flex-wrap items-center justify-between gap-5 bg-amber px-8 py-2 font-sans text-[12px] font-semibold leading-[1.3] text-ink">
+      <div className="flex flex-wrap items-center justify-between gap-x-5 gap-y-1.5 bg-amber px-4 py-2 font-sans text-[12px] font-semibold leading-[1.3] text-ink sm:px-8">
         <span>{c.topbar}</span>
-        <div className="flex gap-[18px] font-mono text-[10.5px] font-medium leading-none tracking-[.1em]">
+        <div className="flex flex-wrap gap-x-[18px] gap-y-1 font-mono text-[10.5px] font-medium leading-none tracking-[.1em]">
           {c.strip.map((cred) => (
-            <span key={cred}>{cred}</span>
+            <span key={cred} className="whitespace-nowrap">
+              {cred}
+            </span>
           ))}
         </div>
       </div>
