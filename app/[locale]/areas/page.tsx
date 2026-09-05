@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getContent } from "@/content";
 import type { Locale } from "@/content/types";
 import { isLocale } from "@/lib/i18n";
 import { buildMetadata, SITE_NAME } from "@/lib/seo";
 import Container from "@/components/Container";
+
+const mapAlt: Record<Locale, string> = {
+  en: "Map of Leon Roofing & Restoration's service area — Miami-Dade, Broward, and Palm Beach counties",
+  es: "Mapa del área de servicio de Leon Roofing & Restoration — condados de Miami-Dade, Broward y Palm Beach",
+};
 
 export function generateMetadata({
   params,
@@ -28,7 +34,8 @@ export default function AreasPage({
   params: { locale: string };
 }) {
   if (!isLocale(params.locale)) notFound();
-  const c = getContent(params.locale as Locale);
+  const locale = params.locale as Locale;
+  const c = getContent(locale);
 
   return (
     <>
@@ -45,8 +52,15 @@ export default function AreasPage({
 
       <div className="bg-paper py-9 pb-16">
         <Container>
-          <div className="mb-[34px] flex h-[300px] items-center justify-center rounded-card bg-stripe-light text-center font-mono text-[10px] font-medium leading-[1.6] tracking-[.08em] text-black/42">
-            {c.areasPage.mapNote}
+          <div className="relative mb-[34px] aspect-[8/3] w-full overflow-hidden rounded-card">
+            <Image
+              src="/assets/areas/service-areas-map.png"
+              alt={mapAlt[locale]}
+              fill
+              sizes="(min-width: 1024px) 1120px, 100vw"
+              className="object-cover"
+              priority
+            />
           </div>
           <div className="grid grid-cols-1 gap-[18px] sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
             {c.areasPage.counties.map((county) => (
