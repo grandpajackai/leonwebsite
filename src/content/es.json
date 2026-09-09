@@ -27,7 +27,7 @@
   "strip": [
     "CERTIFICADO EPA 608",
     "OSHA 10",
-    "MÁS DE 60 AÑOS DE EXPERIENCIA",
+    "MÁS DE 40 AÑOS DE EXPERIENCIA",
     "TOTALMENTE ASEGURADOS"
   ],
   "topbar": "Contestamos en vivo 24/7 — Miami-Dade, Broward y Palm Beach",
@@ -40,13 +40,12 @@
     "h1b": "Nosotros tampoco.",
     "sub": "Restauración de emergencia por agua, moho, tormenta e incendio en todo el sur de la Florida — y la reconstrucción que devuelve la casa a su estado. Una sola empresa desde la primera llamada hasta la última capa de pintura.",
     "bullets": [
-      "Sin cargo por visita en emergencias",
       "Facturamos directo a su seguro",
       "Inspección de daños gratis"
     ],
     "heroPhoto": "",
     "heroImg": "assets/photos/thermal.jpg",
-    "proofTitle": "Sesenta años haciendo el trabajo completo",
+    "proofTitle": "Cuarenta años haciendo el trabajo completo",
     "proofBody": "Leon construye y repara casas en el sur de la Florida desde hace tres generaciones. Eso importa más en un daño por agua: la cuadrilla que seca su casa es la misma que la reconstruye, así nada se pierde entre la empresa de mitigación y el contratista.",
     "proofPoints": [
       {
@@ -256,7 +255,7 @@
     "mapNote": "MAPA — COBERTURA DE TRES CONDADOS · 1120×420"
   },
   "aboutPage": {
-    "title": "Sesenta años en las casas del sur de la Florida",
+    "title": "Cuarenta años en las casas del sur de la Florida",
     "sub": "Leon Roofing & Restoration es una empresa familiar. Tres generaciones de carpinteros, techadores y remodeladores que hoy atienden la parte de emergencia del mismo trabajo.",
     "body": [
       "Empezamos construyendo y reparando casas, no persiguiendo daños por agua. Ese orden importa. Cuando una tubería falla a las dos de la mañana, quien llega ya sabe cómo está armada la casa: por dónde viaja el agua, qué es estructural, qué se puede secar y qué tiene que salir.",
@@ -285,7 +284,7 @@
     "creds": [
       "Certificado EPA 608",
       "OSHA 10",
-      "Más de 60 años de experiencia",
+      "Más de 40 años de experiencia",
       "Totalmente asegurados"
     ],
     "photo": "",

@@ -12,8 +12,15 @@ export default function ProcessBand({ c }: { c: SiteContent }) {
           {c.home.processSub}
         </p>
         <div className="grid grid-cols-1 gap-px border border-white/16 bg-white/16 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(210px,1fr))]">
-          {c.home.process.map((st) => (
-            <div key={st.t} className="bg-navy px-5 pb-7 pt-6">
+          {c.home.process.map((st, i) => (
+            <div
+              key={st.t}
+              className={`bg-navy px-5 pb-7 pt-6 ${
+                i === c.home.process.length - 1
+                  ? "sm:col-span-2 lg:col-span-1"
+                  : ""
+              }`}
+            >
               <div className="font-mono text-[10px] font-medium leading-none tracking-[.13em] text-amber">
                 {st.t}
               </div>

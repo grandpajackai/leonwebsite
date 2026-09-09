@@ -1,7 +1,7 @@
 # Handoff: Leon Roofing &amp; Restoration — full marketing site
 
 ## Overview
-A bilingual (English/Spanish) marketing website for **Leon Roofing & Restoration, Inc.** — a family-owned South Florida restoration and construction company (60+ years, Miami-Dade / Broward / Palm Beach). The site sells emergency restoration (water, mold, storm, sewage), HVAC service, roofing and exterior work, and the reconstruction that follows a loss.
+A bilingual (English/Spanish) marketing website for **Leon Roofing & Restoration, Inc.** — a family-owned South Florida restoration and construction company (40+ years, Miami-Dade / Broward / Palm Beach). The site sells emergency restoration (water, mold, storm, sewage), HVAC service, roofing and exterior work, and the reconstruction that follows a loss.
 
 Primary conversion goal: **phone call** — `(786) 702-2090`, live-answered 24/7. Secondary: the "Request a crew" form.
 
@@ -108,7 +108,7 @@ Service-page groups (order matters):
 
 ### Global chrome (every page)
 
-**1. Amber credential strip** — `background:#f2b21a; color:#12100b; padding:8px 32px`, flex space-between, `wrap`. Left: `600 12px` live-answer line. Right: four mono credentials at `500 10.5px/1`, `letter-spacing:.1em` — `EPA 608 CERTIFIED · OSHA 10 · 60+ YEARS OF EXPERIENCE · FULLY INSURED`. These four are the **only** credentials permitted — see "Legal / truthfulness constraints".
+**1. Amber credential strip** — `background:#f2b21a; color:#12100b; padding:8px 32px`, flex space-between, `wrap`. Left: `600 12px` live-answer line. Right: four mono credentials at `500 10.5px/1`, `letter-spacing:.1em` — `EPA 608 CERTIFIED · OSHA 10 · 40+ YEARS OF EXPERIENCE · FULLY INSURED`. These four are the **only** credentials permitted — see "Legal / truthfulness constraints".
 
 **2. Sticky header** — `background:#0c1520`, `position:sticky; top:0; z-index:40`. Row: logo lockup (44px lion mark + stacked LEON / ROOFING & RESTORATION) → nav items (`500 13.5px`, `rgba(255,255,255,.82)`, hover white + 1.5px amber bottom border) → language toggle (mono 11px in a `rgba(255,255,255,.25)` 1px box, radius 5px, label shows the *other* language) → amber phone button with a 7px ink dot.
 
@@ -203,7 +203,7 @@ In `prototype/assets/`:
 ## Legal / truthfulness constraints — read this before writing any copy
 The client explicitly approved only these claims. Earlier drafts contained invented figures that were **removed on purpose**; do not reintroduce them or invent new ones.
 
-- Credentials are **exactly**: EPA 608 Certified · OSHA 10 · 60+ years of experience · Fully insured. **No contractor license number, no IICRC, no mold-remediation license number** — they aren't held yet. Add them only when the client supplies real numbers.
+- Credentials are **exactly**: EPA 608 Certified · OSHA 10 · 40+ years of experience · Fully insured. **No contractor license number, no IICRC, no mold-remediation license number** — they aren't held yet. Add them only when the client supplies real numbers.
 - **No response-time promise.** The site says "live answer 24/7" and never "45-minute arrival" or similar.
 - **No statistics** — no job counts, star ratings, review counts, or years-to-dry numbers.
 - **No fabricated testimonials.** The review slots are intentionally empty placeholders.
